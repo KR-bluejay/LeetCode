@@ -1,14 +1,13 @@
 class Solution {
     fun repeatedCharacter(s: String): Char {
-        val letterMap = mutableMapOf<Char, Int>()
+        val letterSet = HashSet<Char>()
 
-        s.forEachIndexed { letterIndex, letterItem -> 
-           val letterCount = letterMap.merge(letterItem, 1, Int::plus)
-
-           if (letterCount == 2) {
+        s.forEach { letterItem ->
+            if (letterSet.contains(letterItem)) {
                 return letterItem
-           }
-        } 
+            }
+            letterSet.add(letterItem)
+        }
 
         return ' '
     }
