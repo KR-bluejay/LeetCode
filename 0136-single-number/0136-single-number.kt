@@ -1,13 +1,11 @@
 class Solution {
     fun singleNumber(nums: IntArray): Int {
-        val numMap = nums.toList().groupingBy { it }.eachCount()
+        var uniqueNum = 0
 
-        for ((numKey, numCount) in numMap) {
-            if (numCount == 1) {
-                return numKey
-            }
+        for (numItem in nums) {
+            uniqueNum = numItem xor uniqueNum
         }
 
-        return -1
+        return uniqueNum
     }
 }
