@@ -1,23 +1,25 @@
 class Solution {
     fun lengthOfLongestSubstring(s: String): Int {
-        var leftIndex = 0 
-        var rightIndex = 0
         var maxLength = 0
+        var leftIndex = 0
+        var rightIndex = 0
 
         val charMap = HashMap<Char, Int>()
 
         while (rightIndex < s.length) {
-            val charKey: Char = s[rightIndex]
-            val charCount: Int = charMap.merge(charKey, 1, Integer::sum)!!
+            val currentChar = s.get(rightIndex)
+            var currentCharCount = charMap.merge(currentChar, 1, Integer::sum)!!
 
-            while (charMap.getOrDefault(charKey, 0) > 1) {
-                charMap.put(s[leftIndex], charMap.getOrDefault(s[leftIndex], 0) - 1)
 
-                leftIndex += 1
+            while (currentCharCount > 1) {
+                var leftCharCount = charMap.getOrDefault(s.get(leftIndex), 0)
+                charMap.put(s.get(leftIndex), leftCharCount - 1)
+                leftIndex++
+                currentCharCount = charMap.getOrDefault(currentChar, 0)
             }
 
             maxLength = Math.max(maxLength, rightIndex - leftIndex + 1)
-            rightIndex += 1
+            rightIndex++
         }
 
         return maxLength
