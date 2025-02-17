@@ -10,7 +10,6 @@
 
 class Solution {
     fun hasCycle(head: ListNode?): Boolean {
-        val itemSet = HashSet<Int>()
         var slowNode: ListNode? = head;
         var fastNode: ListNode? = head?.next;
 
