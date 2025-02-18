@@ -2,17 +2,17 @@ class Solution {
     fun twoSum(nums: IntArray, target: Int): IntArray {
         val numMap = HashMap<Int, Int>()
 
-        nums.forEachIndexed { numIndex, numItem ->
-            val neededValue = target - numItem
-            val searchResult = numMap.get(neededValue)
+        for ((numIndex, numItem) in nums.withIndex()) {
+            val pairNumIndex: Int = numMap.getOrDefault(target - numItem, -1)
 
-            if (searchResult != null) {
-                return intArrayOf(searchResult, numIndex)
+            if (pairNumIndex != -1) {
+                return intArrayOf(numIndex, pairNumIndex)
             }
 
             numMap.put(numItem, numIndex)
         }
 
-        return intArrayOf()
+        return IntArray(2)
+
     }
 }
