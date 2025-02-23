@@ -9,39 +9,40 @@
  * }
  */
 
- import java.math.BigDecimal;
- import java.math.RoundingMode;
-
+ import java.math.BigDecimal
+ import java.math.RoundingMode
 
 class Solution {
-    fun averageOfLevels(root: TreeNode?): DoubleArray {
-        val levelNodeMap = mutableMapOf<Int, Pair<Int, Long>>()
-        val nodeQueue= LinkedList<Pair<TreeNode?, Int>>()
-
-        nodeQueue.add(Pair(root, 0))
-
-        while (!nodeQueue.isEmpty()) {
-            val (currentNode, currentLevel) = nodeQueue.remove()
-
-            if (currentNode == null) {
-                continue
-            }
-
-            val (currentCount, currentSum) = levelNodeMap.getOrPut(currentLevel) {Pair(0, 0)}
-
-            
-            levelNodeMap.put(currentLevel, Pair(currentCount + 1, currentSum + currentNode.`val`))
-
-            println(currentSum)
-
-            nodeQueue.add(Pair(currentNode.left, currentLevel + 1))
-            nodeQueue.add(Pair(currentNode.right, currentLevel + 1))
+    fun dfs(
+        target: TreeNode?, 
+        level: Int, 
+        countList: MutableList<Int>, 
+        sumList: MutableList<Double>
+    ) {
+        if (target == null) {
+            return
         }
 
+        if (level + 1 > countList.size) {
+            countList.add(0)
+            sumList.add(0.00)
+        }
 
+        countList[level] += 1
+        sumList[level] += target.`val`.toDouble()
 
-        return DoubleArray(levelNodeMap.size) { level ->
-            val (nodeCount, nodeSum) = levelNodeMap[level]!!
+        dfs(target.left, level + 1, countList, sumList)
+        dfs(target.right, level + 1, countList, sumList)
+    }
+    fun averageOfLevels(root: TreeNode?): DoubleArray {
+        var countList = mutableListOf<Int>()
+        var sumList = mutableListOf<Double>()
+
+        dfs(root, 0, countList, sumList)
+
+        return DoubleArray(countList.size)  { level ->
+            val nodeCount = countList[level]
+            val nodeSum = sumList[level]
 
             BigDecimal(nodeSum).divide(BigDecimal(nodeCount), 5, RoundingMode.DOWN).toDouble()
         }
