@@ -16,27 +16,18 @@
 // }
 impl Solution {
     pub fn middle_node(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
-        let mut tail_node = head.as_ref();
-        let mut mid_node = head.as_ref();
-        
-        let mut total_node_count = 1;
-        let mut mid_node_count = 1;
+        let mut fast_node = head.as_ref();
+        let mut slow_node = head.as_ref();
 
-        while tail_node.is_some() {
-            tail_node = tail_node.unwrap().next.as_ref();
-            total_node_count += 1;
-
-            let temp: i32 = ((total_node_count as f32) / (2 as f32)).round() as i32;
-
-            for i in mid_node_count .. temp {
-                println!("{total_node_count} {i}");
-
-                mid_node = mid_node.unwrap().next.as_ref();
+        while let Some(next_node) = fast_node {
+            fast_node = next_node.next.as_ref();
+            
+            if let Some(temp_node) = fast_node {
+                fast_node = temp_node.next.as_ref();
+                slow_node = slow_node.unwrap().next.as_ref();
             }
-
-            mid_node_count = temp;
         }
 
-        return mid_node.clone().cloned();
+        return slow_node.clone().cloned();
     }
 }
