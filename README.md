@@ -37,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/KR-bluejay/LeetCode/tree/master/0001-two-sum) |
 | [0136-single-number](https://github.com/KR-bluejay/LeetCode/tree/master/0136-single-number) |
 | [0219-contains-duplicate-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0219-contains-duplicate-ii) |
+| [0485-max-consecutive-ones](https://github.com/KR-bluejay/LeetCode/tree/master/0485-max-consecutive-ones) |
 | [0643-maximum-average-subarray-i](https://github.com/KR-bluejay/LeetCode/tree/master/0643-maximum-average-subarray-i) |
 ## Hash Table
 |  |
