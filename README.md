@@ -38,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0136-single-number](https://github.com/KR-bluejay/LeetCode/tree/master/0136-single-number) |
 | [0219-contains-duplicate-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0219-contains-duplicate-ii) |
 | [0485-max-consecutive-ones](https://github.com/KR-bluejay/LeetCode/tree/master/0485-max-consecutive-ones) |
+| [0487-max-consecutive-ones-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0487-max-consecutive-ones-ii) |
 | [0643-maximum-average-subarray-i](https://github.com/KR-bluejay/LeetCode/tree/master/0643-maximum-average-subarray-i) |
 ## Hash Table
 |  |
@@ -66,6 +67,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/KR-bluejay/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0219-contains-duplicate-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0219-contains-duplicate-ii) |
+| [0487-max-consecutive-ones-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0487-max-consecutive-ones-ii) |
 | [0643-maximum-average-subarray-i](https://github.com/KR-bluejay/LeetCode/tree/master/0643-maximum-average-subarray-i) |
 ## Tree
 |  |
@@ -128,4 +130,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/KR-bluejay/LeetCode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0487-max-consecutive-ones-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0487-max-consecutive-ones-ii) |
 <!---LeetCode Topics End-->
