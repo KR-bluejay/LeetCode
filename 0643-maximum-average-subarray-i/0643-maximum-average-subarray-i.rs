@@ -4,20 +4,19 @@ impl Solution {
     pub fn find_max_average(nums: Vec<i32>, k: i32) -> f64 {
         let mut left: usize = 0;
         let mut cur_sum = 0;
-        let mut max_sum = -1000000; 
 
-        for right in 0 .. nums.len() {
-            cur_sum += &nums[right as usize];
+        for i in 0 .. k as usize {
+            cur_sum += nums[i];
+        }
+        let mut max_sum = cur_sum;
 
-            if right - left > k as usize - 1 {
-                cur_sum -= &nums[left as usize];
-                left += 1;
-            }
+        for right in k as usize .. nums.len() {
+            cur_sum += nums[right];
+            cur_sum -= nums[left];
 
-            if right - left == k as usize - 1 {
-                println!("{cur_sum}");
-                max_sum = max(cur_sum, max_sum)
-            }
+            left += 1;
+
+            max_sum = max(cur_sum, max_sum);
         }
 
 
