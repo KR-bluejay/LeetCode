@@ -11,8 +11,6 @@ impl Solution {
     ) {
         recipe_history.insert(recipe_name.clone());
         
-        // let recipe_index = recipes.iter().position(|item| item == recipie_name);
-
         let ingredients_to_process = match recipe_ingredient_map.get(recipe_name) {
             Some(ingredients) => ingredients,
             None => return,
@@ -83,7 +81,5 @@ impl Solution {
         }
 
         recipe_ingredient_map.iter().filter(|(key, value)| value.len() == 0).map(|(k, v)| k.to_string()).collect()
-
-        //Vec::new()
     }
 }
