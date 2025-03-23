@@ -18,87 +18,43 @@
 // }
 use std::rc::Rc;
 use std::cell::RefCell;
-use std::collections::{ VecDeque };
 
-#[derive(Debug, PartialEq)]
-enum TraverseOrder {
-    LEFT,
-    RIGHT
-}
+use std::collections::{ VecDeque };
 
 impl Solution {
     pub fn zigzag_level_order(
         root: Option<Rc<RefCell<TreeNode>>>
     ) -> Vec<Vec<i32>> {
-        let mut direction: TraverseOrder = TraverseOrder::LEFT;
-        let mut zigzag_list: Vec<Vec<i32>> = Vec::new();
+        let mut node_level: usize = 0;
+
         let mut node_queue: VecDeque<Rc<RefCell<TreeNode>>> = VecDeque::new();
-        let mut cur_node_list: Vec<i32> = Vec::new();
-        
-        let mut cur_node_count = 0;
-        let mut next_node_count = 0;
+        let mut zigzag_list: Vec<Vec<i32>> = Vec::new();
 
         if let Some(root_node) = root {
-            cur_node_count += 1;
-            node_queue.push_back(root_node.clone());
+            node_queue.push_front(root_node.clone());
         }
 
-        while let Some(node_pointer) = node_queue.pop_front() {
-            let node = node_pointer.borrow();
+        while !node_queue.is_empty() {
+            let cur_node_count = node_queue.len();
+            let mut cur_node_list: Vec<i32> = Vec::with_capacity(cur_node_count);
 
+            for i in 0 .. cur_node_count {
+                if let Some(node_ref) = node_queue.pop_front() {
+                    let node = node_ref.borrow();
 
-            if cur_node_count == 0 {
-                cur_node_count = next_node_count;
-                next_node_count = 0;
+                    if node_level % 2 == 0 {
+                        cur_node_list.push(node.val);
+                    } else {
+                        cur_node_list.insert(0, node.val);
+                    }
 
-                //zigzag_list.push(cur_node_list.clone());
-
-
-                direction = if direction == TraverseOrder::LEFT {
-                    zigzag_list.push(cur_node_list.clone());
-                    TraverseOrder::RIGHT
-                } else {
-                    let mut a = cur_node_list.clone();
-                    a.reverse();
-                    zigzag_list.push(a);
-                    TraverseOrder::LEFT
-                };
-                cur_node_list = Vec::new();
+                    node.left.as_ref().map(|left_node_ref| node_queue.push_back(left_node_ref.clone()));
+                    node.right.as_ref().map(|right_node_ref| node_queue.push_back(right_node_ref.clone()));
+                }
             }
 
-            cur_node_count -= 1;
-            cur_node_list.push(node.val);
-
-
-            // if direction == TraverseOrder::RIGHT {
-            //     if let Some(node_right) = &node.right {
-            //         node_queue.push_back(node_right.clone());
-            //         next_node_count += 1;
-            //     }
-
-            //     if let Some(node_left) = &node.left {
-            //         node_queue.push_back(node_left.clone());
-            //         next_node_count += 1;
-            //     }
-            // } else {
-                if let Some(node_left) = &node.left {
-                    node_queue.push_back(node_left.clone());
-                    next_node_count += 1;
-                }
-
-                if let Some(node_right) = &node.right {
-                    node_queue.push_back(node_right.clone());
-                    next_node_count += 1;
-                }
-            // }
-        }
-        if cur_node_list.len() > 0 {
-            let mut cloned_list = cur_node_list.clone();
-
-            if direction == TraverseOrder::RIGHT {
-                cloned_list.reverse();
-            }
-            zigzag_list.push(cloned_list);
+            node_level += 1;
+            zigzag_list.push(cur_node_list);
         }
 
         zigzag_list
