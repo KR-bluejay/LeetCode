@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0009-palindrome-number](https://github.com/KR-bluejay/LeetCode/tree/master/0009-palindrome-number) |
 | [0013-roman-to-integer](https://github.com/KR-bluejay/LeetCode/tree/master/0013-roman-to-integer) |
 | [0067-add-binary](https://github.com/KR-bluejay/LeetCode/tree/master/0067-add-binary) |
+| [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/KR-bluejay/LeetCode/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 ## String
 |  |
 | ------- |
@@ -49,6 +50,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0487-max-consecutive-ones-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0487-max-consecutive-ones-ii) |
 | [0643-maximum-average-subarray-i](https://github.com/KR-bluejay/LeetCode/tree/master/0643-maximum-average-subarray-i) |
 | [1046-max-consecutive-ones-iii](https://github.com/KR-bluejay/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
+| [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/KR-bluejay/LeetCode/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/KR-bluejay/LeetCode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [3430-count-days-without-meetings](https://github.com/KR-bluejay/LeetCode/tree/master/3430-count-days-without-meetings) |
 ## Hash Table
@@ -181,6 +183,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0049-group-anagrams](https://github.com/KR-bluejay/LeetCode/tree/master/0049-group-anagrams) |
+| [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/KR-bluejay/LeetCode/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [3430-count-days-without-meetings](https://github.com/KR-bluejay/LeetCode/tree/master/3430-count-days-without-meetings) |
 ## Union Find
 |  |
@@ -205,6 +208,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/KR-bluejay/LeetCode/tree/master/0200-number-of-islands) |
+| [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/KR-bluejay/LeetCode/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 ## Greedy
 |  |
 | ------- |
