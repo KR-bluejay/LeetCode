@@ -1,36 +1,48 @@
-use std::collections::{ HashMap };
 
 impl Solution {
-    pub fn minimum_index(nums: Vec<i32>) -> i32 {
-        let mut num_freq_map_a: HashMap<i32, usize> = HashMap::new();
-        let mut num_freq_map_b: HashMap<i32, usize> = HashMap::new();
+    fn get_dominant_element(nums: &Vec<i32>) -> i32 {
+        let mut candidate_num = nums[0];
+        let mut candidate_count = 1;
+        
+        for num_item in nums.iter().skip(1) {
+            if candidate_num == *num_item {
+                candidate_count += 1;
 
+                continue;
+            }
 
-        for num_item in nums.iter() {
-            *num_freq_map_a.entry(*num_item).or_insert(0) += 1;
+            if candidate_count == 0 {
+                candidate_num = *num_item;
+                candidate_count = 1;
+                
+                continue;
+            }
+            
+            candidate_count -= 1;
         }
 
-        let domi_num = (num_freq_map_a.iter().max_by_key(|entry| entry.1).unwrap().0).clone();
+        candidate_num
+    }
+    pub fn minimum_index(nums: Vec<i32>) -> i32 {
+        let dominant_num = Self::get_dominant_element(&nums);
+        let mut left_count = 0;
+        let mut right_count = nums.iter().filter(|num_item| **num_item == dominant_num).count();
 
-        for i in 0 .. nums.len() {
-            let cur_num = nums[i];
+        for (num_index, &num_item) in nums.iter().enumerate() {
+            if num_item != dominant_num {
+                continue;
+            }
 
-            *num_freq_map_a.entry(cur_num).or_insert(0) -= 1;
-            *num_freq_map_b.entry(cur_num).or_insert(0) += 1;
+            left_count += 1;
+            right_count -= 1;
 
-            let b_len = i + 1;
-            let a_len = nums.len() - b_len;
+            let is_left_dominant = left_count * 2 > (num_index + 1);
+            let is_right_dominant = right_count * 2 > (nums.len() - num_index - 1);
 
-            let a_count = num_freq_map_a.get(&domi_num).unwrap_or(&0);
-            let b_count = num_freq_map_b.get(&domi_num).unwrap_or(&0);
-
-
-            if *a_count > 0 && *b_count > 0 && a_len / a_count  < 2 && b_len / b_count < 2  {
-                return i as i32
+            if is_left_dominant && is_right_dominant {
+                return num_index as i32;
             }
         }
-
-
         -1
     }
 }
