@@ -45,6 +45,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0057-insert-interval](https://github.com/KR-bluejay/LeetCode/tree/master/0057-insert-interval) |
 | [0128-longest-consecutive-sequence](https://github.com/KR-bluejay/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0136-single-number](https://github.com/KR-bluejay/LeetCode/tree/master/0136-single-number) |
+| [0169-majority-element](https://github.com/KR-bluejay/LeetCode/tree/master/0169-majority-element) |
 | [0200-number-of-islands](https://github.com/KR-bluejay/LeetCode/tree/master/0200-number-of-islands) |
 | [0209-minimum-size-subarray-sum](https://github.com/KR-bluejay/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0219-contains-duplicate-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0219-contains-duplicate-ii) |
@@ -64,6 +65,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0013-roman-to-integer](https://github.com/KR-bluejay/LeetCode/tree/master/0013-roman-to-integer) |
 | [0049-group-anagrams](https://github.com/KR-bluejay/LeetCode/tree/master/0049-group-anagrams) |
 | [0128-longest-consecutive-sequence](https://github.com/KR-bluejay/LeetCode/tree/master/0128-longest-consecutive-sequence) |
+| [0169-majority-element](https://github.com/KR-bluejay/LeetCode/tree/master/0169-majority-element) |
 | [0202-happy-number](https://github.com/KR-bluejay/LeetCode/tree/master/0202-happy-number) |
 | [0205-isomorphic-strings](https://github.com/KR-bluejay/LeetCode/tree/master/0205-isomorphic-strings) |
 | [0219-contains-duplicate-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0219-contains-duplicate-ii) |
@@ -81,6 +83,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Counting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/KR-bluejay/LeetCode/tree/master/0169-majority-element) |
 | [2053-check-if-all-characters-have-equal-number-of-occurrences](https://github.com/KR-bluejay/LeetCode/tree/master/2053-check-if-all-characters-have-equal-number-of-occurrences) |
 | [2427-first-letter-to-appear-twice](https://github.com/KR-bluejay/LeetCode/tree/master/2427-first-letter-to-appear-twice) |
 ## Sliding Window
@@ -191,6 +194,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0015-3sum](https://github.com/KR-bluejay/LeetCode/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/KR-bluejay/LeetCode/tree/master/0049-group-anagrams) |
+| [0169-majority-element](https://github.com/KR-bluejay/LeetCode/tree/master/0169-majority-element) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/KR-bluejay/LeetCode/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/KR-bluejay/LeetCode/tree/master/2888-minimum-index-of-a-valid-split) |
 | [3430-count-days-without-meetings](https://github.com/KR-bluejay/LeetCode/tree/master/3430-count-days-without-meetings) |
@@ -222,4 +226,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/KR-bluejay/LeetCode/tree/master/0011-container-with-most-water) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/KR-bluejay/LeetCode/tree/master/0169-majority-element) |
 <!---LeetCode Topics End-->
