@@ -43,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0011-container-with-most-water](https://github.com/KR-bluejay/LeetCode/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/KR-bluejay/LeetCode/tree/master/0015-3sum) |
 | [0036-valid-sudoku](https://github.com/KR-bluejay/LeetCode/tree/master/0036-valid-sudoku) |
+| [0046-permutations](https://github.com/KR-bluejay/LeetCode/tree/master/0046-permutations) |
 | [0049-group-anagrams](https://github.com/KR-bluejay/LeetCode/tree/master/0049-group-anagrams) |
 | [0057-insert-interval](https://github.com/KR-bluejay/LeetCode/tree/master/0057-insert-interval) |
 | [0128-longest-consecutive-sequence](https://github.com/KR-bluejay/LeetCode/tree/master/0128-longest-consecutive-sequence) |
@@ -234,4 +235,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/KR-bluejay/LeetCode/tree/master/0169-majority-element) |
+## Backtracking
+|  |
+| ------- |
+| [0046-permutations](https://github.com/KR-bluejay/LeetCode/tree/master/0046-permutations) |
 <!---LeetCode Topics End-->
