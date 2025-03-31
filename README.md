@@ -30,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0205-isomorphic-strings](https://github.com/KR-bluejay/LeetCode/tree/master/0205-isomorphic-strings) |
 | [0768-partition-labels](https://github.com/KR-bluejay/LeetCode/tree/master/0768-partition-labels) |
 | [1051-shortest-way-to-form-string](https://github.com/KR-bluejay/LeetCode/tree/master/1051-shortest-way-to-form-string) |
+| [1250-longest-common-subsequence](https://github.com/KR-bluejay/LeetCode/tree/master/1250-longest-common-subsequence) |
 | [1302-delete-characters-to-make-fancy-string](https://github.com/KR-bluejay/LeetCode/tree/master/1302-delete-characters-to-make-fancy-string) |
 | [1960-check-if-the-sentence-is-pangram](https://github.com/KR-bluejay/LeetCode/tree/master/1960-check-if-the-sentence-is-pangram) |
 | [2053-check-if-all-characters-have-equal-number-of-occurrences](https://github.com/KR-bluejay/LeetCode/tree/master/2053-check-if-all-characters-have-equal-number-of-occurrences) |
@@ -208,6 +209,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0198-house-robber](https://github.com/KR-bluejay/LeetCode/tree/master/0198-house-robber) |
 | [0487-max-consecutive-ones-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0487-max-consecutive-ones-ii) |
+| [1250-longest-common-subsequence](https://github.com/KR-bluejay/LeetCode/tree/master/1250-longest-common-subsequence) |
 ## Prefix Sum
 |  |
 | ------- |
