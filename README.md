@@ -20,6 +20,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0013-roman-to-integer](https://github.com/KR-bluejay/LeetCode/tree/master/0013-roman-to-integer) |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/KR-bluejay/LeetCode/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0020-valid-parentheses](https://github.com/KR-bluejay/LeetCode/tree/master/0020-valid-parentheses) |
+| [0022-generate-parentheses](https://github.com/KR-bluejay/LeetCode/tree/master/0022-generate-parentheses) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/KR-bluejay/LeetCode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0049-group-anagrams](https://github.com/KR-bluejay/LeetCode/tree/master/0049-group-anagrams) |
 | [0067-add-binary](https://github.com/KR-bluejay/LeetCode/tree/master/0067-add-binary) |
@@ -207,6 +208,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/KR-bluejay/LeetCode/tree/master/0022-generate-parentheses) |
 | [0198-house-robber](https://github.com/KR-bluejay/LeetCode/tree/master/0198-house-robber) |
 | [0487-max-consecutive-ones-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0487-max-consecutive-ones-ii) |
 | [1250-longest-common-subsequence](https://github.com/KR-bluejay/LeetCode/tree/master/1250-longest-common-subsequence) |
@@ -266,6 +268,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/KR-bluejay/LeetCode/tree/master/0017-letter-combinations-of-a-phone-number) |
+| [0022-generate-parentheses](https://github.com/KR-bluejay/LeetCode/tree/master/0022-generate-parentheses) |
 | [0039-combination-sum](https://github.com/KR-bluejay/LeetCode/tree/master/0039-combination-sum) |
 | [0046-permutations](https://github.com/KR-bluejay/LeetCode/tree/master/0046-permutations) |
 | [0051-n-queens](https://github.com/KR-bluejay/LeetCode/tree/master/0051-n-queens) |
