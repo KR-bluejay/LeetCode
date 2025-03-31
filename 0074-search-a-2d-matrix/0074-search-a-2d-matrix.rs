@@ -12,8 +12,6 @@ impl Solution {
             let mid = (start + end) / 2;
             let (m, n) = Self::get_2d_index(mid, matrix[0].len());
 
-            println!("{m} {n} {mid}");
-
             if matrix[m][n] == target {
                 return true;
             }
