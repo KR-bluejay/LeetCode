@@ -58,6 +58,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0074-search-a-2d-matrix](https://github.com/KR-bluejay/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0078-subsets](https://github.com/KR-bluejay/LeetCode/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/KR-bluejay/LeetCode/tree/master/0079-word-search) |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0119-pascals-triangle-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0119-pascals-triangle-ii) |
 | [0128-longest-consecutive-sequence](https://github.com/KR-bluejay/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0136-single-number](https://github.com/KR-bluejay/LeetCode/tree/master/0136-single-number) |
@@ -124,6 +125,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0101-symmetric-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0101-symmetric-tree) |
 | [0102-binary-tree-level-order-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/0102-binary-tree-level-order-traversal) |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0112-path-sum](https://github.com/KR-bluejay/LeetCode/tree/master/0112-path-sum) |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0117-populating-next-right-pointers-in-each-node-ii) |
 | [0226-invert-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0226-invert-binary-tree) |
@@ -166,6 +168,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0101-symmetric-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0101-symmetric-tree) |
 | [0102-binary-tree-level-order-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/0102-binary-tree-level-order-traversal) |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0112-path-sum](https://github.com/KR-bluejay/LeetCode/tree/master/0112-path-sum) |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0117-populating-next-right-pointers-in-each-node-ii) |
 | [0226-invert-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0226-invert-binary-tree) |
@@ -175,6 +178,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0074-search-a-2d-matrix](https://github.com/KR-bluejay/LeetCode/tree/master/0074-search-a-2d-matrix) |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0209-minimum-size-subarray-sum](https://github.com/KR-bluejay/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/KR-bluejay/LeetCode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [1046-max-consecutive-ones-iii](https://github.com/KR-bluejay/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
@@ -272,6 +276,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Divide and Conquer
 |  |
 | ------- |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0169-majority-element](https://github.com/KR-bluejay/LeetCode/tree/master/0169-majority-element) |
 ## Backtracking
 |  |
