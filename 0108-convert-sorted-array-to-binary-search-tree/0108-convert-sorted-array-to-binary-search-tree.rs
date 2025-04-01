@@ -18,35 +18,36 @@
 // }
 use std::rc::Rc;
 use std::cell::RefCell;
+use std::cmp::Ordering;
 
 impl Solution {
     fn build_node(left: usize, right: usize, nums: &Vec<i32>) -> Option<Rc<RefCell<TreeNode>>> {
-        let mid = (left + right) / 2;
+        match left.cmp(&right) {
+            Ordering::Greater => None,
+            Ordering::Equal => Some(Rc::new(RefCell::new(TreeNode::new(nums[left])))),
+            Ordering::Less => {
+                let mid = (left + right) / 2;
+                let mut new_node = TreeNode::new(nums[mid]);
+        
+                new_node.left = if left < mid {
+                    Self::build_node(left, mid - 1, &nums)
+                } else {
+                    None
+                };
 
-        if left == right {
-            let new_node = TreeNode::new(nums[left]);
-
-            return Some(Rc::new(RefCell::new(new_node)));
+                new_node.right = if mid < right {
+                    Self::build_node(mid + 1, right, &nums)
+                } else {
+                    None
+                };
+        
+                Some(Rc::new(RefCell::new(new_node)))
+            },
         }
-
-        if left + 1 == right {
-            let mut new_node = TreeNode::new(nums[right]);
-
-            new_node.left = Self::build_node(left, left, nums);
-
-            return Some(Rc::new(RefCell::new(new_node)));
-        }
-
-        let mut new_node = TreeNode::new(nums[mid]);
-
-        new_node.left = Self::build_node(left, mid - 1, &nums);
-        new_node.right = Self::build_node(mid + 1, right, &nums);
-
-        return Some(Rc::new(RefCell::new(new_node)));
     }
     pub fn sorted_array_to_bst(nums: Vec<i32>) -> Option<Rc<RefCell<TreeNode>>> {
-        let mut left = 0;
-        let mut right = nums.len() - 1;
+        let left = 0;
+        let right = nums.len() - 1;
 
         Self::build_node(left, right, &nums)
     }
