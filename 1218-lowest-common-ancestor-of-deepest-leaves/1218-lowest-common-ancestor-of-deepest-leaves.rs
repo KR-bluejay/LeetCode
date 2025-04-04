@@ -51,8 +51,6 @@ impl Solution {
     ) -> Option<Rc<RefCell<TreeNode>>> {
         let (lca_depth, lca_node) = Self::find_lca(root);
 
-        println!("{lca_depth}, {lca_node:?}");
-
         lca_node
     }
 }
