@@ -19,49 +19,49 @@
 use std::rc::Rc;
 use std::cell::RefCell;
 impl Solution {
-    fn find_leaf(cur_list: &mut Vec<i32>, opt_node: Option<Rc<RefCell<TreeNode>>>, master_list: &mut Vec<i32>) {
-        if opt_node.is_none() {
-            return;
+    fn is_better_path(path: &Vec<i32>, best_path: &Vec<i32>) -> bool {
+        let reversed_path = path.iter().rev();
+        let reversed_best_path = best_path.iter().rev();
+
+        best_path.len() == 0 || 
+        reversed_path.zip(reversed_best_path)
+            .find(|(&a, &b)| a != b)
+            .map_or_else(
+                || path.len() < best_path.len(), 
+                |(a, b)| a < b
+            )
+    }
+    fn parse_smallest_string(
+        opt_node_ref: Option<Rc<RefCell<TreeNode>>>, 
+        path: &mut Vec<i32>, 
+        best_path: &mut Vec<i32>
+    ) {
+        let node_ref = match opt_node_ref {
+            Some(n) => n,
+            None => return,
+        };
+        let node = node_ref.borrow();
+
+        path.push(node.val);
+
+        if node.left.is_none() && node.right.is_none() && Self::is_better_path(path, best_path) {
+            best_path.clear();
+            best_path.extend_from_slice(&path);
         }
 
-        let node_rc = opt_node.unwrap();
-        let node = node_rc.borrow();
+        Self::parse_smallest_string(node.left.clone(), path, best_path);
+        Self::parse_smallest_string(node.right.clone(), path, best_path);
 
-        cur_list.insert(0, node.val);
-
-        if node.left.is_none() && node.right.is_none() {
-            for i in 0 .. cur_list.len().min(master_list.len()) {
-                if cur_list[i] == master_list[i] {
-                    continue;
-                }
-
-                if cur_list[i] < master_list[i] {
-                    *master_list = cur_list.to_vec();
-                }
-                cur_list.remove(0);
-
-                return;
-            }
-
-
-
-            if master_list.len() == 0 || (cur_list.len() > 0 && cur_list.len() < master_list.len()) {
-                *master_list = cur_list.to_vec();
-            }
-            cur_list.remove(0);
-            return;
-        } else {
-            Self::find_leaf(cur_list, node.left.clone(), master_list);
-            Self::find_leaf(cur_list, node.right.clone(), master_list);
-        }
-
-        cur_list.remove(0);
+        path.pop();
     }
     pub fn smallest_from_leaf(root: Option<Rc<RefCell<TreeNode>>>) -> String {
-        let mut master_list = Vec::new();
+        let mut path = Vec::with_capacity(8500);
+        let mut best_path = Vec::with_capacity(8500);
 
-        Self::find_leaf(&mut Vec::new(), root, &mut master_list);
+        Self::parse_smallest_string(root, &mut path, &mut best_path);
 
-        master_list.into_iter().map(|v| ('a' as u8 + v as u8) as char).collect()
+        best_path.into_iter().rev()
+            .map(|v| ('a' as u8 + v as u8) as char)
+            .collect()
     }
 }
