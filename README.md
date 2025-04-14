@@ -65,6 +65,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0074-search-a-2d-matrix](https://github.com/KR-bluejay/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0078-subsets](https://github.com/KR-bluejay/LeetCode/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/KR-bluejay/LeetCode/tree/master/0079-word-search) |
+| [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0119-pascals-triangle-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0119-pascals-triangle-ii) |
 | [0128-longest-consecutive-sequence](https://github.com/KR-bluejay/LeetCode/tree/master/0128-longest-consecutive-sequence) |
@@ -103,6 +104,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0017-letter-combinations-of-a-phone-number](https://github.com/KR-bluejay/LeetCode/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0036-valid-sudoku](https://github.com/KR-bluejay/LeetCode/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/KR-bluejay/LeetCode/tree/master/0049-group-anagrams) |
+| [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0128-longest-consecutive-sequence](https://github.com/KR-bluejay/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0169-majority-element](https://github.com/KR-bluejay/LeetCode/tree/master/0169-majority-element) |
 | [0202-happy-number](https://github.com/KR-bluejay/LeetCode/tree/master/0202-happy-number) |
@@ -149,6 +151,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0101-symmetric-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0101-symmetric-tree) |
 | [0102-binary-tree-level-order-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/0102-binary-tree-level-order-traversal) |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
+| [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0112-path-sum](https://github.com/KR-bluejay/LeetCode/tree/master/0112-path-sum) |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0117-populating-next-right-pointers-in-each-node-ii) |
@@ -199,6 +202,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0101-symmetric-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0101-symmetric-tree) |
 | [0102-binary-tree-level-order-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/0102-binary-tree-level-order-traversal) |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
+| [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0112-path-sum](https://github.com/KR-bluejay/LeetCode/tree/master/0112-path-sum) |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0117-populating-next-right-pointers-in-each-node-ii) |
@@ -322,6 +326,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/KR-bluejay/LeetCode/tree/master/0053-maximum-subarray) |
+| [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0169-majority-element](https://github.com/KR-bluejay/LeetCode/tree/master/0169-majority-element) |
 ## Backtracking
