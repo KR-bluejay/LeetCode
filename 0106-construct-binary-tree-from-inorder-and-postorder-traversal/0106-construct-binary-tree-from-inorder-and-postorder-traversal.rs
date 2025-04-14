@@ -27,8 +27,14 @@ impl Solution {
         let post_root_val = postorder[postorder.len() - 1];
         let in_root_id = inorder.iter().position(|&v| v == post_root_val).unwrap_or(0);
 
-        let (in_left_node, in_right_node) = (&inorder[0 .. in_root_id], &inorder[in_root_id + 1 .. ]);
-        let (post_left_node, post_right_node) = (&postorder[0 .. in_left_node.len()], &postorder[in_left_node.len() .. postorder.len() - 1]);
+        let (in_left_node, in_right_node) = (
+            &inorder[0 .. in_root_id], 
+            &inorder[in_root_id + 1 .. ]
+        );
+        let (post_left_node, post_right_node) = (
+            &postorder[0 .. in_left_node.len()], 
+            &postorder[in_left_node.len() .. postorder.len() - 1]
+        );
 
 
         Some(
