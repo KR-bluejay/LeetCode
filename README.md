@@ -49,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0020-valid-parentheses](https://github.com/KR-bluejay/LeetCode/tree/master/0020-valid-parentheses) |
 | [0071-simplify-path](https://github.com/KR-bluejay/LeetCode/tree/master/0071-simplify-path) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/KR-bluejay/LeetCode/tree/master/0114-flatten-binary-tree-to-linked-list) |
 ## Array
 |  |
 | ------- |
@@ -154,6 +155,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0112-path-sum](https://github.com/KR-bluejay/LeetCode/tree/master/0112-path-sum) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/KR-bluejay/LeetCode/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0117-populating-next-right-pointers-in-each-node-ii) |
 | [0226-invert-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0226-invert-binary-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
@@ -167,6 +169,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0079-word-search](https://github.com/KR-bluejay/LeetCode/tree/master/0079-word-search) |
 | [0101-symmetric-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0101-symmetric-tree) |
 | [0112-path-sum](https://github.com/KR-bluejay/LeetCode/tree/master/0112-path-sum) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/KR-bluejay/LeetCode/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0117-populating-next-right-pointers-in-each-node-ii) |
 | [0130-surrounded-regions](https://github.com/KR-bluejay/LeetCode/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/KR-bluejay/LeetCode/tree/master/0200-number-of-islands) |
@@ -207,6 +210,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0112-path-sum](https://github.com/KR-bluejay/LeetCode/tree/master/0112-path-sum) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/KR-bluejay/LeetCode/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0117-populating-next-right-pointers-in-each-node-ii) |
 | [0226-invert-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0226-invert-binary-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
@@ -245,6 +249,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/KR-bluejay/LeetCode/tree/master/0002-add-two-numbers) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/KR-bluejay/LeetCode/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0117-populating-next-right-pointers-in-each-node-ii) |
 | [0908-middle-of-the-linked-list](https://github.com/KR-bluejay/LeetCode/tree/master/0908-middle-of-the-linked-list) |
 | [1618-delete-n-nodes-after-m-nodes-of-a-linked-list](https://github.com/KR-bluejay/LeetCode/tree/master/1618-delete-n-nodes-after-m-nodes-of-a-linked-list) |
