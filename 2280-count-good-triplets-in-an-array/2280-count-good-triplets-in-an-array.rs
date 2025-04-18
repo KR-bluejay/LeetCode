@@ -24,7 +24,6 @@ impl Solution {
     }
     pub fn good_triplets(nums1: Vec<i32>, nums2: Vec<i32>) -> i64 {
         let mut bit1: Vec<i64> = vec![0; nums1.len() + 1];
-        let mut bit2: Vec<i64> = vec![0; nums1.len() + 1];
         let mut num2_mapping: HashMap<i32, usize> = HashMap::new();
         let mut res = 0;
 
@@ -41,13 +40,18 @@ impl Solution {
             
             smaller[*num2_id] = Self::query(&bit1, *num2_id + 1);
             Self::update(&mut bit1, *num2_id + 1);
-
-            let seen = Self::query(&bit2, nums1.len());
-            larger[*num2_id_rev] = seen - Self::query(&bit2, *num2_id_rev + 1);
-
-            Self::update(&mut bit2, *num2_id_rev + 1);
         }
 
+        std::mem::replace(&mut bit1, vec![0; nums1.len() + 1]);
+
+        for i in (0 .. nums1.len()).rev() {
+            let num2_id = num2_mapping.get(&nums1[i]).unwrap();
+            let seen = Self::query(&bit1, nums1.len());
+            
+            larger[*num2_id] = seen - Self::query(&bit1, *num2_id + 1);
+
+            Self::update(&mut bit1, *num2_id + 1);
+        }
 
         for i in 0 .. larger.len() {
             res += larger[i] * smaller[i];
