@@ -12,6 +12,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0062-unique-paths](https://github.com/KR-bluejay/LeetCode/tree/master/0062-unique-paths) |
 | [0067-add-binary](https://github.com/KR-bluejay/LeetCode/tree/master/0067-add-binary) |
 | [0202-happy-number](https://github.com/KR-bluejay/LeetCode/tree/master/0202-happy-number) |
+| [0797-rabbits-in-forest](https://github.com/KR-bluejay/LeetCode/tree/master/0797-rabbits-in-forest) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/KR-bluejay/LeetCode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2050-count-good-numbers](https://github.com/KR-bluejay/LeetCode/tree/master/2050-count-good-numbers) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/KR-bluejay/LeetCode/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
@@ -89,6 +90,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0485-max-consecutive-ones](https://github.com/KR-bluejay/LeetCode/tree/master/0485-max-consecutive-ones) |
 | [0487-max-consecutive-ones-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0487-max-consecutive-ones-ii) |
 | [0643-maximum-average-subarray-i](https://github.com/KR-bluejay/LeetCode/tree/master/0643-maximum-average-subarray-i) |
+| [0797-rabbits-in-forest](https://github.com/KR-bluejay/LeetCode/tree/master/0797-rabbits-in-forest) |
 | [1025-minimum-cost-for-tickets](https://github.com/KR-bluejay/LeetCode/tree/master/1025-minimum-cost-for-tickets) |
 | [1046-max-consecutive-ones-iii](https://github.com/KR-bluejay/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1063-best-sightseeing-pair](https://github.com/KR-bluejay/LeetCode/tree/master/1063-best-sightseeing-pair) |
@@ -125,6 +127,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0219-contains-duplicate-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0219-contains-duplicate-ii) |
 | [0266-palindrome-permutation](https://github.com/KR-bluejay/LeetCode/tree/master/0266-palindrome-permutation) |
 | [0768-partition-labels](https://github.com/KR-bluejay/LeetCode/tree/master/0768-partition-labels) |
+| [0797-rabbits-in-forest](https://github.com/KR-bluejay/LeetCode/tree/master/0797-rabbits-in-forest) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/KR-bluejay/LeetCode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1960-check-if-the-sentence-is-pangram](https://github.com/KR-bluejay/LeetCode/tree/master/1960-check-if-the-sentence-is-pangram) |
 | [2053-check-if-all-characters-have-equal-number-of-occurrences](https://github.com/KR-bluejay/LeetCode/tree/master/2053-check-if-all-characters-have-equal-number-of-occurrences) |
@@ -353,6 +356,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0011-container-with-most-water](https://github.com/KR-bluejay/LeetCode/tree/master/0011-container-with-most-water) |
 | [0134-gas-station](https://github.com/KR-bluejay/LeetCode/tree/master/0134-gas-station) |
 | [0768-partition-labels](https://github.com/KR-bluejay/LeetCode/tree/master/0768-partition-labels) |
+| [0797-rabbits-in-forest](https://github.com/KR-bluejay/LeetCode/tree/master/0797-rabbits-in-forest) |
 | [1051-shortest-way-to-form-string](https://github.com/KR-bluejay/LeetCode/tree/master/1051-shortest-way-to-form-string) |
 | [2345-minimum-number-of-operations-to-convert-time](https://github.com/KR-bluejay/LeetCode/tree/master/2345-minimum-number-of-operations-to-convert-time) |
 ## Divide and Conquer
