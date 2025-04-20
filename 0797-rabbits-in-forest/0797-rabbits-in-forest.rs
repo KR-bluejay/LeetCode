@@ -6,16 +6,22 @@ impl Solution {
         let mut rabbit_count: i32 = 0;
 
         for &answer_item in answers.iter() {
-            let mut res = *color_map.entry(answer_item).and_modify(|v| *v += 1).or_insert(0);
+            let mut group_size = color_map.entry(answer_item)
+                .and_modify(|v| *v += 1)
+                .or_insert(1);
 
-            if res == answer_item {
+            if *group_size == (answer_item + 1) {
                 rabbit_count += (answer_item + 1);
-                color_map.remove(&answer_item);
+                *group_size = 0;
             }
         }
 
-        for (color_key, color_count) in color_map.iter() {
-            rabbit_count += color_key + 1;
+        println!("{color_map:?}");
+
+        for (color_key, &color_count) in color_map.iter() {
+            if color_count != 0 {
+                rabbit_count += color_key + 1;
+            }
         }
 
         rabbit_count
