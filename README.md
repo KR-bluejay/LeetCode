@@ -41,6 +41,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0768-partition-labels](https://github.com/KR-bluejay/LeetCode/tree/master/0768-partition-labels) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/KR-bluejay/LeetCode/tree/master/1030-smallest-string-starting-from-leaf) |
 | [1051-shortest-way-to-form-string](https://github.com/KR-bluejay/LeetCode/tree/master/1051-shortest-way-to-form-string) |
+| [1093-recover-a-tree-from-preorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1250-longest-common-subsequence](https://github.com/KR-bluejay/LeetCode/tree/master/1250-longest-common-subsequence) |
 | [1302-delete-characters-to-make-fancy-string](https://github.com/KR-bluejay/LeetCode/tree/master/1302-delete-characters-to-make-fancy-string) |
 | [1960-check-if-the-sentence-is-pangram](https://github.com/KR-bluejay/LeetCode/tree/master/1960-check-if-the-sentence-is-pangram) |
@@ -184,6 +185,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0530-minimum-absolute-difference-in-bst](https://github.com/KR-bluejay/LeetCode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0637-average-of-levels-in-binary-tree) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/KR-bluejay/LeetCode/tree/master/1030-smallest-string-starting-from-leaf) |
+| [1093-recover-a-tree-from-preorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/KR-bluejay/LeetCode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 ## Depth-First Search
 |  |
@@ -203,6 +205,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0637-average-of-levels-in-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0813-all-paths-from-source-to-target](https://github.com/KR-bluejay/LeetCode/tree/master/0813-all-paths-from-source-to-target) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/KR-bluejay/LeetCode/tree/master/1030-smallest-string-starting-from-leaf) |
+| [1093-recover-a-tree-from-preorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/KR-bluejay/LeetCode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [2793-count-the-number-of-complete-components](https://github.com/KR-bluejay/LeetCode/tree/master/2793-count-the-number-of-complete-components) |
 ## Breadth-First Search
@@ -239,6 +242,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0530-minimum-absolute-difference-in-bst](https://github.com/KR-bluejay/LeetCode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0637-average-of-levels-in-binary-tree) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/KR-bluejay/LeetCode/tree/master/1030-smallest-string-starting-from-leaf) |
+| [1093-recover-a-tree-from-preorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/KR-bluejay/LeetCode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 ## Binary Search Tree
 |  |
