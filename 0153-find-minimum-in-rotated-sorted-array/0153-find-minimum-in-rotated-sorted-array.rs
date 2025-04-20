@@ -10,10 +10,6 @@ impl Solution {
             let is_left_sorted = nums[left] <= nums[mid];
             let is_right_sorted = nums[mid] <= nums[right];
 
-            if right - left <= 2 {
-                return nums[left].min(nums[right]).min(nums[mid]);
-            }
-
 
             if is_left_sorted && is_right_sorted {
                 return nums[left];
@@ -21,14 +17,23 @@ impl Solution {
 
             if is_right_sorted {
                 if mid == 0 {
-                    break;
+                    return 0;
                 }
-                right = mid;
+
+                if nums[mid] < nums[mid - 1] {
+                    return nums[mid];
+                }
+                right = mid - 1;
             } else {
                 if mid + 1 == nums.len() {
-                    break;
+                    return nums[mid];
                 }
-                left = mid;
+
+                if nums[mid] > nums[mid + 1] {
+                    return nums[mid + 1];
+                }
+
+                left = mid + 1;
             }
         }
 
