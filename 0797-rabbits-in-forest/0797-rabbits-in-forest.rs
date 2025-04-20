@@ -11,12 +11,11 @@ impl Solution {
                 .or_insert(1);
 
             if *group_size == (answer_item + 1) {
-                rabbit_count += (answer_item + 1);
                 *group_size = 0;
+                rabbit_count += (answer_item + 1);
             }
         }
 
-        println!("{color_map:?}");
 
         for (color_key, &color_count) in color_map.iter() {
             if color_count != 0 {
