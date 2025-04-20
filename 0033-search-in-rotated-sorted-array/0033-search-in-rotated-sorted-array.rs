@@ -13,24 +13,19 @@ impl Solution {
                 return mid_id as i32;
             }
 
-            if is_left_sorted && nums[left_id] <= target && target < nums[mid_id] {
-                right_id = mid_id - 1;
-                
-                continue;
+            if is_left_sorted {
+                if nums[left_id] <= target && target < nums[mid_id] {
+                    right_id = mid_id - 1;
+                } else {
+                    left_id = mid_id + 1;
+                }
+            } else {
+                if nums[mid_id] < target && target <= nums[right_id] {
+                    left_id = mid_id + 1;
+                } else {
+                    right_id = mid_id - 1;
+                }
             }
-            
-            if is_right_sorted && nums[mid_id] < target && target <= nums[right_id] {
-                left_id = mid_id + 1;
-                continue;
-            }
-
-            if is_left_sorted && !(nums[left_id] <= target && target < nums[mid_id]) {
-                left_id = mid_id + 1;
-
-                continue;
-            }
-            right_id = mid_id - 1;
-
         }
 
         -1
