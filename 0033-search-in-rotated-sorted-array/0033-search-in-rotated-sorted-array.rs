@@ -1,5 +1,5 @@
 impl Solution {
-    fn b_search(nums: &Vec<i32>, target: i32) -> i32 {
+    pub fn search(nums: Vec<i32>, target: i32) -> i32 {
         let mut left_id = 0;
         let mut right_id = nums.len() - 1;
 
@@ -34,8 +34,5 @@ impl Solution {
         }
 
         -1
-    }
-    pub fn search(nums: Vec<i32>, target: i32) -> i32 {
-        Self::b_search(&nums, target)
     }
 }
