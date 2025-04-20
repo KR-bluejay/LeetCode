@@ -6,11 +6,6 @@ impl Solution {
         let mut rabbit_count: i32 = 0;
 
         for &answer_item in answers.iter() {
-            if answer_item == 0 {
-                rabbit_count += 1;
-
-                continue;
-            }
             let mut res = *color_map.entry(answer_item).and_modify(|v| *v += 1).or_insert(0);
 
             if res == answer_item {
