@@ -19,71 +19,65 @@
 use std::rc::Rc;
 use std::cell::RefCell;
 impl Solution {
-    fn build_tree(traversal: &[&str], depth: usize) -> Option<Rc<RefCell<TreeNode>>> {
-        if traversal.len() == 0 {
+    fn build_tree(nodes: &[(usize, i32)]) -> Option<Rc<RefCell<TreeNode>>> {
+        if nodes.len() == 0 {
             return None;
         }
 
-        println!("{traversal:?}");
-        let root_val = traversal[0].parse::<i32>().unwrap();
-        let mut cur_count = 0;
-        let mut left_id = 0;
-        let mut right_id = 0;
+        let (root_depth, root_val) = nodes[0];
+        let child_node_ids: Vec<usize> = nodes.iter()
+            .enumerate()
+            .filter_map(|(id, (d, v))| {
+                return if *d == root_depth + 1 {
+                    Some(id)
+                } else {
+                    None 
+                }
+            })
+            .collect();
 
-        for i in 1 .. traversal.len() {
-            if traversal[i] == "" {
-                cur_count += 1;
-                continue;
-            }
-
-
-            if cur_count == depth && left_id == 0 {
-                left_id = i;
-                cur_count = 0;
-                continue;
-            }
-
-            if cur_count == depth && right_id == 0 {
-                right_id = i;
-                cur_count = 0;
-                break;
-            }
-
-            if traversal[i] != "" {
-                cur_count = 0;
-                continue;
-            }
-        }
-
-        if right_id == 0 {
-            right_id = traversal.len();
-        }
-
-        let mut left_node = if left_id != 0 {
-            Self::build_tree(&traversal[left_id .. right_id], depth + 1)
+        let (left_node, right_node) = if child_node_ids.len() == 0 { 
+            (None, None)
+        } else if child_node_ids.len() == 1 {
+            (Self::build_tree(&nodes[child_node_ids[0] .. ]), None)
         } else {
-            None
-        };
-        let mut right_node = if left_id != 0 {
-            Self::build_tree(&traversal[right_id .. traversal.len()], depth + 1)
-        } else {
-            None
+            (
+                Self::build_tree(&nodes[child_node_ids[0] .. child_node_ids[1]]), 
+                Self::build_tree(&nodes[child_node_ids[1]..])
+            )
         };
 
 
-
-        Some(Rc::new(RefCell::new(TreeNode {
-            val: root_val,
-            left: left_node,
-            right: right_node,
-        })))
-
-        
+        Some(Rc::new(RefCell::new(TreeNode {val: root_val, left: left_node, right: right_node})))
     }
     pub fn recover_from_preorder(
         traversal: String
     ) -> Option<Rc<RefCell<TreeNode>>> {
-        let v: Vec<&str> = traversal.split('-').collect();
-        Self::build_tree(&v, 0)
+        let traversal: Vec<char> = traversal.chars().collect();
+        let mut nodes: Vec<(usize, i32)> = Vec::new();
+
+        let mut node_depth = 0;
+
+        for mut traversal_id in 0 .. traversal.len() {
+            if traversal[traversal_id] == '-' {
+                node_depth += 1;
+                continue;
+            }
+
+            let mut cur_node_val = 0;
+
+            while traversal_id < traversal.len() 
+                && traversal[traversal_id] != '-' {
+                cur_node_val = cur_node_val * 10 
+                    + traversal[traversal_id].to_digit(10).unwrap() as i32;
+                traversal_id += 1;
+            }
+
+
+            nodes.push((node_depth, cur_node_val));
+            node_depth = 0;
+        }
+
+        Self::build_tree(&nodes)
     }
 }
