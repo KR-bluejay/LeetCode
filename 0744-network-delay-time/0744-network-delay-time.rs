@@ -3,7 +3,7 @@ use std::cmp::Reverse;
 
 impl Solution {
     pub fn network_delay_time(times: Vec<Vec<i32>>, n: i32, k: i32) -> i32 {
-        let mut node_map: HashMap<i32, Vec<(i32, i32)>> = HashMap::with_capacity();
+        let mut node_map: HashMap<i32, Vec<(i32, i32)>> = HashMap::new();
         let mut node_cost: Vec<i32> = vec![i32::MAX; (n + 1) as usize];
         let mut node_queue: BinaryHeap<Reverse<(i32, i32)>> = BinaryHeap::with_capacity(n as usize);
         let mut total_min_cost: i32 = 0;
@@ -22,11 +22,11 @@ impl Solution {
 
         node_cost[0] = 0;
         // node_cost[k as usize] = 0;
-        node_queue.push(Reverse((k, 0)));
+        node_queue.push(Reverse((0, k)));
 
 
         while !node_queue.is_empty() {
-            let Reverse((src_id, cost)) = node_queue.pop().unwrap();
+            let Reverse((cost, src_id)) = node_queue.pop().unwrap();
 
             if node_cost[src_id as usize] < cost {
                 continue;
@@ -42,7 +42,7 @@ impl Solution {
                         continue;
                     }
                     node_cost[adj_id] = cost + adj_cost;
-                    node_queue.push(Reverse((adj_id as i32, cost + adj_cost)));
+                    node_queue.push(Reverse((cost + adj_cost, adj_id as i32)));
                 }
             }
         }
