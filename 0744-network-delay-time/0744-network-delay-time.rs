@@ -5,7 +5,7 @@ impl Solution {
     pub fn network_delay_time(times: Vec<Vec<i32>>, n: i32, k: i32) -> i32 {
         let mut node_map: HashMap<i32, Vec<(i32, i32)>> = HashMap::new();
         let mut node_cost: Vec<i32> = vec![i32::MAX; (n + 1) as usize];
-        let mut node_queue: BinaryHeap<Reverse<(i32, i32)>> = BinaryHeap::new();
+        let mut node_queue: BinaryHeap<Reverse<(i32, i32)>> = BinaryHeap::with_capacity(n as usize);
         let mut total_min_cost: i32 = 0;
 
         // node_cost[k as usize] = 0;
@@ -31,7 +31,7 @@ impl Solution {
             if node_cost[src_id as usize] < cost {
                 continue;
             }
-            
+
             node_cost[src_id as usize] = cost;
 
 
