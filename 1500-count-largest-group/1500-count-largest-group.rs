@@ -11,8 +11,14 @@ impl Solution {
 
         for i in 1 ..= n {
             if i % 10 == 0 {
-                prev_num = i.to_string().chars().map(|v| v.to_digit(10).unwrap() as i32).sum();
+                let mut i0 = i.clone();
+                prev_num = 0;
+                while i0 != 0 {
+                    prev_num += i0 % 10;
+                    i0 /= 10;
+                }
             }
+            
             num_map.entry(prev_num).and_modify(|v| *v += 1).or_insert(1);
             prev_num = prev_num + 1;
         }
