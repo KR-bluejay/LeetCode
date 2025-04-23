@@ -6,18 +6,14 @@ impl Solution {
             return n;
         }
 
-        let mut num_map: HashMap<i32, Vec<i32>> = HashMap::new();
-        num_map.insert(0, vec![]);
-        for i in 1 ..= 9 {
-            num_map.insert(i, vec![i]);
-        }
-        let mut prev_num = 0;
+        let mut num_map: HashMap<i32, i32> = HashMap::new();
+        let mut prev_num = 1;
 
-        for i in 10 ..= n {
+        for i in 1 ..= n {
             if i % 10 == 0 {
                 prev_num = i.to_string().chars().map(|v| v.to_digit(10).unwrap() as i32).sum();
             }
-            num_map.entry(prev_num).and_modify(|v| v.push(i)).or_insert(vec![i]);
+            num_map.entry(prev_num).and_modify(|v| *v += 1).or_insert(1);
             prev_num = prev_num + 1;
         }
 
@@ -26,19 +22,15 @@ impl Solution {
         let mut all_elem = 0;
 
 
-        for (num_key, num_list) in num_map.iter() {
-            all_elem += num_list.len();
-            if max_len < num_list.len() {
+        for (num_key, &num_list) in num_map.iter() {
+            if max_len < num_list {
                 max_count = 1;
-                max_len = num_list.len();
-            } else if max_len == num_list.len() {
+                max_len = num_list;
+            } else if max_len == num_list {
                 max_count += 1;
             }
         }
 
-        println!("{all_elem}");
-
-        // println!("{max_len}");
 
         max_count as i32
     }
