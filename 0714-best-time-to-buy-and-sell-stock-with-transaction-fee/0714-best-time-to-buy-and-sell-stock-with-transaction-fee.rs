@@ -7,10 +7,12 @@ impl Solution {
         tx_sell[0] = 0;
 
         for i in 1 .. prices.len() {
-            tx_hold[i] = tx_hold[i - 1].max(tx_sell[i - 1] - prices[i]);
-            tx_sell[i] = tx_sell[i - 1].max(tx_hold[i - 1] + prices[i] - fee);
+            tx_hold[i] = tx_hold[i - 1]
+                .max(tx_sell[i - 1] - prices[i]);
+            tx_sell[i] = tx_sell[i - 1]
+                .max(tx_hold[i - 1] + prices[i] - fee);
         }
 
-        *tx_hold.last().unwrap().max(tx_sell.last().unwrap())
+        *tx_sell.last().unwrap()
     }
 }
