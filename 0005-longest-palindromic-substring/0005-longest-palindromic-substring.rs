@@ -1,62 +1,56 @@
 impl Solution {
+    fn find_palindrome(
+        s: &Vec<char>, 
+        initial_left_id: usize, 
+        initial_right_id: usize
+    ) -> (usize, usize) {
+        let mut left_id = initial_left_id as i32;
+        let mut right_id = initial_right_id;
+
+        while 0 <= left_id 
+            && right_id < s.len() 
+            && s[left_id as usize] == s[right_id] 
+        {
+            // Underflow
+            left_id -= 1;
+            right_id += 1;
+        }
+
+        (((left_id + 1) as usize), (right_id - 1))
+    }
     pub fn longest_palindrome(s: String) -> String {
+        if s.len() == 1 {
+            return s;
+        }
+
         let s: Vec<char> = s.chars().collect();
+       
+        let mut long_left_id = 0;
+        let mut long_right_id = 0;
 
-        let mut cache: Vec<Vec<Option<bool>>> = vec![vec![None; s.len()]; s.len()];
+        for i in 0 .. s.len() {
+            let (left_id, right_id) = Self::find_palindrome(&s, i, i);
 
-        let mut long_str_len: usize = 0;
-        let mut long_str_start: usize = 0;
-        let mut long_str_end: usize = 0;
 
-        for i in 1 .. s.len()  {
-            let mid_id = i;
-            let mut left_id = i - 1;
-            let mut right_id = i + 1;
-
-            while left_id >= 0 && right_id < s.len() && left_id < s.len()  {
-                if cache[left_id][right_id].is_some() &&  !cache[left_id][right_id].unwrap(){
-                    break;
-                }
-    
-                if s[left_id] != s[right_id] {
-                    cache[left_id][right_id] = Some(false);
-                    break;
-                }
-                if long_str_len < right_id - left_id + 1 {
-                    long_str_start = left_id;
-                    long_str_end = right_id;
-                    long_str_len = right_id - left_id + 1 
-                }
-                cache[left_id][right_id] = Some(true);
-                left_id -= 1;
-                right_id += 1;
+            if left_id <= right_id 
+                && (right_id - left_id) > (long_right_id - long_left_id) {
+                long_left_id = left_id;
+                long_right_id = right_id;
             }
 
-            left_id = mid_id;
-            right_id = mid_id - 1;
+            if i + 1 == s.len() {
+                continue;
+            }
 
-            while left_id >= 0 && right_id < s.len() && left_id < s.len()  {
-                if cache[left_id][right_id].is_some() && !cache[left_id][right_id].unwrap() {
-                    break;
-                }
-    
-                if s[left_id] != s[right_id] {
-                    cache[left_id][right_id] = Some(false);
-                    break;
-                }
-
-                if long_str_len <= right_id - left_id + 1 {
-                    long_str_start = left_id;
-                    long_str_end = right_id;
-                    long_str_len = right_id - left_id + 1;
-                }
-                cache[left_id][right_id] = Some(true);
-                left_id -= 1;
-                right_id += 1;
+            let (left_id, right_id) = Self::find_palindrome(&s, i, i + 1);
+            if left_id <= right_id && 
+                (right_id - left_id) > (long_right_id - long_left_id) {
+                long_left_id = left_id;
+                long_right_id = right_id;
             }
         }
-        
 
-        s[long_str_start ..= long_str_end].iter().collect()
+
+        s[long_left_id ..= long_right_id].iter().collect()
     }
 }
