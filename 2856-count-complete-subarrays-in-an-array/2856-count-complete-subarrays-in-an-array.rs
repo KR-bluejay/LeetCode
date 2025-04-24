@@ -13,8 +13,9 @@ impl Solution {
         }
 
         let num_item = nums[cur_id];
+        visited[cur_id][cur_id] = true;
         // Skip
-        let skip_count = Self::find_subarray(cur_id + 1, cur_id + 1, nums, &mut BTreeSet::new(), num_dist_count, visited);
+        let skip_count = Self::find_subarray(cur_id, cur_id + 1, nums, &mut BTreeSet::from([num_item]), num_dist_count, visited);
         
         visited[start_id][cur_id] = true;
         subset.insert(nums[cur_id]);
