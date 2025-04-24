@@ -30,6 +30,8 @@ impl Solution {
             }
             if num_count_map.len() == num_dist_count {
                 complete_count += nums.len() - right_id + 1;
+            } else if right_id == nums.len() {
+                break;
             }
         }
 
