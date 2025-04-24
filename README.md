@@ -37,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0079-word-search](https://github.com/KR-bluejay/LeetCode/tree/master/0079-word-search) |
 | [0097-interleaving-string](https://github.com/KR-bluejay/LeetCode/tree/master/0097-interleaving-string) |
 | [0125-valid-palindrome](https://github.com/KR-bluejay/LeetCode/tree/master/0125-valid-palindrome) |
+| [0139-word-break](https://github.com/KR-bluejay/LeetCode/tree/master/0139-word-break) |
 | [0151-reverse-words-in-a-string](https://github.com/KR-bluejay/LeetCode/tree/master/0151-reverse-words-in-a-string) |
 | [0205-isomorphic-strings](https://github.com/KR-bluejay/LeetCode/tree/master/0205-isomorphic-strings) |
 | [0208-implement-trie-prefix-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
@@ -87,6 +88,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0130-surrounded-regions](https://github.com/KR-bluejay/LeetCode/tree/master/0130-surrounded-regions) |
 | [0134-gas-station](https://github.com/KR-bluejay/LeetCode/tree/master/0134-gas-station) |
 | [0136-single-number](https://github.com/KR-bluejay/LeetCode/tree/master/0136-single-number) |
+| [0139-word-break](https://github.com/KR-bluejay/LeetCode/tree/master/0139-word-break) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/KR-bluejay/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0169-majority-element](https://github.com/KR-bluejay/LeetCode/tree/master/0169-majority-element) |
 | [0198-house-robber](https://github.com/KR-bluejay/LeetCode/tree/master/0198-house-robber) |
@@ -135,6 +137,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0049-group-anagrams](https://github.com/KR-bluejay/LeetCode/tree/master/0049-group-anagrams) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0128-longest-consecutive-sequence](https://github.com/KR-bluejay/LeetCode/tree/master/0128-longest-consecutive-sequence) |
+| [0139-word-break](https://github.com/KR-bluejay/LeetCode/tree/master/0139-word-break) |
 | [0169-majority-element](https://github.com/KR-bluejay/LeetCode/tree/master/0169-majority-element) |
 | [0202-happy-number](https://github.com/KR-bluejay/LeetCode/tree/master/0202-happy-number) |
 | [0205-isomorphic-strings](https://github.com/KR-bluejay/LeetCode/tree/master/0205-isomorphic-strings) |
@@ -321,6 +324,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0097-interleaving-string](https://github.com/KR-bluejay/LeetCode/tree/master/0097-interleaving-string) |
 | [0119-pascals-triangle-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0119-pascals-triangle-ii) |
 | [0120-triangle](https://github.com/KR-bluejay/LeetCode/tree/master/0120-triangle) |
+| [0139-word-break](https://github.com/KR-bluejay/LeetCode/tree/master/0139-word-break) |
 | [0198-house-robber](https://github.com/KR-bluejay/LeetCode/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0213-house-robber-ii) |
 | [0300-longest-increasing-subsequence](https://github.com/KR-bluejay/LeetCode/tree/master/0300-longest-increasing-subsequence) |
@@ -428,6 +432,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Trie
 |  |
 | ------- |
+| [0139-word-break](https://github.com/KR-bluejay/LeetCode/tree/master/0139-word-break) |
 | [0208-implement-trie-prefix-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 ## Combinatorics
 |  |
@@ -484,4 +489,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
+## Memoization
+|  |
+| ------- |
+| [0139-word-break](https://github.com/KR-bluejay/LeetCode/tree/master/0139-word-break) |
 <!---LeetCode Topics End-->
