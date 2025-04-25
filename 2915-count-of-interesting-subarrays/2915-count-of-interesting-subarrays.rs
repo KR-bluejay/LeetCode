@@ -17,7 +17,6 @@ impl Solution {
             } else {
                 0
             };
-            prefix_sum %= modulo;
             
             let target = (prefix_sum - k + modulo) % modulo;
 
@@ -25,7 +24,7 @@ impl Solution {
             if let Some(v) = count_map.get(&target) {
                 total_sum += *v as i64
             }
-            count_map.entry(prefix_sum)
+            count_map.entry(prefix_sum % modulo)
                 .and_modify(|v| *v += 1)
                 .or_insert(1);
         }
