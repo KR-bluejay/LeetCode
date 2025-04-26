@@ -168,6 +168,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0078-subsets](https://github.com/KR-bluejay/LeetCode/tree/master/0078-subsets) |
 | [0136-single-number](https://github.com/KR-bluejay/LeetCode/tree/master/0136-single-number) |
 | [0190-reverse-bits](https://github.com/KR-bluejay/LeetCode/tree/master/0190-reverse-bits) |
+| [0191-number-of-1-bits](https://github.com/KR-bluejay/LeetCode/tree/master/0191-number-of-1-bits) |
 | [0266-palindrome-permutation](https://github.com/KR-bluejay/LeetCode/tree/master/0266-palindrome-permutation) |
 | [0338-counting-bits](https://github.com/KR-bluejay/LeetCode/tree/master/0338-counting-bits) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/KR-bluejay/LeetCode/tree/master/1993-sum-of-all-subset-xor-totals) |
@@ -416,6 +417,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0169-majority-element](https://github.com/KR-bluejay/LeetCode/tree/master/0169-majority-element) |
 | [0190-reverse-bits](https://github.com/KR-bluejay/LeetCode/tree/master/0190-reverse-bits) |
+| [0191-number-of-1-bits](https://github.com/KR-bluejay/LeetCode/tree/master/0191-number-of-1-bits) |
 | [0215-kth-largest-element-in-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0948-sort-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/0948-sort-an-array) |
 | [2280-count-good-triplets-in-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/2280-count-good-triplets-in-an-array) |
