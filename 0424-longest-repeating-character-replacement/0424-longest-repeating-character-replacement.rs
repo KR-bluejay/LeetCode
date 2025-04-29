@@ -17,14 +17,12 @@ impl Solution {
                 .or_insert(1);
             max_freq = max_freq.max(cur_freq);
 
-            let shrink_range = right_id - left_id + 1 - max_freq - k;
+            let mut shrink_range = right_id - left_id + 1 - max_freq - k;
 
-            if shrink_range < s.len() {
-                for i in 0 .. shrink_range {
-                    char_map.entry(s[left_id])
-                        .and_modify(|v| *v -= 1);
-                    left_id += 1;
-                }
+            while right_id + 1 - (left_id + max_freq) > k {
+                char_map.entry(s[left_id])
+                    .and_modify(|v| *v -= 1);
+                left_id += 1;
             }
 
             max_len = max_len.max(right_id - left_id + 1);
