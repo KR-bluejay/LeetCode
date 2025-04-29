@@ -1,52 +1,34 @@
-use std::collections::HashMap;
+use std::collections::{ HashMap };
 
 impl Solution {
     pub fn character_replacement(s: String, k: i32) -> i32 {
         let s: Vec<char> = s.chars().collect();
-        let mut char_map: HashMap<char, usize> = HashMap::new();
+        let k = k as usize;
 
         let mut left_id: usize = 0;
-        let mut right_id: usize = 0;
-        let mut long_char_len: usize = 0;
-        
-        // for i in 0 .. s.len() {
-        //     let temp = char_map
-        //         .entry(s[i])
-        //         .and_modify(|v| *v += 1)
-        //         .or_insert(1);
-        //     let char_len = i - left_id + 1;
+        let mut max_freq: usize = 0;
+        let mut max_len: usize = 0;
 
-        //     if char_len - *temp <= k as usize || i + 1 == s.len() {
-        //         long_char_len = i + 1;
-        //         right_id = i;
-        //     } else {
-        //         break;
-        //     }
-        // }
-        let mut max_count = 0;
-        
+        let mut char_map: HashMap<char, usize> = HashMap::with_capacity(26);
 
-        for i in 0  .. s.len() {
-            let temp_count = char_map
-                .entry(s[i])
+        for (right_id, &char_item) in s.iter().enumerate() {
+            let cur_freq = *char_map.entry(char_item)
                 .and_modify(|v| *v += 1)
                 .or_insert(1);
+            max_freq = max_freq.max(cur_freq);
 
-            let mut char_len = i - left_id + 1;
-            max_count = max_count.max(*temp_count);
+            let shrink_range = right_id - left_id + 1 - max_freq - k;
 
-            while i - left_id + 1 - max_count > k as usize && left_id < i {
-                char_map
-                    .entry(s[left_id])
-                    .and_modify(|v| *v -= 1);
-                left_id += 1;
+            if shrink_range < s.len() {
+                for i in 0 .. shrink_range {
+                    char_map.entry(s[left_id])
+                        .and_modify(|v| *v -= 1);
+                    left_id += 1;
+                }
             }
 
-            char_len = i - left_id + 1;
-            long_char_len = long_char_len.max(i - left_id + 1);
-
+            max_len = max_len.max(right_id - left_id + 1);
         }
-
-        long_char_len as i32
+        max_len as i32
     }
 }
