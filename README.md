@@ -56,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/KR-bluejay/LeetCode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2345-minimum-number-of-operations-to-convert-time](https://github.com/KR-bluejay/LeetCode/tree/master/2345-minimum-number-of-operations-to-convert-time) |
 | [2427-first-letter-to-appear-twice](https://github.com/KR-bluejay/LeetCode/tree/master/2427-first-letter-to-appear-twice) |
+| [3543-count-substrings-that-satisfy-k-constraint-i](https://github.com/KR-bluejay/LeetCode/tree/master/3543-count-substrings-that-satisfy-k-constraint-i) |
 ## Stack
 |  |
 | ------- |
@@ -205,6 +206,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2856-count-complete-subarrays-in-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/2856-count-complete-subarrays-in-an-array) |
 | [3213-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/KR-bluejay/LeetCode/tree/master/3213-count-subarrays-where-max-element-appears-at-least-k-times) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/KR-bluejay/LeetCode/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
+| [3543-count-substrings-that-satisfy-k-constraint-i](https://github.com/KR-bluejay/LeetCode/tree/master/3543-count-substrings-that-satisfy-k-constraint-i) |
 ## Tree
 |  |
 | ------- |
