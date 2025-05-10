@@ -9,37 +9,37 @@ impl Solution {
 
 
         if num1_wild_count > 0 {
-            num1_sum += num1_wild_count - 1;
+            num1_sum += num1_wild_count;
             num1_wild_count = 1;
         }
 
         if num2_wild_count > 0 {
-            num2_sum += num2_wild_count - 1;
+            num2_sum += num2_wild_count;
             num2_wild_count = 1;
         }
 
-        if num1_sum == num2_sum && num1_wild_count == 0 && num2_wild_count == 0 {
-            return num1_sum as i64;
-        }
+        // if num1_sum == num2_sum && num1_wild_count == 0 && num2_wild_count == 0 {
+        //     return num1_sum as i64;
+        // }
 
 
-        if num1_sum == num2_sum && (num1_wild_count == 0 || num2_wild_count == 0) {
-            return -1;
-        }
+        // if num1_sum == num2_sum && (num1_wild_count == 0 || num2_wild_count == 0) {
+        //     return -1;
+        // }
 
         if (num1_sum < num2_sum && num1_wild_count == 0) || (num2_sum < num1_sum && num2_wild_count == 0) {
             return -1;
         }
 
-        let diff_num = (num2_sum - num1_sum).abs() as i64;
+        // let diff_num = (num2_sum - num1_sum).abs() as i64;
 
 
-        if num1_sum < num2_sum && num2_wild_count == 0 {
-            return num2_sum as i64;
-        } else if num2_sum < num1_sum && num1_wild_count == 0 {
-            return num1_sum as i64;
-        }
+        // if num1_sum < num2_sum && num2_wild_count == 0 {
+        //     return num2_sum as i64;
+        // } else if num2_sum < num1_sum && num1_wild_count == 0 {
+        //     return num1_sum as i64;
+        // }
 
-        (num1_sum.max(num2_sum) + 1) as i64
+        num1_sum.max(num2_sum)
     }
 }
