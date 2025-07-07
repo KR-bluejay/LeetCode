@@ -22,11 +22,10 @@ impl Solution {
             }
 
             while let Some(Reverse(event_end_day)) = min_heap.peek() {
-                if cur_day > *event_end_day {
-                    min_heap.pop();
-                } else {
+                if cur_day <= *event_end_day {
                     break;
                 }
+                min_heap.pop();
             }
 
             if min_heap.pop().is_some() {
