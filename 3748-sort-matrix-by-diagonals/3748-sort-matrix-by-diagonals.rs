@@ -18,17 +18,13 @@ impl Solution {
             let mut row_id = init_id;
             let mut col_id = 0;
             let mut temp_id = 0;
-
-            loop {
-                if temp_id < temp.len() {
-                    grid[row_id][col_id] = temp[temp_id];
-                    temp_id += 1;
-                    row_id += 1;
-                    col_id += 1;
-                } else {
-                    break;
-                }
+            
+            for temp_id in 0 .. temp.len() {
+                grid[row_id][col_id] = temp[temp_id];
+                row_id += 1;
+                col_id += 1;
             }
+
         }
 
         for init_id in (1 .. grid_len) {
@@ -48,17 +44,11 @@ impl Solution {
             
             let mut row_id = 0;
             let mut col_id = init_id;
-            let mut temp_id = 0;
 
-            loop {
-                if temp_id < temp.len() {
-                    grid[row_id][col_id] = temp[temp_id];
-                    temp_id += 1;
-                    row_id += 1;
-                    col_id += 1;
-                } else {
-                    break;
-                }
+            for temp_id in 0 .. temp.len() {
+                grid[row_id][col_id] = temp[temp_id];
+                row_id += 1;
+                col_id += 1;
             }
         }
         grid
