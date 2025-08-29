@@ -23,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2507-number-of-common-factors](https://github.com/KR-bluejay/LeetCode/tree/master/2507-number-of-common-factors) |
 | [2998-count-symmetric-integers](https://github.com/KR-bluejay/LeetCode/tree/master/2998-count-symmetric-integers) |
 | [3273-most-expensive-item-that-can-not-be-bought](https://github.com/KR-bluejay/LeetCode/tree/master/3273-most-expensive-item-that-can-not-be-bought) |
+| [3279-alice-and-bob-playing-flower-game](https://github.com/KR-bluejay/LeetCode/tree/master/3279-alice-and-bob-playing-flower-game) |
 ## String
 |  |
 | ------- |
