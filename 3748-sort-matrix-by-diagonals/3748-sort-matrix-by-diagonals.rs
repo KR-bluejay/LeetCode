@@ -21,8 +21,8 @@ impl Solution {
         }
 
 
-        for (k, v) in diagonal.iter().enumerate() {
-            grid[row_id + k][col_id + k] = *v;
+        for (k, v) in diagonal.into_iter().enumerate() {
+            grid[row_id + k][col_id + k] = v;
         }
     }
     pub fn sort_matrix(mut grid: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
