@@ -1,21 +1,22 @@
 impl Solution {
     pub fn flower_game(n: i32, m: i32) -> i64 {
-        let mut first_flower = n as i64;
-        let mut second_flower = m as i64;
+        // Approach:
+        // Alice wins iff the total number of turns (x + y) is odd,
+        // because she moves first.
+        //
+        // That means we want the number of pairs (x, y) with different parity:
+        //   - x odd & y even
+        //   - x even & y odd
+        //
+        // Count of odds in [1..n] = ceil(n/2)
+        // Count of evens in [1..n] = floor(n/2)
+        // (same for m).
+        //
+        // So result = odd(n) * even(m) + even(n) * odd(m)
+        // Algebraically, this always simplifies to (n * m) / 2.
+        //
+        // Example: n=3, m=2 → (2 odds * 1 even) + (1 even * 1 odd) = 3.
 
-        let mut total_win: i64 = 0;
-        
-        total_win += (2 ..= second_flower).filter(|i| i % 2 == 0).count() as i64;
-
-        for i in 2 ..= first_flower {
-            total_win += if i % 2 == 0 {
-                second_flower - (second_flower / 2)
-            } else {
-                second_flower / 2
-            }
-        }
-
-
-        total_win
+        (n as i64) * (m as i64) / 2
     }
 }
