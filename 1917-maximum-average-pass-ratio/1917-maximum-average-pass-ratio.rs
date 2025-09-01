@@ -60,7 +60,6 @@ impl Solution {
             });
         }
 
-        println!("{class_ratios:?}");
 
         class_ratios.iter().map(|v| v.pass as f64 / v.total as f64).sum::<f64>() / class_ratios.len() as f64
     }
