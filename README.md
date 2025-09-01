@@ -125,6 +125,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/KR-bluejay/LeetCode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1656-count-good-triplets](https://github.com/KR-bluejay/LeetCode/tree/master/1656-count-good-triplets) |
 | [1755-defuse-the-bomb](https://github.com/KR-bluejay/LeetCode/tree/master/1755-defuse-the-bomb) |
+| [1917-maximum-average-pass-ratio](https://github.com/KR-bluejay/LeetCode/tree/master/1917-maximum-average-pass-ratio) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/KR-bluejay/LeetCode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2003-distinct-numbers-in-each-subarray](https://github.com/KR-bluejay/LeetCode/tree/master/2003-distinct-numbers-in-each-subarray) |
 | [2048-build-array-from-permutation](https://github.com/KR-bluejay/LeetCode/tree/master/2048-build-array-from-permutation) |
@@ -462,6 +463,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/KR-bluejay/LeetCode/tree/master/1049-minimum-domino-rotations-for-equal-row) |
 | [1051-shortest-way-to-form-string](https://github.com/KR-bluejay/LeetCode/tree/master/1051-shortest-way-to-form-string) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/KR-bluejay/LeetCode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
+| [1917-maximum-average-pass-ratio](https://github.com/KR-bluejay/LeetCode/tree/master/1917-maximum-average-pass-ratio) |
 | [2345-minimum-number-of-operations-to-convert-time](https://github.com/KR-bluejay/LeetCode/tree/master/2345-minimum-number-of-operations-to-convert-time) |
 | [3171-minimum-equal-sum-of-two-arrays-after-replacing-zeros](https://github.com/KR-bluejay/LeetCode/tree/master/3171-minimum-equal-sum-of-two-arrays-after-replacing-zeros) |
 ## Divide and Conquer
@@ -520,6 +522,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0744-network-delay-time](https://github.com/KR-bluejay/LeetCode/tree/master/0744-network-delay-time) |
 | [0948-sort-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/0948-sort-an-array) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/KR-bluejay/LeetCode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
+| [1917-maximum-average-pass-ratio](https://github.com/KR-bluejay/LeetCode/tree/master/1917-maximum-average-pass-ratio) |
 | [2164-two-best-non-overlapping-events](https://github.com/KR-bluejay/LeetCode/tree/master/2164-two-best-non-overlapping-events) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/KR-bluejay/LeetCode/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
