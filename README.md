@@ -23,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2507-number-of-common-factors](https://github.com/KR-bluejay/LeetCode/tree/master/2507-number-of-common-factors) |
 | [2998-count-symmetric-integers](https://github.com/KR-bluejay/LeetCode/tree/master/2998-count-symmetric-integers) |
 | [3273-most-expensive-item-that-can-not-be-bought](https://github.com/KR-bluejay/LeetCode/tree/master/3273-most-expensive-item-that-can-not-be-bought) |
+| [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
 | [3278-find-the-number-of-ways-to-place-people-i](https://github.com/KR-bluejay/LeetCode/tree/master/3278-find-the-number-of-ways-to-place-people-i) |
 | [3279-alice-and-bob-playing-flower-game](https://github.com/KR-bluejay/LeetCode/tree/master/3279-alice-and-bob-playing-flower-game) |
 | [3830-find-closest-person](https://github.com/KR-bluejay/LeetCode/tree/master/3830-find-closest-person) |
@@ -148,6 +149,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3154-maximum-value-of-an-ordered-triplet-i](https://github.com/KR-bluejay/LeetCode/tree/master/3154-maximum-value-of-an-ordered-triplet-i) |
 | [3171-minimum-equal-sum-of-two-arrays-after-replacing-zeros](https://github.com/KR-bluejay/LeetCode/tree/master/3171-minimum-equal-sum-of-two-arrays-after-replacing-zeros) |
 | [3213-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/KR-bluejay/LeetCode/tree/master/3213-count-subarrays-where-max-element-appears-at-least-k-times) |
+| [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
 | [3278-find-the-number-of-ways-to-place-people-i](https://github.com/KR-bluejay/LeetCode/tree/master/3278-find-the-number-of-ways-to-place-people-i) |
 | [3430-count-days-without-meetings](https://github.com/KR-bluejay/LeetCode/tree/master/3430-count-days-without-meetings) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/KR-bluejay/LeetCode/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
@@ -414,6 +416,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2164-two-best-non-overlapping-events](https://github.com/KR-bluejay/LeetCode/tree/master/2164-two-best-non-overlapping-events) |
 | [2699-count-the-number-of-fair-pairs](https://github.com/KR-bluejay/LeetCode/tree/master/2699-count-the-number-of-fair-pairs) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/KR-bluejay/LeetCode/tree/master/2888-minimum-index-of-a-valid-split) |
+| [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
 | [3278-find-the-number-of-ways-to-place-people-i](https://github.com/KR-bluejay/LeetCode/tree/master/3278-find-the-number-of-ways-to-place-people-i) |
 | [3430-count-days-without-meetings](https://github.com/KR-bluejay/LeetCode/tree/master/3430-count-days-without-meetings) |
 | [3748-sort-matrix-by-diagonals](https://github.com/KR-bluejay/LeetCode/tree/master/3748-sort-matrix-by-diagonals) |
@@ -519,6 +522,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1993-sum-of-all-subset-xor-totals](https://github.com/KR-bluejay/LeetCode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2507-number-of-common-factors](https://github.com/KR-bluejay/LeetCode/tree/master/2507-number-of-common-factors) |
 | [2998-count-symmetric-integers](https://github.com/KR-bluejay/LeetCode/tree/master/2998-count-symmetric-integers) |
+| [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
 | [3278-find-the-number-of-ways-to-place-people-i](https://github.com/KR-bluejay/LeetCode/tree/master/3278-find-the-number-of-ways-to-place-people-i) |
 ## Heap (Priority Queue)
 |  |
@@ -598,5 +602,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Geometry
 |  |
 | ------- |
+| [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
 | [3278-find-the-number-of-ways-to-place-people-i](https://github.com/KR-bluejay/LeetCode/tree/master/3278-find-the-number-of-ways-to-place-people-i) |
 <!---LeetCode Topics End-->
