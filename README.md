@@ -123,6 +123,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1046-max-consecutive-ones-iii](https://github.com/KR-bluejay/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/KR-bluejay/LeetCode/tree/master/1049-minimum-domino-rotations-for-equal-row) |
 | [1063-best-sightseeing-pair](https://github.com/KR-bluejay/LeetCode/tree/master/1063-best-sightseeing-pair) |
+| [1067-campus-bikes-ii](https://github.com/KR-bluejay/LeetCode/tree/master/1067-campus-bikes-ii) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/KR-bluejay/LeetCode/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/KR-bluejay/LeetCode/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/KR-bluejay/LeetCode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
@@ -206,6 +207,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0191-number-of-1-bits](https://github.com/KR-bluejay/LeetCode/tree/master/0191-number-of-1-bits) |
 | [0266-palindrome-permutation](https://github.com/KR-bluejay/LeetCode/tree/master/0266-palindrome-permutation) |
 | [0338-counting-bits](https://github.com/KR-bluejay/LeetCode/tree/master/0338-counting-bits) |
+| [1067-campus-bikes-ii](https://github.com/KR-bluejay/LeetCode/tree/master/1067-campus-bikes-ii) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/KR-bluejay/LeetCode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2427-first-letter-to-appear-twice](https://github.com/KR-bluejay/LeetCode/tree/master/2427-first-letter-to-appear-twice) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/KR-bluejay/LeetCode/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
@@ -390,6 +392,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/KR-bluejay/LeetCode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [1025-minimum-cost-for-tickets](https://github.com/KR-bluejay/LeetCode/tree/master/1025-minimum-cost-for-tickets) |
 | [1063-best-sightseeing-pair](https://github.com/KR-bluejay/LeetCode/tree/master/1063-best-sightseeing-pair) |
+| [1067-campus-bikes-ii](https://github.com/KR-bluejay/LeetCode/tree/master/1067-campus-bikes-ii) |
 | [1250-longest-common-subsequence](https://github.com/KR-bluejay/LeetCode/tree/master/1250-longest-common-subsequence) |
 | [2164-two-best-non-overlapping-events](https://github.com/KR-bluejay/LeetCode/tree/master/2164-two-best-non-overlapping-events) |
 | [2262-solving-questions-with-brainpower](https://github.com/KR-bluejay/LeetCode/tree/master/2262-solving-questions-with-brainpower) |
@@ -499,6 +502,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0079-word-search](https://github.com/KR-bluejay/LeetCode/tree/master/0079-word-search) |
 | [0813-all-paths-from-source-to-target](https://github.com/KR-bluejay/LeetCode/tree/master/0813-all-paths-from-source-to-target) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/KR-bluejay/LeetCode/tree/master/1030-smallest-string-starting-from-leaf) |
+| [1067-campus-bikes-ii](https://github.com/KR-bluejay/LeetCode/tree/master/1067-campus-bikes-ii) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/KR-bluejay/LeetCode/tree/master/1993-sum-of-all-subset-xor-totals) |
 ## Design
 |  |
@@ -604,4 +608,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
 | [3278-find-the-number-of-ways-to-place-people-i](https://github.com/KR-bluejay/LeetCode/tree/master/3278-find-the-number-of-ways-to-place-people-i) |
+## Bitmask
+|  |
+| ------- |
+| [1067-campus-bikes-ii](https://github.com/KR-bluejay/LeetCode/tree/master/1067-campus-bikes-ii) |
 <!---LeetCode Topics End-->
