@@ -16,16 +16,15 @@ impl Solution {
             return;
         }
 
-        for bike_id in 0 .. bikes.len() {
-            let is_used_bike = (bit_mask & (1 << bike_id)) != 0;
-            
-            if is_used_bike {
-                continue;
-            }
+        let all_count = (1 << bikes.len()) - 1;
+        let mut remaining_count = (!bit_mask) & all_count;
 
+        while remaining_count != 0 {
+            let bike_id = remaining_count.trailing_zeros() as usize;
             let cur_dist = ongoing_dist + (workers[0][0] - bikes[bike_id][0]).abs() 
             + (workers[0][1] - bikes[bike_id][1]).abs();
 
+            remaining_count &= (remaining_count - 1);
 
             Self::dyn_assign(
                 &workers[1 ..], 
