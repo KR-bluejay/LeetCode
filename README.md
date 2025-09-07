@@ -72,6 +72,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0020-valid-parentheses](https://github.com/KR-bluejay/LeetCode/tree/master/0020-valid-parentheses) |
 | [0071-simplify-path](https://github.com/KR-bluejay/LeetCode/tree/master/0071-simplify-path) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/KR-bluejay/LeetCode/tree/master/0114-flatten-binary-tree-to-linked-list) |
+| [0496-next-greater-element-i](https://github.com/KR-bluejay/LeetCode/tree/master/0496-next-greater-element-i) |
 ## Array
 |  |
 | ------- |
@@ -115,6 +116,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0416-partition-equal-subset-sum](https://github.com/KR-bluejay/LeetCode/tree/master/0416-partition-equal-subset-sum) |
 | [0485-max-consecutive-ones](https://github.com/KR-bluejay/LeetCode/tree/master/0485-max-consecutive-ones) |
 | [0487-max-consecutive-ones-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0487-max-consecutive-ones-ii) |
+| [0496-next-greater-element-i](https://github.com/KR-bluejay/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0643-maximum-average-subarray-i](https://github.com/KR-bluejay/LeetCode/tree/master/0643-maximum-average-subarray-i) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/KR-bluejay/LeetCode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0797-rabbits-in-forest](https://github.com/KR-bluejay/LeetCode/tree/master/0797-rabbits-in-forest) |
@@ -183,6 +185,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0325-maximum-size-subarray-sum-equals-k](https://github.com/KR-bluejay/LeetCode/tree/master/0325-maximum-size-subarray-sum-equals-k) |
 | [0359-logger-rate-limiter](https://github.com/KR-bluejay/LeetCode/tree/master/0359-logger-rate-limiter) |
 | [0424-longest-repeating-character-replacement](https://github.com/KR-bluejay/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
+| [0496-next-greater-element-i](https://github.com/KR-bluejay/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0768-partition-labels](https://github.com/KR-bluejay/LeetCode/tree/master/0768-partition-labels) |
 | [0797-rabbits-in-forest](https://github.com/KR-bluejay/LeetCode/tree/master/0797-rabbits-in-forest) |
 | [1084-find-k-length-substrings-with-no-repeated-characters](https://github.com/KR-bluejay/LeetCode/tree/master/1084-find-k-length-substrings-with-no-repeated-characters) |
@@ -620,4 +623,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2837-minimum-operations-to-make-the-integer-zero](https://github.com/KR-bluejay/LeetCode/tree/master/2837-minimum-operations-to-make-the-integer-zero) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0496-next-greater-element-i](https://github.com/KR-bluejay/LeetCode/tree/master/0496-next-greater-element-i) |
 <!---LeetCode Topics End-->
