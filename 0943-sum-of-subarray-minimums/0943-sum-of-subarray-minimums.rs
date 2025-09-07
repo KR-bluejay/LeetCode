@@ -6,7 +6,7 @@ impl Solution {
     pub fn sum_subarray_mins(arr: Vec<i32>) -> i32 {
         let mut min_sum: i64 = 0;
         let mut sub_stack: Vec<usize> = Vec::with_capacity(arr.len());
-        let mut left_to_right: Vec<i32> = vec![-1; arr.len()];
+        let mut left_to_right: Vec<usize> = vec![0; arr.len()];
         let mut right_to_left: Vec<usize> = vec![arr.len(); arr.len()];
 
         for (num_id, num_val) in arr.iter().enumerate() {
@@ -18,13 +18,13 @@ impl Solution {
                     break;
                 }
 
-                left_to_right[stack_id] = num_id as i32 - 1;
+                left_to_right[stack_id] = num_id - 1;
             }
             sub_stack.push(num_id);
         }
 
         while let Some(stack_num) = sub_stack.pop() {
-            left_to_right[stack_num] = (arr.len() - 1) as i32;
+            left_to_right[stack_num] = arr.len() - 1;
         }
 
         
@@ -53,13 +53,13 @@ impl Solution {
             let start = if right_to_left[sub_id] == arr.len() {
                 sub_id
             } else {
-                right_to_left[sub_id] as usize
+                right_to_left[sub_id]
             };
 
-            let end = if left_to_right[sub_id] == -1 {
+            let end = if left_to_right[sub_id] == 0 {
                 sub_id
             } else {
-                left_to_right[sub_id] as usize
+                left_to_right[sub_id]
             };
             let range_count = (end - sub_id + 1) * (sub_id - start + 1);
 
