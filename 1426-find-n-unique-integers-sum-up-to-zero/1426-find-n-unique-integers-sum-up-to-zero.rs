@@ -8,10 +8,8 @@ impl Solution {
         }
 
         for i in 0 .. (n / 2) {
-            let rev_id = nums.len() - 1;
-
             nums[i] = i as i32 + 1;
-            nums[rev_id - i]  = nums[i] * - 1;
+            nums[n - i - 1]  = nums[i] * - 1;
         }
 
         nums
