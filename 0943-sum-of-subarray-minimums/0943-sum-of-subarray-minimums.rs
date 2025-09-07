@@ -5,63 +5,65 @@ impl Solution {
 
     pub fn sum_subarray_mins(arr: Vec<i32>) -> i32 {
         let mut min_sum: i64 = 0;
-        let mut left_sub_stack: Vec<usize> = Vec::with_capacity(arr.len());
-        let mut right_sub_stack: Vec<usize> = Vec::with_capacity(arr.len());
-        let mut sub_map: HashMap<usize, Range<usize>> = arr.iter().enumerate().map(|(i, v)| {
-            (i, Range {
-                start: i,
-                end: i,
-            })
-        }).collect();
+        let mut sub_stack: Vec<usize> = Vec::with_capacity(arr.len());
+        let mut left_to_right: Vec<i32> = vec![-1; arr.len()];
+        let mut right_to_left: Vec<usize> = vec![arr.len(); arr.len()];
 
-        for num_id in 0 .. arr.len() {
-            let num_val = arr[num_id];
-            let rev_num_id = arr.len() - 1 - num_id;
-            let rev_num_val = arr[rev_num_id];
-
-            while let Some(stack_id) = left_sub_stack.pop() {
+        for (num_id, num_val) in arr.iter().enumerate() {
+            while let Some(stack_id) = sub_stack.pop() {
                 let stack_num = arr[stack_id];
-                if stack_num < num_val {
-                    left_sub_stack.push(stack_id);
+                if stack_num < *num_val {
+                    sub_stack.push(stack_id);
                     
                     break;
                 }
 
-                sub_map.entry(stack_id).and_modify(|v| v.end = num_id - 1);
+                left_to_right[stack_id] = num_id as i32 - 1;
             }
+            sub_stack.push(num_id);
+        }
 
-            while let Some(stack_id) = right_sub_stack.pop() {
+        while let Some(stack_num) = sub_stack.pop() {
+            left_to_right[stack_num] = (arr.len() - 1) as i32;
+        }
+
+        
+        for (num_id, num_val) in arr.iter().enumerate().rev() {
+            while let Some(stack_id) = sub_stack.pop() {
                 let stack_num = arr[stack_id];
 
-                if stack_num <= rev_num_val {
-                    right_sub_stack.push(stack_id);
+                if stack_num <= *num_val {
+                    sub_stack.push(stack_id);
                     
                     break;
                 }
 
-                sub_map.entry(stack_id).and_modify(|v| v.start = rev_num_id + 1);
+                right_to_left[stack_id] = num_id + 1;
             }
-
-            left_sub_stack.push(num_id);
-            right_sub_stack.push(rev_num_id);
+            sub_stack.push(num_id);
         }
 
-        while let Some(stack_num) = left_sub_stack.pop() {
-            sub_map.entry(stack_num).and_modify(|v| v.end = arr.len() - 1);
+        while let Some(stack_num) = sub_stack.pop() {
+            right_to_left[stack_num] = 0;
         }
 
+        
 
-        while let Some(stack_num) = right_sub_stack.pop() {
-            sub_map.entry(stack_num).and_modify(|v| v.start = 0);
-        }
+        for (sub_id, sub_val) in arr.iter().enumerate() {
+            let start = if right_to_left[sub_id] == arr.len() {
+                sub_id
+            } else {
+                right_to_left[sub_id] as usize
+            };
 
-        for (sub_id, sub_range) in sub_map.iter() {
-            let Range {start, end} = sub_range;
-            let sub_val = arr[*sub_id];
-
+            let end = if left_to_right[sub_id] == -1 {
+                sub_id
+            } else {
+                left_to_right[sub_id] as usize
+            };
             let range_count = (end - sub_id + 1) * (sub_id - start + 1);
 
-            min_sum += sub_val as i64 * range_count as i64;
+            min_sum += (*sub_val as i64 * range_count as i64) % 1000000007;
             min_sum %= 1000000007;
         }
 
