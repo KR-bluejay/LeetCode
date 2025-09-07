@@ -61,7 +61,7 @@ impl Solution {
 
             let range_count = (end - sub_id + 1) * (sub_id - start + 1);
 
-            min_sum += (sub_val as i64 * range_count as i64) % 1000000007;
+            min_sum += sub_val as i64 * range_count as i64;
             min_sum %= 1000000007;
         }
 
