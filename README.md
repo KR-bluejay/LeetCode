@@ -130,6 +130,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/KR-bluejay/LeetCode/tree/master/1049-minimum-domino-rotations-for-equal-row) |
 | [1063-best-sightseeing-pair](https://github.com/KR-bluejay/LeetCode/tree/master/1063-best-sightseeing-pair) |
 | [1067-campus-bikes-ii](https://github.com/KR-bluejay/LeetCode/tree/master/1067-campus-bikes-ii) |
+| [1098-largest-unique-number](https://github.com/KR-bluejay/LeetCode/tree/master/1098-largest-unique-number) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/KR-bluejay/LeetCode/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/KR-bluejay/LeetCode/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1426-find-n-unique-integers-sum-up-to-zero](https://github.com/KR-bluejay/LeetCode/tree/master/1426-find-n-unique-integers-sum-up-to-zero) |
@@ -192,6 +193,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0768-partition-labels](https://github.com/KR-bluejay/LeetCode/tree/master/0768-partition-labels) |
 | [0797-rabbits-in-forest](https://github.com/KR-bluejay/LeetCode/tree/master/0797-rabbits-in-forest) |
 | [1084-find-k-length-substrings-with-no-repeated-characters](https://github.com/KR-bluejay/LeetCode/tree/master/1084-find-k-length-substrings-with-no-repeated-characters) |
+| [1098-largest-unique-number](https://github.com/KR-bluejay/LeetCode/tree/master/1098-largest-unique-number) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/KR-bluejay/LeetCode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/KR-bluejay/LeetCode/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1500-count-largest-group](https://github.com/KR-bluejay/LeetCode/tree/master/1500-count-largest-group) |
@@ -424,6 +426,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/KR-bluejay/LeetCode/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0948-sort-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/0948-sort-an-array) |
+| [1098-largest-unique-number](https://github.com/KR-bluejay/LeetCode/tree/master/1098-largest-unique-number) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/KR-bluejay/LeetCode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/KR-bluejay/LeetCode/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2164-two-best-non-overlapping-events](https://github.com/KR-bluejay/LeetCode/tree/master/2164-two-best-non-overlapping-events) |
