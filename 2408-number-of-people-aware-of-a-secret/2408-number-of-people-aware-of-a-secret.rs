@@ -6,6 +6,8 @@ impl Solution {
         let mut total_aware_count: i128 = 1;
         let mut total_delay_count: i128 = 1;
 
+        const modular_num: i128 = 1000000007;
+
         secret_aware_map.insert(1, 1);
 
         for day_id in 1 + delay ..= n {
@@ -17,7 +19,7 @@ impl Solution {
                 total_delay_count -= day_delay_count;
             }
 
-            let today_count = (total_aware_count - total_delay_count) % 1000000007;
+            let today_count = (total_aware_count - total_delay_count) % modular_num;
             
             secret_aware_map.insert(day_id, today_count);
 
@@ -26,6 +28,6 @@ impl Solution {
         }
 
 
-        (total_aware_count % 1000000007) as i32
+        (total_aware_count % modular_num) as i32
     }
 }
