@@ -2,11 +2,11 @@ use std::collections::HashMap;
 
 impl Solution {
     pub fn people_aware_of_secret(mut n: i32, mut delay: i32, mut forget: i32) -> i32 {
-        let mut secret_aware_map: HashMap<i32, i128> = HashMap::with_capacity(n as usize);
-        let mut total_aware_count: i128 = 1;
-        let mut total_delay_count: i128 = 1;
+        let mut secret_aware_map: HashMap<i32, i32> = HashMap::with_capacity(n as usize);
+        let mut total_aware_count: i32 = 1;
+        let mut total_delay_count: i32 = 1;
 
-        const modular_num: i128 = 1000000007;
+        const MODULO_NUM: i32 = 1_000_000_007;
 
         secret_aware_map.insert(1, 1);
 
@@ -19,15 +19,19 @@ impl Solution {
                 total_delay_count -= day_delay_count;
             }
 
-            let today_count = (total_aware_count - total_delay_count) % modular_num;
+
+            let today_count = (((total_aware_count - total_delay_count) % MODULO_NUM) + MODULO_NUM) % MODULO_NUM;
             
             secret_aware_map.insert(day_id, today_count);
 
-            total_delay_count += today_count;
             total_aware_count += today_count;
+            total_delay_count += today_count;
+
+            total_aware_count = ((total_aware_count % MODULO_NUM) + MODULO_NUM) % MODULO_NUM;
+            total_delay_count = ((total_delay_count % MODULO_NUM) + MODULO_NUM) % MODULO_NUM;
         }
 
 
-        (total_aware_count % modular_num) as i32
+        total_aware_count
     }
 }
