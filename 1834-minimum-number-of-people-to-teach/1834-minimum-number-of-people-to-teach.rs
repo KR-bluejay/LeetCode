@@ -9,8 +9,8 @@ impl Solution {
         mut friendships: Vec<Vec<i32>>
     ) -> i32 {
         let mut friendship_remove_set: BTreeSet<usize> = BTreeSet::new();
-        let mut teaching_friend_set: BTreeSet<usize> = BTreeSet::new();
-        let mut teaching_lang_set: BTreeSet<i32> = BTreeSet::new();
+        let mut teaching_friend_set: HashSet<usize> = HashSet::new();
+        let mut teaching_lang_set: HashSet<i32> = HashSet::new();
 
         for lang_id in 0 .. languages.len() {
             languages[lang_id].sort();
@@ -64,7 +64,7 @@ impl Solution {
             let mut lang_teaching_count: i32 = 0;
 
             for friend_id in teaching_friend_set.iter() {
-                if !languages[*friend_id].contains(lang_id) {
+                if languages[*friend_id].binary_search(&lang_id).is_err() {
                     lang_teaching_count += 1;
                 }
             }
