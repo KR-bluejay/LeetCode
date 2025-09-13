@@ -70,6 +70,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2887-sort-vowels-in-a-string](https://github.com/KR-bluejay/LeetCode/tree/master/2887-sort-vowels-in-a-string) |
 | [3462-vowels-game-in-a-string](https://github.com/KR-bluejay/LeetCode/tree/master/3462-vowels-game-in-a-string) |
 | [3543-count-substrings-that-satisfy-k-constraint-i](https://github.com/KR-bluejay/LeetCode/tree/master/3543-count-substrings-that-satisfy-k-constraint-i) |
+| [3872-find-most-frequent-vowel-and-consonant](https://github.com/KR-bluejay/LeetCode/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Stack
 |  |
 | ------- |
@@ -212,6 +213,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2888-minimum-index-of-a-valid-split](https://github.com/KR-bluejay/LeetCode/tree/master/2888-minimum-index-of-a-valid-split) |
 | [2915-count-of-interesting-subarrays](https://github.com/KR-bluejay/LeetCode/tree/master/2915-count-of-interesting-subarrays) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/KR-bluejay/LeetCode/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
+| [3872-find-most-frequent-vowel-and-consonant](https://github.com/KR-bluejay/LeetCode/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -234,6 +236,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1227-number-of-equivalent-domino-pairs](https://github.com/KR-bluejay/LeetCode/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [2053-check-if-all-characters-have-equal-number-of-occurrences](https://github.com/KR-bluejay/LeetCode/tree/master/2053-check-if-all-characters-have-equal-number-of-occurrences) |
 | [2427-first-letter-to-appear-twice](https://github.com/KR-bluejay/LeetCode/tree/master/2427-first-letter-to-appear-twice) |
+| [3872-find-most-frequent-vowel-and-consonant](https://github.com/KR-bluejay/LeetCode/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Sliding Window
 |  |
 | ------- |
