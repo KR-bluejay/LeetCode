@@ -21,7 +21,7 @@ impl Solution {
                     *b = b'*';
                 }
             }
-let vowel_word = unsafe { String::from_utf8_unchecked(bytes) };
+            let vowel_word = unsafe { String::from_utf8_unchecked(bytes) };
             spell_vowel_map.entry(vowel_word).or_insert(word);
         }
 
