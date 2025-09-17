@@ -70,6 +70,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/KR-bluejay/LeetCode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2345-minimum-number-of-operations-to-convert-time](https://github.com/KR-bluejay/LeetCode/tree/master/2345-minimum-number-of-operations-to-convert-time) |
 | [2427-first-letter-to-appear-twice](https://github.com/KR-bluejay/LeetCode/tree/master/2427-first-letter-to-appear-twice) |
+| [2429-design-a-food-rating-system](https://github.com/KR-bluejay/LeetCode/tree/master/2429-design-a-food-rating-system) |
 | [2887-sort-vowels-in-a-string](https://github.com/KR-bluejay/LeetCode/tree/master/2887-sort-vowels-in-a-string) |
 | [3462-vowels-game-in-a-string](https://github.com/KR-bluejay/LeetCode/tree/master/3462-vowels-game-in-a-string) |
 | [3543-count-substrings-that-satisfy-k-constraint-i](https://github.com/KR-bluejay/LeetCode/tree/master/3543-count-substrings-that-satisfy-k-constraint-i) |
@@ -160,6 +161,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2277-count-equal-and-divisible-pairs-in-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/2277-count-equal-and-divisible-pairs-in-an-array) |
 | [2280-count-good-triplets-in-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/2280-count-good-triplets-in-an-array) |
 | [2307-replace-non-coprime-numbers-in-array](https://github.com/KR-bluejay/LeetCode/tree/master/2307-replace-non-coprime-numbers-in-array) |
+| [2429-design-a-food-rating-system](https://github.com/KR-bluejay/LeetCode/tree/master/2429-design-a-food-rating-system) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/KR-bluejay/LeetCode/tree/master/2527-count-subarrays-with-fixed-bounds) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/KR-bluejay/LeetCode/tree/master/2626-count-the-number-of-good-subarrays) |
 | [2699-count-the-number-of-fair-pairs](https://github.com/KR-bluejay/LeetCode/tree/master/2699-count-the-number-of-fair-pairs) |
@@ -217,6 +219,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2053-check-if-all-characters-have-equal-number-of-occurrences](https://github.com/KR-bluejay/LeetCode/tree/master/2053-check-if-all-characters-have-equal-number-of-occurrences) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/KR-bluejay/LeetCode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2427-first-letter-to-appear-twice](https://github.com/KR-bluejay/LeetCode/tree/master/2427-first-letter-to-appear-twice) |
+| [2429-design-a-food-rating-system](https://github.com/KR-bluejay/LeetCode/tree/master/2429-design-a-food-rating-system) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/KR-bluejay/LeetCode/tree/master/2626-count-the-number-of-good-subarrays) |
 | [2856-count-complete-subarrays-in-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/2856-count-complete-subarrays-in-an-array) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/KR-bluejay/LeetCode/tree/master/2888-minimum-index-of-a-valid-split) |
@@ -544,6 +547,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0359-logger-rate-limiter](https://github.com/KR-bluejay/LeetCode/tree/master/0359-logger-rate-limiter) |
+| [2429-design-a-food-rating-system](https://github.com/KR-bluejay/LeetCode/tree/master/2429-design-a-food-rating-system) |
 ## Trie
 |  |
 | ------- |
@@ -573,6 +577,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/KR-bluejay/LeetCode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1917-maximum-average-pass-ratio](https://github.com/KR-bluejay/LeetCode/tree/master/1917-maximum-average-pass-ratio) |
 | [2164-two-best-non-overlapping-events](https://github.com/KR-bluejay/LeetCode/tree/master/2164-two-best-non-overlapping-events) |
+| [2429-design-a-food-rating-system](https://github.com/KR-bluejay/LeetCode/tree/master/2429-design-a-food-rating-system) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/KR-bluejay/LeetCode/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
 ## Binary Indexed Tree
@@ -593,6 +598,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2280-count-good-triplets-in-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/2280-count-good-triplets-in-an-array) |
+| [2429-design-a-food-rating-system](https://github.com/KR-bluejay/LeetCode/tree/master/2429-design-a-food-rating-system) |
 | [3790-fruits-into-baskets-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3790-fruits-into-baskets-ii) |
 ## Bucket Sort
 |  |
