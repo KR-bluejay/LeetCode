@@ -20,8 +20,8 @@ impl PartialOrd for FoodRating {
 }
 
 struct FoodRatings {
-    food_rating_map: BTreeMap<String, i32>,
-    food_cuisine_map: BTreeMap<String, String>,
+    food_rating_map: HashMap<String, i32>,
+    food_cuisine_map: HashMap<String, String>,
     cuisine_rating_map: HashMap<String, BinaryHeap<FoodRating>>,
 }
 
@@ -33,8 +33,8 @@ struct FoodRatings {
 impl FoodRatings {
 
     fn new(foods: Vec<String>, cuisines: Vec<String>, ratings: Vec<i32>) -> Self {
-        let mut food_rating_map: BTreeMap<String, i32> = BTreeMap::new();
-        let mut food_cuisine_map: BTreeMap<String, String> = BTreeMap::new();
+        let mut food_rating_map: HashMap<String, i32> = HashMap::new();
+        let mut food_cuisine_map: HashMap<String, String> = HashMap::new();
         let mut cuisine_rating_map: HashMap<String, BinaryHeap<FoodRating>> = HashMap::with_capacity(foods.len());
 
         for i in 0 .. foods.len() {
