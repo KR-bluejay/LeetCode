@@ -65,17 +65,15 @@ impl FoodRatings {
                 rating: new_rating,
             });
         self.food_rating_map.entry(food).and_modify(|v| *v = new_rating);
-
     }
     
     fn highest_rated(&mut self, cuisine: String) -> String {
         if let Some(food_ratings) = self.cuisine_rating_map.get_mut(&cuisine) {
-            while let Some(food_rating) = food_ratings.pop() {
-                if food_rating.rating != *self.food_rating_map.get(&food_rating.food).unwrap() {
-                    continue;
+            while let Some(food_rating) = food_ratings.peek() {
+                if food_rating.rating == *self.food_rating_map.get(&food_rating.food).unwrap() {
+                    return String::from(food_rating.food.clone());
                 }
-                food_ratings.push(food_rating.clone());
-                return String::from(food_rating.food.clone());
+                food_ratings.pop();
             }
         }
         String::new()
