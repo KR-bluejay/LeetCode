@@ -33,8 +33,8 @@ struct FoodRatings {
 impl FoodRatings {
 
     fn new(foods: Vec<String>, cuisines: Vec<String>, ratings: Vec<i32>) -> Self {
-        let mut food_rating_map: HashMap<String, i32> = HashMap::new();
-        let mut food_cuisine_map: HashMap<String, String> = HashMap::new();
+        let mut food_rating_map: HashMap<String, i32> = HashMap::with_capacity(foods.len());
+        let mut food_cuisine_map: HashMap<String, String> = HashMap::with_capacity(foods.len());
         let mut cuisine_rating_map: HashMap<String, BinaryHeap<FoodRating>> = HashMap::with_capacity(foods.len());
 
         for i in 0 .. foods.len() {
