@@ -59,28 +59,21 @@ impl TaskManager {
     }
     
     fn exec_top(&mut self) -> i32 {
-        let mut top_user_id = -1;
-
         self.priority_tasks_map.retain(|_, v| !v.is_empty());
-        
+
         for (k, v) in self.priority_tasks_map.iter_mut() {
             while let Some(task_id) = v.pop() {
                 if let Some(priority) = self.task_priority_map.get(&task_id) {
                     if k == priority {
                         self.task_priority_map.remove(&task_id);
-                        top_user_id =  self.task_user_map.remove(&task_id).unwrap();
-                        break;
+                        return self.task_user_map.remove(&task_id).unwrap();
                     }
                 }
-            }
-
-            if top_user_id != -1 {
-                break;
             }
         }
         
 
-        return top_user_id;
+        return -1;
     }
 }
 
