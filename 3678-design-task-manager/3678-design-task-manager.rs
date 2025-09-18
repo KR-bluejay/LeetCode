@@ -1,8 +1,7 @@
 use std::collections::{ BinaryHeap, HashMap };
 
 struct TaskManager {
-    task_to_user: HashMap<i32, i32>,
-    task_to_priority: HashMap<i32, i32>,
+    task_to_user: HashMap<i32, (i32, i32)>,
     priority_heap: BinaryHeap<(i32, i32)>,
 }
 
@@ -14,51 +13,47 @@ struct TaskManager {
 impl TaskManager {
 
     fn new(tasks: Vec<Vec<i32>>) -> Self {
-        let mut task_to_user: HashMap<i32, i32> = HashMap::with_capacity(tasks.len());
-        let mut task_to_priority: HashMap<i32, i32> = HashMap::with_capacity(tasks.len());
+        let mut task_to_user: HashMap<i32, (i32, i32)> = HashMap::with_capacity(tasks.len());
         let mut priority_heap: BinaryHeap<(i32, i32)> = BinaryHeap::with_capacity(tasks.len());
 
         for task in tasks {
             let [user_id, task_id, priority]: [i32; 3] = task.try_into().unwrap();
 
-            task_to_user.insert(task_id, user_id);
-            task_to_priority.insert(task_id, priority);
+            task_to_user.insert(task_id, (user_id, priority));
             priority_heap.push((priority, task_id));
         }
 
         Self {
             task_to_user,
-            task_to_priority,
             priority_heap
         }
     }
     
     fn add(&mut self, user_id: i32, task_id: i32, priority: i32) {
-        self.task_to_user.insert(task_id, user_id);
-        self.task_to_priority.insert(task_id, priority);
+        self.task_to_user.insert(task_id, (user_id, priority));
         
         self.priority_heap.push((priority, task_id));
     }
     
     fn edit(&mut self, task_id: i32, new_priority: i32) {
-        self.task_to_priority.entry(task_id).and_modify(|v| *v = new_priority);
+        self.task_to_user.entry(task_id).and_modify(|v| (*v).1 = new_priority);
         self.priority_heap.push((new_priority, task_id));
     }
     
     fn rmv(&mut self, task_id: i32) {
         self.task_to_user.remove(&task_id);
-        self.task_to_priority.remove(&task_id);
     }
     
     fn exec_top(&mut self) -> i32 {
         while let Some((priority, task_id)) = self.priority_heap.pop() {
-            let task_priority = self.task_to_priority.get(&task_id).unwrap_or(&-1);
-
-            if priority == *task_priority {
-                self.task_to_priority.remove(&task_id);
-    
-                return self.task_to_user.remove(&task_id).unwrap_or(-1);
+            if let Some(&(task_user_id, task_priority)) = self.task_to_user.get(&task_id) {
+                if priority == task_priority {
+                    self.task_to_user.remove(&task_id);
+        
+                    return task_user_id;
+                }
             }
+
         }
 
         -1
