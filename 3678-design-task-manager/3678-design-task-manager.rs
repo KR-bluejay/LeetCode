@@ -31,7 +31,6 @@ impl TaskManager {
     
     fn add(&mut self, user_id: i32, task_id: i32, priority: i32) {
         self.task_to_user.insert(task_id, (user_id, priority));
-        
         self.priority_heap.push((priority, task_id));
     }
     
@@ -53,7 +52,6 @@ impl TaskManager {
                     return task_user_id;
                 }
             }
-
         }
 
         -1
