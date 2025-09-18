@@ -1,9 +1,9 @@
-use std::collections::{ BTreeMap, HashMap, BinaryHeap };
+use std::collections::{ BinaryHeap, HashMap };
 
 struct TaskManager {
-    task_user_map: HashMap<i32, i32>,
-    task_priority_map: HashMap<i32, i32>,
-    priority_tasks_map: BTreeMap<i32, BinaryHeap<i32>>,
+    task_to_user: HashMap<i32, i32>,
+    task_to_priority: HashMap<i32, i32>,
+    priority_heap: BinaryHeap<(i32, i32)>,
 }
 
 
@@ -12,68 +12,56 @@ struct TaskManager {
  * If you need a mutable reference, change it to `&mut self` instead.
  */
 impl TaskManager {
+
     fn new(tasks: Vec<Vec<i32>>) -> Self {
-        let mut task_priority_map: HashMap<i32, i32> = HashMap::with_capacity(tasks.len());
-        let mut task_user_map: HashMap<i32, i32> = HashMap::with_capacity(tasks.len());
-        let mut priority_tasks_map: BTreeMap<i32, BinaryHeap<i32>> = BTreeMap::new();
+        let mut task_to_user: HashMap<i32, i32> = HashMap::with_capacity(tasks.len());
+        let mut task_to_priority: HashMap<i32, i32> = HashMap::with_capacity(tasks.len());
+        let mut priority_heap: BinaryHeap<(i32, i32)> = BinaryHeap::with_capacity(tasks.len());
 
-        for task in tasks.iter() {
-            let user_id = task[0];
-            let task_id = task[1];
-            let priority = task[2];
+        for task in tasks {
+            let [user_id, task_id, priority]: [i32; 3] = task.try_into().unwrap();
 
-            task_user_map.insert(task_id.clone(), user_id);
-            task_priority_map.insert(task_id.clone(), priority.clone() * -1);
-            priority_tasks_map.entry(priority * -1)
-                .or_insert(BinaryHeap::new())
-                .push(task_id);
+            task_to_user.insert(task_id, user_id);
+            task_to_priority.insert(task_id, priority);
+            priority_heap.push((priority, task_id));
         }
 
         Self {
-            task_priority_map,
-            task_user_map,
-            priority_tasks_map
+            task_to_user,
+            task_to_priority,
+            priority_heap
         }
     }
     
     fn add(&mut self, user_id: i32, task_id: i32, priority: i32) {
-        self.task_priority_map.insert(task_id.clone(), priority.clone() * -1);
-        self.task_user_map.insert(task_id.clone(), user_id);
-        self.priority_tasks_map.entry(priority.clone() * -1)
-            .or_insert(BinaryHeap::new())
-            .push(task_id);
+        self.task_to_user.insert(task_id, user_id);
+        self.task_to_priority.insert(task_id, priority);
+        
+        self.priority_heap.push((priority, task_id));
     }
     
     fn edit(&mut self, task_id: i32, new_priority: i32) {
-        self.priority_tasks_map.entry(new_priority * -1)
-            .or_insert(BinaryHeap::new())
-            .push(task_id);
-        self.task_priority_map.entry(task_id).and_modify(|v| {
-            *v = new_priority * -1
-        });
+        self.task_to_priority.entry(task_id).and_modify(|v| *v = new_priority);
+        self.priority_heap.push((new_priority, task_id));
     }
     
     fn rmv(&mut self, task_id: i32) {
-        self.task_priority_map.remove(&task_id);
-        self.task_user_map.remove(&task_id);
+        self.task_to_user.remove(&task_id);
+        self.task_to_priority.remove(&task_id);
     }
     
     fn exec_top(&mut self) -> i32 {
-        self.priority_tasks_map.retain(|_, v| !v.is_empty());
+        while let Some((priority, task_id)) = self.priority_heap.pop() {
+            let task_priority = self.task_to_priority.get(&task_id).unwrap_or(&-1);
 
-        for (k, v) in self.priority_tasks_map.iter_mut() {
-            while let Some(task_id) = v.pop() {
-                if let Some(priority) = self.task_priority_map.get(&task_id) {
-                    if k == priority {
-                        self.task_priority_map.remove(&task_id);
-                        return self.task_user_map.remove(&task_id).unwrap();
-                    }
-                }
+            if priority == *task_priority {
+                self.task_to_priority.remove(&task_id);
+    
+                return self.task_to_user.remove(&task_id).unwrap_or(-1);
             }
         }
-        
 
-        return -1;
+        -1
     }
 }
 
