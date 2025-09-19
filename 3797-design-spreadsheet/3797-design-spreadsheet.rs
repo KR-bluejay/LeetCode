@@ -1,7 +1,7 @@
 use std::collections::HashMap;
 
 struct Spreadsheet {
-    cells: HashMap<String, i32>,
+    cells: Vec<i32>,
 }
 
 
@@ -13,16 +13,27 @@ impl Spreadsheet {
 
     fn new(rows: i32) -> Self {
         Self {
-            cells: HashMap::with_capacity(rows as usize * 26),
+            cells: vec![0; rows as usize * 26]
         }
+    }
+
+    fn parse_cell_id(&self, cell: &str) -> usize {
+        let cell_id = (cell.as_bytes()[0] - b'A') as usize;
+        let row_id = cell[1..].parse::<usize>().unwrap() - 1;
+
+        row_id * 26 + cell_id
     }
     
     fn set_cell(&mut self, cell: String, value: i32) {
-        self.cells.insert(cell, value);
+        let cell_id = self.parse_cell_id(&cell);
+
+        self.cells[cell_id] = value;
     }
     
     fn reset_cell(&mut self, cell: String) {
-        self.cells.remove(&cell);
+        let cell_id = self.parse_cell_id(&cell);
+
+        self.cells[cell_id] = 0;
     }
     
     fn get_value(&self, formula: String) -> i32 {
@@ -34,7 +45,9 @@ impl Spreadsheet {
                     value += num;
                 }
                 _ => {
-                    value += self.cells.get(formula_item).unwrap_or(&0);
+                    let cell_id = self.parse_cell_id(formula_item);
+
+                    value += self.cells[cell_id];
                 }
             }
         }
