@@ -19,22 +19,8 @@ impl Spreadsheet {
     }
 
     fn get_cell_id(&self, cell: &str) -> (usize, usize) {
-        let mut row_id: usize = 0;
-        let mut cell_id: usize = 0;
-
-        for cell_item in cell.chars() {
-            match cell_item.to_digit(10) {
-                Some(num) => {
-                    row_id *= 10;
-                    row_id += num as usize;
-                },
-                _ => {
-                    cell_id = cell_item as usize - 'A' as usize;
-                }
-            }
-        }
-
-        row_id -= 1;
+        let row_id: usize = cell[1 ..].parse::<usize>().unwrap() - 1;
+        let cell_id = cell.chars().nth(0).unwrap() as usize - 'A' as usize;
 
         (row_id, cell_id)
     }
