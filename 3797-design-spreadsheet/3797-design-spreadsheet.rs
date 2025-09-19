@@ -22,8 +22,7 @@ impl Spreadsheet {
     }
     
     fn reset_cell(&mut self, cell: String) {
-        self.cells.insert(cell, 0);
-
+        self.cells.remove(&cell);
     }
     
     fn get_value(&self, formula: String) -> i32 {
