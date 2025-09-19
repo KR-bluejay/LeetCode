@@ -1,7 +1,7 @@
-use std::collections::HashMap;
+use std::collections::BTreeMap;
 
 struct Spreadsheet {
-    cells: HashMap<String, i32>,
+    cells: BTreeMap<String, i32>,
 }
 
 
@@ -13,7 +13,7 @@ impl Spreadsheet {
 
     fn new(rows: i32) -> Self {
         Self {
-            cells: HashMap::with_capacity(rows as usize * 26),
+            cells: BTreeMap::new(),
         }
     }
     
