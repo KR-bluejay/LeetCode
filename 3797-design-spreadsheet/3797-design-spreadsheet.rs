@@ -40,15 +40,12 @@ impl Spreadsheet {
         let mut value = 0;
 
         for formula_item in formula[1..].split('+') {
-            match formula_item.parse::<i32>() {
-                Ok(num) => {
-                    value += num;
-                }
-                _ => {
-                    let cell_id = self.parse_cell_id(formula_item);
+            if formula_item.as_bytes()[0].is_ascii_digit() {
+                value += formula_item.parse::<i32>().unwrap();
+            } else {
+                let cell_id = self.parse_cell_id(formula_item);
 
-                    value += self.cells[cell_id];
-                }
+                value += self.cells[cell_id];
             }
         }
 
