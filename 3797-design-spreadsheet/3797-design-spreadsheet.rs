@@ -16,7 +16,7 @@ impl Spreadsheet {
             cells: vec![0; rows as usize * 26]
         }
     }
-    
+
     #[inline(always)]
     fn parse_cell_id(cell: &str) -> usize {
         let cell_id = (cell.as_bytes()[0] - b'A') as usize;
@@ -25,18 +25,21 @@ impl Spreadsheet {
         row_id * 26 + cell_id
     }
     
+    #[inline(always)]
     fn set_cell(&mut self, cell: String, value: i32) {
         let cell_id = Self::parse_cell_id(&cell);
 
         self.cells[cell_id] = value;
     }
     
+    #[inline(always)]
     fn reset_cell(&mut self, cell: String) {
         let cell_id = Self::parse_cell_id(&cell);
 
         self.cells[cell_id] = 0;
     }
     
+    #[inline(always)]
     fn get_value(&self, formula: String) -> i32 {
         let mut value = 0;
 
