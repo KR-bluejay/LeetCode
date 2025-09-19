@@ -17,7 +17,7 @@ impl Spreadsheet {
         }
     }
 
-    fn parse_cell_id(&self, cell: &str) -> usize {
+    fn parse_cell_id(cell: &str) -> usize {
         let cell_id = (cell.as_bytes()[0] - b'A') as usize;
         let row_id = cell[1..].parse::<usize>().unwrap() - 1;
 
@@ -25,13 +25,13 @@ impl Spreadsheet {
     }
     
     fn set_cell(&mut self, cell: String, value: i32) {
-        let cell_id = self.parse_cell_id(&cell);
+        let cell_id = Self::parse_cell_id(&cell);
 
         self.cells[cell_id] = value;
     }
     
     fn reset_cell(&mut self, cell: String) {
-        let cell_id = self.parse_cell_id(&cell);
+        let cell_id = Self::parse_cell_id(&cell);
 
         self.cells[cell_id] = 0;
     }
@@ -43,7 +43,7 @@ impl Spreadsheet {
             if formula_item.as_bytes()[0].is_ascii_digit() {
                 value += formula_item.parse::<i32>().unwrap();
             } else {
-                let cell_id = self.parse_cell_id(formula_item);
+                let cell_id = Self::parse_cell_id(formula_item);
 
                 value += self.cells[cell_id];
             }
