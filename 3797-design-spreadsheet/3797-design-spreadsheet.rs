@@ -16,7 +16,8 @@ impl Spreadsheet {
             cells: vec![0; rows as usize * 26]
         }
     }
-
+    
+    #[inline(always)]
     fn parse_cell_id(cell: &str) -> usize {
         let cell_id = (cell.as_bytes()[0] - b'A') as usize;
         let row_id = cell[1..].parse::<usize>().unwrap() - 1;
@@ -50,14 +51,6 @@ impl Spreadsheet {
                     value += self.cells[cell_id];
                 }
             }
-
-            // if formula_item.as_bytes()[0].is_ascii_digit() {
-            //     value += formula_item.parse::<i32>().unwrap();
-            // } else {
-            //     let cell_id = Self::parse_cell_id(formula_item);
-
-            //     value += self.cells[cell_id];
-            // }
         }
 
         value
