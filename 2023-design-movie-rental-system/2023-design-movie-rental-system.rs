@@ -1,12 +1,9 @@
 use std::collections::{ BTreeSet, HashMap };
 
 struct MovieRentingSystem {
-    // (shop_id, movie_id) -> price
-    store_price_map: HashMap<(i32, i32), i32>,
-    // movie_id -> (price, shop_id)
-    movie_price_map: HashMap<i32, BTreeSet<(i32, i32)>>,
-    // (price, shop_id, movie_id)
-    rent_set: BTreeSet<(i32, i32, i32)>,
+    shop_movie_price: HashMap<(i32, i32), i32>,
+    avail_copies: HashMap<i32, BTreeSet<(i32, i32)>>,
+    rented_copies: BTreeSet<(i32, i32, i32)>,
 }
 
 
@@ -15,40 +12,34 @@ struct MovieRentingSystem {
  * If you need a mutable reference, change it to `&mut self` instead.
  */
 impl MovieRentingSystem {
-
+    
     fn new(n: i32, entries: Vec<Vec<i32>>) -> Self {
-        let mut store_price_map: HashMap<(i32, i32), i32> = HashMap::new();
-        let mut movie_price_map: HashMap<i32, BTreeSet<(i32, i32)>> = HashMap::new();
+        let mut shop_movie_price = HashMap::with_capacity(entries.len());
+        let mut avail_copies: HashMap<i32, BTreeSet<(i32, i32)>> = HashMap::with_capacity(entries.len());
+        let mut rented_copies = BTreeSet::new();
 
         for entry in &entries {
             let shop_id = entry[0];
             let movie_id = entry[1];
             let price = entry[2];
-
-            store_price_map.insert((shop_id, movie_id), price);
-            movie_price_map.entry(movie_id).or_insert(BTreeSet::new()).insert((price, shop_id));
+            
+            shop_movie_price.insert((shop_id, movie_id), price);
+            avail_copies.entry(movie_id).or_default().insert((price, shop_id));
         }
 
         Self {
-            store_price_map,
-            movie_price_map,
-            rent_set: BTreeSet::new(),
+            shop_movie_price,
+            avail_copies,
+            rented_copies,
         }
     }
     
     fn search(&self, movie: i32) -> Vec<i32> {
-        let mut search_movies: Vec<i32> = Vec::with_capacity(5);
+        let mut search_movies = Vec::with_capacity(5);
 
-        if let Some(temp) = self.movie_price_map.get(&movie) {
-
-            for (price, shop_id) in temp.iter() {
-                if search_movies.len() == 5 {
-                    break;
-                }
-
-                if *self.store_price_map.get(&(*shop_id, movie)).unwrap() > 0 {
-                    search_movies.push(*shop_id);
-                }
+        if let Some(price_movie_set) = self.avail_copies.get(&movie) {
+            for (_, shop_id) in price_movie_set.iter().take(5) {
+                search_movies.push(*shop_id);
             }
         }
 
@@ -56,29 +47,26 @@ impl MovieRentingSystem {
     }
     
     fn rent(&mut self, shop: i32, movie: i32) {
-        let mut prev_price = self.store_price_map.get_mut(&(shop, movie)).unwrap();
-        self.rent_set.insert((*prev_price, shop, movie));
-        *prev_price *= -1;
+        let rented_price = self.shop_movie_price.get(&(shop, movie)).unwrap();
 
+        if let Some(price_shop_set) = self.avail_copies.get_mut(&movie) {
+            price_shop_set.remove(&(*rented_price, shop));
+        }
+        self.rented_copies.insert((*rented_price, shop, movie));
     }
     
     fn drop(&mut self, shop: i32, movie: i32) {
-        let mut prev_price = self.store_price_map.get_mut(&(shop, movie)).unwrap();
-        *prev_price *= -1;
+        let rented_price = self.shop_movie_price.get(&(shop, movie)).unwrap();
+ 
 
-        self.rent_set.remove(&(*prev_price, shop, movie));
+        self.avail_copies.get_mut(&movie).unwrap().insert((*rented_price, shop));
+        self.rented_copies.remove(&(*rented_price, shop, movie));
     }
     
     fn report(&self) -> Vec<Vec<i32>> {
-        let mut reports: Vec<Vec<i32>> = Vec::with_capacity(5);
-
-        for ((price, shop, movie)) in self.rent_set.iter() {
-            if reports.len() == 5 {
-                break;
-            }
-            reports.push(vec![*shop, *movie]);
-        }
-        reports
+        self.rented_copies.iter().take(5).map(|(price, shop_id, movie_id)| {
+            vec![*shop_id, *movie_id]
+        }).collect()
     }
 }
 
