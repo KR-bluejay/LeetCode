@@ -8,18 +8,16 @@ impl Solution {
         let mut max_count: i32 = 0;
 
         for num in &nums {
-            num_map.entry(*num)
+            let num_freq = *num_map.entry(*num)
                 .and_modify(|v| *v += 1)
                 .or_insert(1);
-        }
 
-        for (num_id, num_freq) in num_map.iter() {
             match num_freq.cmp(&max_freq) {
                 Ordering::Equal => {
                     max_count += 1;
                 },
                 Ordering::Greater => {
-                    max_freq = *num_freq;
+                    max_freq = num_freq;
                     max_count = 1;
                 },
                 _ => {
