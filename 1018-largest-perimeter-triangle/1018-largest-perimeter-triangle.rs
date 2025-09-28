@@ -4,18 +4,11 @@ impl Solution {
 
         for i in 0 .. nums.len() - 2 {
             let a = nums[i];
-            for j in i + 1 .. nums.len() - 1 {
-                let b = nums[j];
+            let b = nums[i + 1];
+            let c = nums[i + 2];
 
-                for k in j + 1 .. nums.len() {
-                    let c = nums[k];
-
-                    if b + c > a {
-                        return a + b + c;
-                    } else {
-                        break;
-                    }
-                }
+            if b + c > a {
+                return a + b + c;
             }
         }
         0
