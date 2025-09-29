@@ -154,6 +154,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1098-largest-unique-number](https://github.com/KR-bluejay/LeetCode/tree/master/1098-largest-unique-number) |
 | [1102-check-if-a-number-is-majority-element-in-a-sorted-array](https://github.com/KR-bluejay/LeetCode/tree/master/1102-check-if-a-number-is-majority-element-in-a-sorted-array) |
 | [1108-analyze-user-website-visit-pattern](https://github.com/KR-bluejay/LeetCode/tree/master/1108-analyze-user-website-visit-pattern) |
+| [1111-minimum-score-triangulation-of-polygon](https://github.com/KR-bluejay/LeetCode/tree/master/1111-minimum-score-triangulation-of-polygon) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/KR-bluejay/LeetCode/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/KR-bluejay/LeetCode/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1426-find-n-unique-integers-sum-up-to-zero](https://github.com/KR-bluejay/LeetCode/tree/master/1426-find-n-unique-integers-sum-up-to-zero) |
@@ -457,6 +458,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1025-minimum-cost-for-tickets](https://github.com/KR-bluejay/LeetCode/tree/master/1025-minimum-cost-for-tickets) |
 | [1063-best-sightseeing-pair](https://github.com/KR-bluejay/LeetCode/tree/master/1063-best-sightseeing-pair) |
 | [1067-campus-bikes-ii](https://github.com/KR-bluejay/LeetCode/tree/master/1067-campus-bikes-ii) |
+| [1111-minimum-score-triangulation-of-polygon](https://github.com/KR-bluejay/LeetCode/tree/master/1111-minimum-score-triangulation-of-polygon) |
 | [1250-longest-common-subsequence](https://github.com/KR-bluejay/LeetCode/tree/master/1250-longest-common-subsequence) |
 | [2164-two-best-non-overlapping-events](https://github.com/KR-bluejay/LeetCode/tree/master/2164-two-best-non-overlapping-events) |
 | [2262-solving-questions-with-brainpower](https://github.com/KR-bluejay/LeetCode/tree/master/2262-solving-questions-with-brainpower) |
