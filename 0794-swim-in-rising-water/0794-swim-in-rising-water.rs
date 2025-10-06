@@ -10,7 +10,7 @@ struct Block {
 
 impl Ord for Block {
     fn cmp(&self, other: &Self) -> Ordering {
-        self.cur_time.cmp(&other.cur_time)
+        other.cur_time.cmp(&self.cur_time)
     }
 }
 
