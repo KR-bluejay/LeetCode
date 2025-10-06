@@ -41,7 +41,8 @@ impl Solution {
         while let Some(target_block) = block_heap.pop() {
             let Block { row_id, col_id, cur_time } = target_block;
             
-            if min_grid[row_id][col_id] <= cur_time || min_grid[max_row_id][max_col_id] <= cur_time {
+            if min_grid[row_id][col_id] <= cur_time 
+            || min_grid[max_row_id][max_col_id] <= cur_time {
                 continue;
             }
 
@@ -51,14 +52,20 @@ impl Solution {
                 let next_row_id = (row_id as i32 + dy) as usize;
                 let next_col_id = (col_id as i32 + dx) as usize;
 
-                if max_row_id < next_row_id || max_col_id < next_col_id {
+                if max_row_id < next_row_id 
+                || max_col_id < next_col_id {
+                    continue;
+                }
+                let next_time = cur_time.max(grid[next_row_id][next_col_id]);
+
+                if min_grid[max_row_id][max_col_id] <= next_time {
                     continue;
                 }
 
                 block_heap.push(Block {
                     row_id: next_row_id,
                     col_id: next_col_id,
-                    cur_time: cur_time.max(grid[next_row_id][next_col_id]),
+                    cur_time: next_time,
                 });
             }
         }
