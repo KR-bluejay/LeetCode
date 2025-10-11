@@ -197,6 +197,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3278-find-the-number-of-ways-to-place-people-i](https://github.com/KR-bluejay/LeetCode/tree/master/3278-find-the-number-of-ways-to-place-people-i) |
 | [3383-taking-maximum-energy-from-the-mystic-dungeon](https://github.com/KR-bluejay/LeetCode/tree/master/3383-taking-maximum-energy-from-the-mystic-dungeon) |
 | [3430-count-days-without-meetings](https://github.com/KR-bluejay/LeetCode/tree/master/3430-count-days-without-meetings) |
+| [3437-maximum-total-damage-with-spell-casting](https://github.com/KR-bluejay/LeetCode/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/KR-bluejay/LeetCode/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/KR-bluejay/LeetCode/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
@@ -255,6 +256,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2888-minimum-index-of-a-valid-split](https://github.com/KR-bluejay/LeetCode/tree/master/2888-minimum-index-of-a-valid-split) |
 | [2915-count-of-interesting-subarrays](https://github.com/KR-bluejay/LeetCode/tree/master/2915-count-of-interesting-subarrays) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/KR-bluejay/LeetCode/tree/master/3242-count-elements-with-maximum-frequency) |
+| [3437-maximum-total-damage-with-spell-casting](https://github.com/KR-bluejay/LeetCode/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/KR-bluejay/LeetCode/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 | [3678-design-task-manager](https://github.com/KR-bluejay/LeetCode/tree/master/3678-design-task-manager) |
 | [3797-design-spreadsheet](https://github.com/KR-bluejay/LeetCode/tree/master/3797-design-spreadsheet) |
@@ -284,6 +286,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2053-check-if-all-characters-have-equal-number-of-occurrences](https://github.com/KR-bluejay/LeetCode/tree/master/2053-check-if-all-characters-have-equal-number-of-occurrences) |
 | [2427-first-letter-to-appear-twice](https://github.com/KR-bluejay/LeetCode/tree/master/2427-first-letter-to-appear-twice) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/KR-bluejay/LeetCode/tree/master/3242-count-elements-with-maximum-frequency) |
+| [3437-maximum-total-damage-with-spell-casting](https://github.com/KR-bluejay/LeetCode/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/KR-bluejay/LeetCode/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Sliding Window
 |  |
@@ -406,6 +409,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2164-two-best-non-overlapping-events](https://github.com/KR-bluejay/LeetCode/tree/master/2164-two-best-non-overlapping-events) |
 | [2280-count-good-triplets-in-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/2280-count-good-triplets-in-an-array) |
 | [2699-count-the-number-of-fair-pairs](https://github.com/KR-bluejay/LeetCode/tree/master/2699-count-the-number-of-fair-pairs) |
+| [3437-maximum-total-damage-with-spell-casting](https://github.com/KR-bluejay/LeetCode/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3790-fruits-into-baskets-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3790-fruits-into-baskets-ii) |
 | [3827-implement-router](https://github.com/KR-bluejay/LeetCode/tree/master/3827-implement-router) |
 ## Simulation
@@ -434,6 +438,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0908-middle-of-the-linked-list](https://github.com/KR-bluejay/LeetCode/tree/master/0908-middle-of-the-linked-list) |
 | [1051-shortest-way-to-form-string](https://github.com/KR-bluejay/LeetCode/tree/master/1051-shortest-way-to-form-string) |
 | [2699-count-the-number-of-fair-pairs](https://github.com/KR-bluejay/LeetCode/tree/master/2699-count-the-number-of-fair-pairs) |
+| [3437-maximum-total-damage-with-spell-casting](https://github.com/KR-bluejay/LeetCode/tree/master/3437-maximum-total-damage-with-spell-casting) |
 ## Linked List
 |  |
 | ------- |
@@ -482,6 +487,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2262-solving-questions-with-brainpower](https://github.com/KR-bluejay/LeetCode/tree/master/2262-solving-questions-with-brainpower) |
 | [2408-number-of-people-aware-of-a-secret](https://github.com/KR-bluejay/LeetCode/tree/master/2408-number-of-people-aware-of-a-secret) |
 | [3273-most-expensive-item-that-can-not-be-bought](https://github.com/KR-bluejay/LeetCode/tree/master/3273-most-expensive-item-that-can-not-be-bought) |
+| [3437-maximum-total-damage-with-spell-casting](https://github.com/KR-bluejay/LeetCode/tree/master/3437-maximum-total-damage-with-spell-casting) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -514,6 +520,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
 | [3278-find-the-number-of-ways-to-place-people-i](https://github.com/KR-bluejay/LeetCode/tree/master/3278-find-the-number-of-ways-to-place-people-i) |
 | [3430-count-days-without-meetings](https://github.com/KR-bluejay/LeetCode/tree/master/3430-count-days-without-meetings) |
+| [3437-maximum-total-damage-with-spell-casting](https://github.com/KR-bluejay/LeetCode/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3748-sort-matrix-by-diagonals](https://github.com/KR-bluejay/LeetCode/tree/master/3748-sort-matrix-by-diagonals) |
 ## Union Find
 |  |
