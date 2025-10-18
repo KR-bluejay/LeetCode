@@ -2,7 +2,7 @@ use std::collections::HashSet;
 
 impl Solution {
     pub fn max_distinct_elements(mut nums: Vec<i32>, k: i32) -> i32 {
-        let mut dist_count = 0;
+        let mut dist_count = 1;
         
         nums.sort();
         
@@ -19,22 +19,20 @@ impl Solution {
 
             if min_range > 0 {
                 nums[id] -= min_range;
+                dist_count += 1;
                 continue;
             } else if min_range == 0 {
+                dist_count += 1;
                 continue;
             }
-
-            println!("{id} {k} {prev_num} {} {}", nums[id], original);
 
             if k >= (nums[id] - original + 1) {
                 nums[id] += 1;
+                dist_count += 1;
             }
         }
 
-        println!("{nums:?}");
 
-        let nums: HashSet<i32> = nums.into_iter().collect();
-
-        nums.len() as i32
+        dist_count
     }
 }
