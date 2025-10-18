@@ -20,13 +20,9 @@ impl Solution {
             if min_range > 0 {
                 nums[id] -= min_range;
                 dist_count += 1;
-                continue;
             } else if min_range == 0 {
                 dist_count += 1;
-                continue;
-            }
-
-            if k >= (nums[id] - original + 1) {
+            } else if k >= (nums[id] - original + 1) {
                 nums[id] += 1;
                 dist_count += 1;
             }
