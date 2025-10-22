@@ -208,6 +208,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3620-maximum-number-of-distinct-elements-after-operations](https://github.com/KR-bluejay/LeetCode/tree/master/3620-maximum-number-of-distinct-elements-after-operations) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/KR-bluejay/LeetCode/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
+| [3640-maximum-frequency-of-an-element-after-performing-operations-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3640-maximum-frequency-of-an-element-after-performing-operations-ii) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/KR-bluejay/LeetCode/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 | [3685-count-subarrays-of-length-three-with-a-condition](https://github.com/KR-bluejay/LeetCode/tree/master/3685-count-subarrays-of-length-three-with-a-condition) |
 | [3744-minimum-operations-to-make-array-elements-zero](https://github.com/KR-bluejay/LeetCode/tree/master/3744-minimum-operations-to-make-array-elements-zero) |
@@ -316,6 +317,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3213-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/KR-bluejay/LeetCode/tree/master/3213-count-subarrays-where-max-element-appears-at-least-k-times) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/KR-bluejay/LeetCode/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3543-count-substrings-that-satisfy-k-constraint-i](https://github.com/KR-bluejay/LeetCode/tree/master/3543-count-substrings-that-satisfy-k-constraint-i) |
+| [3640-maximum-frequency-of-an-element-after-performing-operations-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3640-maximum-frequency-of-an-element-after-performing-operations-ii) |
 ## Tree
 |  |
 | ------- |
@@ -420,6 +422,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2699-count-the-number-of-fair-pairs](https://github.com/KR-bluejay/LeetCode/tree/master/2699-count-the-number-of-fair-pairs) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/KR-bluejay/LeetCode/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
+| [3640-maximum-frequency-of-an-element-after-performing-operations-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3640-maximum-frequency-of-an-element-after-performing-operations-ii) |
 | [3790-fruits-into-baskets-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3790-fruits-into-baskets-ii) |
 | [3827-implement-router](https://github.com/KR-bluejay/LeetCode/tree/master/3827-implement-router) |
 ## Simulation
@@ -508,6 +511,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2915-count-of-interesting-subarrays](https://github.com/KR-bluejay/LeetCode/tree/master/2915-count-of-interesting-subarrays) |
 | [3383-taking-maximum-energy-from-the-mystic-dungeon](https://github.com/KR-bluejay/LeetCode/tree/master/3383-taking-maximum-energy-from-the-mystic-dungeon) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/KR-bluejay/LeetCode/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
+| [3640-maximum-frequency-of-an-element-after-performing-operations-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3640-maximum-frequency-of-an-element-after-performing-operations-ii) |
 | [3794-find-the-minimum-amount-of-time-to-brew-potions](https://github.com/KR-bluejay/LeetCode/tree/master/3794-find-the-minimum-amount-of-time-to-brew-potions) |
 ## Sorting
 |  |
@@ -533,6 +537,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3430-count-days-without-meetings](https://github.com/KR-bluejay/LeetCode/tree/master/3430-count-days-without-meetings) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/KR-bluejay/LeetCode/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3620-maximum-number-of-distinct-elements-after-operations](https://github.com/KR-bluejay/LeetCode/tree/master/3620-maximum-number-of-distinct-elements-after-operations) |
+| [3640-maximum-frequency-of-an-element-after-performing-operations-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3640-maximum-frequency-of-an-element-after-performing-operations-ii) |
 | [3748-sort-matrix-by-diagonals](https://github.com/KR-bluejay/LeetCode/tree/master/3748-sort-matrix-by-diagonals) |
 ## Union Find
 |  |
