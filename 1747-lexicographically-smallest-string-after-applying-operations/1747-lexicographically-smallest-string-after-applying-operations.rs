@@ -8,54 +8,65 @@ impl Solution {
             m = n;
             n = r;
         }
-
         m
     }
+    
     pub fn find_lex_smallest_string(s: String, a: i32, b: i32) -> String {
         let a = a as u8;
         let b = b as usize;
-        let mut nums: Vec<u8> = s.into_bytes().into_iter().map(|v| v - b'0').collect();
-        let mut best_num = nums.clone();
-
-        let step_len = 10 / Self::gcd(10.max(a as usize), 10.min(a as usize));
-        let rotation_len = nums.len() / Self::gcd(nums.len(), b);
+        let mut nums: Vec<u8> = s.bytes().map(|v| v - b'0').collect();
+        let mut best = nums.clone();
         
-        for _ in 0 .. rotation_len {
-            for even_step in 0 .. step_len {
-                let mut cur_num = nums.clone();
-
-                if cur_num < best_num {
-                    best_num = cur_num.clone();
+        let step_len = 10 / Self::gcd(10, a as usize);
+        let rotation_len = nums.len() / Self::gcd(nums.len(), b);
+        let is_b_odd = b % 2 == 1;
+        
+        for _ in 0..rotation_len {
+            // Try all odd index modifications
+            for odd_step in 0..step_len {
+                let odd_add = (a * odd_step as u8) % 10;
+                
+                // Apply odd modification
+                for i in (1..nums.len()).step_by(2) {
+                    nums[i] = (nums[i] + odd_add) % 10;
                 }
-                for cur_id in (0 .. cur_num.len())
-                    .skip(1)
-                    .step_by(2) {
-                    
-                    cur_num[cur_id] = (cur_num[cur_id] + ((a * even_step as u8) % 10 as u8)) % 10;
+                
+                if nums < best {
+                    best.copy_from_slice(&nums);
                 }
-                if b % 2 == 1 {
-                    if cur_num < best_num {
-                        best_num = cur_num.clone();
-                    }
-
-                    for odd_step in 0 .. step_len {
-                        for odd_cur_id in (0 .. cur_num.len())
-                            .step_by(2) {
-                            cur_num[odd_cur_id] = (cur_num[odd_cur_id] + a as u8) % 10;
+                
+                // If b is odd, we can also modify even indices
+                if is_b_odd {
+                    for even_step in 0..step_len {
+                        let even_add = (a * even_step as u8) % 10;
+                        
+                        // Apply even modification
+                        for i in (0..nums.len()).step_by(2) {
+                            nums[i] = (nums[i] + even_add) % 10;
                         }
                         
-                        if cur_num < best_num {
-                            best_num = cur_num.clone();
+                        if nums < best {
+                            best.copy_from_slice(&nums);
+                        }
+                        
+                        // Revert even modification (subtract is same as add complement)
+                        let even_revert = (10 - even_add) % 10;
+                        for i in (0..nums.len()).step_by(2) {
+                            nums[i] = (nums[i] + even_revert) % 10;
                         }
                     }
                 }
-                if cur_num < best_num {
-                    best_num = cur_num.clone();
+                
+                // Revert odd modification
+                let odd_revert = (10 - odd_add) % 10;
+                for i in (1..nums.len()).step_by(2) {
+                    nums[i] = (nums[i] + odd_revert) % 10;
                 }
             }
+            
             nums.rotate_right(b);
         }
         
-        best_num.into_iter().map(|v| (v + b'0') as char).collect()
+        best.into_iter().map(|v| (v + b'0') as char).collect()
     }
 }
