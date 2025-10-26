@@ -15,6 +15,7 @@ impl Bank {
         }
     }
     
+    #[inline(always)]
     fn transfer(&mut self, account1: i32, account2: i32, money: i64) -> bool {
         let account1 = account1 as usize - 1;
         let account2 = account2 as usize - 1;
@@ -31,6 +32,7 @@ impl Bank {
         true
     }
     
+    #[inline(always)]
     fn deposit(&mut self, account: i32, money: i64) -> bool {
         let account = account as usize - 1;
 
@@ -43,6 +45,7 @@ impl Bank {
         true
     }
     
+    #[inline(always)]
     fn withdraw(&mut self, account: i32, money: i64) -> bool {
         let account = account as usize - 1;
         
