@@ -8,11 +8,12 @@ impl Solution {
             sum -= num_val;
             prefix_sum += num_val;
 
-            if num_val == 0 && prefix_sum == sum {
-                count += 2;
-            } else if num_val == 0 && (prefix_sum - sum).abs() == 1 {
-                println!("{id} {prefix_sum} {sum}");
-                count += 1;
+            if num_val == 0 {
+                if prefix_sum == sum {
+                    count += 2;
+                } else if (prefix_sum - sum).abs() == 1 {
+                    count += 1;
+                }
             }
         }
 
