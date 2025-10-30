@@ -5,7 +5,7 @@ impl Solution {
         let mut op_count: i32 = target[0];
         let mut prev_num: i32 = target[0];
 
-        for &cur_num in target.iter().skip(1) {
+        for cur_num in target.into_iter().skip(1) {
             if prev_num < cur_num {
                 op_count += cur_num - prev_num;
             }
