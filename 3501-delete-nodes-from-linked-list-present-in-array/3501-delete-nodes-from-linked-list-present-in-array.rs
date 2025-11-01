@@ -23,7 +23,10 @@ impl Solution {
     ) -> Option<Box<ListNode>> {
         let num_set: HashSet<i32> = nums.into_iter().collect();
 
-        while matches!(head.as_ref(), Some(node) if num_set.contains(&node.val)) {
+        while matches!(
+            head.as_ref(), 
+            Some(node) if num_set.contains(&node.val)
+        ) {
             head = head.take()?.next;
         }
 
@@ -31,7 +34,8 @@ impl Solution {
 
         while let Some(node) = cur_node {
             while matches!(
-                node.next.as_ref(), Some(next_node) if num_set.contains(&next_node.val)
+                node.next.as_ref(), 
+                Some(next_node) if num_set.contains(&next_node.val)
             ) {
                 node.next = node.next.take()?.next;
             }
