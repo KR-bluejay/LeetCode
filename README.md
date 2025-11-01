@@ -217,6 +217,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3430-count-days-without-meetings](https://github.com/KR-bluejay/LeetCode/tree/master/3430-count-days-without-meetings) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/KR-bluejay/LeetCode/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/KR-bluejay/LeetCode/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
+| [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/KR-bluejay/LeetCode/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 | [3612-adjacent-increasing-subarrays-detection-i](https://github.com/KR-bluejay/LeetCode/tree/master/3612-adjacent-increasing-subarrays-detection-i) |
 | [3616-make-array-elements-equal-to-zero](https://github.com/KR-bluejay/LeetCode/tree/master/3616-make-array-elements-equal-to-zero) |
 | [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
@@ -284,6 +285,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2915-count-of-interesting-subarrays](https://github.com/KR-bluejay/LeetCode/tree/master/2915-count-of-interesting-subarrays) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/KR-bluejay/LeetCode/tree/master/3242-count-elements-with-maximum-frequency) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/KR-bluejay/LeetCode/tree/master/3437-maximum-total-damage-with-spell-casting) |
+| [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/KR-bluejay/LeetCode/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/KR-bluejay/LeetCode/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 | [3678-design-task-manager](https://github.com/KR-bluejay/LeetCode/tree/master/3678-design-task-manager) |
 | [3797-design-spreadsheet](https://github.com/KR-bluejay/LeetCode/tree/master/3797-design-spreadsheet) |
@@ -484,6 +486,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0117-populating-next-right-pointers-in-each-node-ii) |
 | [0908-middle-of-the-linked-list](https://github.com/KR-bluejay/LeetCode/tree/master/0908-middle-of-the-linked-list) |
 | [1618-delete-n-nodes-after-m-nodes-of-a-linked-list](https://github.com/KR-bluejay/LeetCode/tree/master/1618-delete-n-nodes-after-m-nodes-of-a-linked-list) |
+| [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/KR-bluejay/LeetCode/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 ## Recursion
 |  |
 | ------- |
