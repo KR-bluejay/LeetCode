@@ -13,6 +13,8 @@ impl Solution {
         let mut row_guard: Vec<bool> = vec![false; max_row_id + 1];
         let mut col_guard: Vec<bool> = vec![false; max_col_id + 1];
 
+        let mut unguard = m * n - guards.len() as i32 - walls.len() as i32;
+
         for guard in guards {
             let row_id = guard[0] as usize;
             let col_id = guard[1] as usize;
@@ -45,13 +47,19 @@ impl Solution {
 
             while left_id <= max_col_id {
                 match guarded[row_id][left_id] {
-                    0 if left_guard => guarded[row_id][left_id] = 3,
+                    0 if left_guard => {
+                        unguard -= 1;
+                        guarded[row_id][left_id] = 3
+                    },
                     1 => left_guard = false,
                     2 => left_guard = true,
                     _ => {},
                 }
                 match guarded[row_id][right_id] {
-                    0 if right_guard => guarded[row_id][right_id] = 3,
+                    0 if right_guard => {
+                        unguard -= 1;
+                        guarded[row_id][right_id] = 3
+                    },
                     1 => right_guard = false,
                     2 => right_guard = true,
                     _ => {},
@@ -77,14 +85,20 @@ impl Solution {
 
             while top_id <= max_row_id {
                 match guarded[top_id][col_id] {
-                    0 if top_guard => guarded[top_id][col_id] = 3,
+                    0 if top_guard => {
+                        unguard -= 1;
+                        guarded[top_id][col_id] = 3
+                    },
                     1 => top_guard = false,
                     2 => top_guard = true,
                     _ => {},
                 }
 
                 match guarded[bottom_id][col_id] {
-                    0 if bottom_guard => guarded[bottom_id][col_id] = 3,
+                    0 if bottom_guard => {
+                        unguard -= 1;
+                        guarded[bottom_id][col_id] = 3
+                    },
                     1 => bottom_guard = false,
                     2 => bottom_guard = true,
                     _ => {},
@@ -94,8 +108,6 @@ impl Solution {
             }
         }
 
-        guarded.into_iter()
-            .map(|row| row.into_iter().filter(|&c| c == 0).count() as i32)
-            .sum()
+        unguard
     }
 }
