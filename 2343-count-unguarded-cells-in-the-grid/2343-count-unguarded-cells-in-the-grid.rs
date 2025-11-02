@@ -1,5 +1,3 @@
-use std::collections::HashSet;
-
 impl Solution {
     pub fn count_unguarded(
         m: i32, 
@@ -12,10 +10,15 @@ impl Solution {
 
         let mut guarded: Vec<Vec<u8>>
             = vec![vec![0; max_col_id + 1]; max_row_id + 1];
+        let mut row_guard: Vec<bool> = vec![false; max_row_id + 1];
+        let mut col_guard: Vec<bool> = vec![false; max_col_id + 1];
 
         for guard in guards {
             let row_id = guard[0] as usize;
             let col_id = guard[1] as usize;
+
+            row_guard[row_id] = true;
+            col_guard[col_id] = true;
 
             guarded[row_id][col_id] = 2;
         }
@@ -30,6 +33,10 @@ impl Solution {
         // 0: None, 1: Wall, 2: Guard, 3: AlreadyGuarded
         // Top -> Bottom
         for row_id in 0 ..= max_row_id {
+            if !row_guard[row_id] {
+                continue;
+            }
+
             let mut left_id = 0;
             let mut right_id = max_col_id;
 
@@ -58,6 +65,10 @@ impl Solution {
         // 0: None, 1: Wall, 2: Guard
         // Top -> Bottom
         for col_id in 0 ..= max_col_id {
+            if !col_guard[col_id] {
+                continue;
+            }
+
             let mut top_id = 0;
             let mut bottom_id = max_row_id;
 
