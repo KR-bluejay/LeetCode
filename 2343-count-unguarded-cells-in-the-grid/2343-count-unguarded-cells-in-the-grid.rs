@@ -14,12 +14,21 @@ impl Solution {
         let mut guarded: Vec<Vec<u8>>
             = vec![vec![0; max_col_id + 1]; max_row_id + 1];
 
-        let guard_set: HashSet<(usize, usize)> = guards.into_iter()
-            .map(|v| (v[0] as usize, v[1] as usize)).collect();
+        for guard in guards {
+            let row_id = guard[0] as usize;
+            let col_id = guard[1] as usize;
 
-        let wall_set: HashSet<(usize, usize)> = walls.into_iter()
-            .map(|v| (v[0] as usize, v[1] as usize)).collect();
-        // 0: None, 1: Wall, 2: Guard
+            guarded[row_id][col_id] = 2;
+        }
+        
+        for wall in walls {
+            let row_id = wall[0] as usize;
+            let col_id = wall[1] as usize;
+
+            guarded[row_id][col_id] = 1;
+        }
+
+        // 0: None, 1: Wall, 2: Guard, 3: AlreadyGuarded
         // Top -> Bottom
         for row_id in 0 ..= max_row_id {
             let mut left_id = 0;
@@ -29,24 +38,17 @@ impl Solution {
             let mut right_guard = false;
 
             while left_id <= max_col_id {
-                if wall_set.contains(&(row_id, left_id)) {
-                    guarded[row_id][left_id] = 1;
-                    left_guard = false;
-                } else if guard_set.contains(&(row_id, left_id)) {
-                    guarded[row_id][left_id] = 2;
-                    left_guard = true;
-                } else if left_guard {
-                    guarded[row_id][left_id] = 2;
+                match guarded[row_id][left_id] {
+                    0 if left_guard => guarded[row_id][left_id] = 3,
+                    1 => left_guard = false,
+                    2 => left_guard = true,
+                    _ => {},
                 }
-
-                if wall_set.contains(&(row_id, right_id)) {
-                    guarded[row_id][right_id] = 1;
-                    right_guard = false;
-                } else if guard_set.contains(&(row_id, right_id)) {
-                    guarded[row_id][right_id] = 2;
-                    right_guard = true;
-                } else if right_guard {
-                    guarded[row_id][right_id] = 2;
+                match guarded[row_id][right_id] {
+                    0 if right_guard => guarded[row_id][right_id] = 3,
+                    1 => right_guard = false,
+                    2 => right_guard = true,
+                    _ => {},
                 }
 
                 left_id += 1;
@@ -64,26 +66,19 @@ impl Solution {
             let mut bottom_guard = false;
 
             while top_id <= max_row_id {
-                if wall_set.contains(&(top_id, col_id)) {
-                    guarded[top_id][col_id] = 1;
-                    top_guard = false;
-                } else if guard_set.contains(&(top_id, col_id)) {
-                    guarded[top_id][col_id] = 2;
-                    top_guard = true;
-                } else if top_guard {
-                    guarded[top_id][col_id] = 2;
+                match guarded[top_id][col_id] {
+                    0 if top_guard => guarded[top_id][col_id] = 3,
+                    1 => top_guard = false,
+                    2 => top_guard = true,
+                    _ => {},
                 }
 
-                if wall_set.contains(&(bottom_id, col_id)) {
-                    guarded[bottom_id][col_id] = 1;
-                    bottom_guard = false;
-                } else if guard_set.contains(&(bottom_id, col_id)) {
-                    guarded[bottom_id][col_id] = 2;
-                    bottom_guard = true;
-                } else if bottom_guard {
-                    guarded[bottom_id][col_id] = 2;
+                match guarded[bottom_id][col_id] {
+                    0 if bottom_guard => guarded[bottom_id][col_id] = 3,
+                    1 => bottom_guard = false,
+                    2 => bottom_guard = true,
+                    _ => {},
                 }
-
                 top_id += 1;
                 bottom_id -= 1;
             }
