@@ -9,7 +9,6 @@ impl Solution {
     ) -> i32 {
         let max_row_id = m as usize - 1;
         let max_col_id = n as usize - 1;
-        let mut unguard_count: i32 = 0;
 
         let mut guarded: Vec<Vec<u8>>
             = vec![vec![0; max_col_id + 1]; max_row_id + 1];
@@ -84,13 +83,8 @@ impl Solution {
             }
         }
 
-        for row_id in 0 ..= max_row_id {
-            for col_id in 0 ..= max_col_id {
-                if guarded[row_id][col_id] == 0 {
-                    unguard_count += 1;
-                }
-            }
-        }
-        unguard_count
+        guarded.into_iter()
+            .map(|row| row.into_iter().filter(|&c| c == 0).count() as i32)
+            .sum()
     }
 }
