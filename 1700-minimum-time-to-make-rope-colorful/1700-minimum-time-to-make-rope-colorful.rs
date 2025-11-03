@@ -6,16 +6,18 @@ impl Solution {
 
         let mut total_time = 0;
 
-        for (color, time) in colors.into_bytes().into_iter().zip(needed_time.into_iter()) {
+        for (&color, time) in colors.as_bytes().into_iter().zip(needed_time.into_iter()) {
             if color == prev_color {
                 prev_sum += time;
                 prev_max = prev_max.max(time);
-            } else {
-                total_time += prev_sum - prev_max;
-                prev_sum = time;
-                prev_max = time;
-                prev_color = color;
+
+                continue;
             }
+
+            total_time += prev_sum - prev_max;
+            prev_sum = time;
+            prev_max = time;
+            prev_color = color;
         }
 
         if prev_sum > 0 {
