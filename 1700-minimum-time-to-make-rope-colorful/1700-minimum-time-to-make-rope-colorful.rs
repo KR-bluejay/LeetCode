@@ -1,34 +1,26 @@
 impl Solution {
     pub fn min_cost(colors: String, needed_time: Vec<i32>) -> i32 {
-        let colors: Vec<u8> = colors.into_bytes();
-        let mut id: usize = 0;
-        let mut total_time: i32 = 0;
+        let mut prev_color = 0;
+        let mut prev_max = 0;
+        let mut prev_sum = 0;
 
-        let mut same_color_times: Vec<i32> = Vec::with_capacity(needed_time.len());
+        let mut total_time = 0;
 
-        while id < colors.len() {
-            same_color_times.clear();
-            same_color_times.push(needed_time[id]);
-            
-            let mut next_id = id + 1;
-
-            while next_id < colors.len() && colors[id] == colors[next_id] {
-                same_color_times.push(needed_time[next_id]);
-                next_id += 1;
+        for (color, time) in colors.into_bytes().into_iter().zip(needed_time.into_iter()) {
+            if color == prev_color {
+                prev_sum += time;
+                prev_max = prev_max.max(time);
+            } else {
+                total_time += prev_sum - prev_max;
+                prev_sum = time;
+                prev_max = time;
+                prev_color = color;
             }
-
-            if same_color_times.len() > 1 {
-                same_color_times.sort();
-
-                for same_color_time in same_color_times[0 .. same_color_times.len() - 1].iter() {
-                    total_time += same_color_time;
-                }
-            }
-
-
-            id = next_id;
         }
 
-        total_time
+        if prev_sum > 0 {
+            total_time += prev_sum - prev_max;
+        }
+        total_time 
     }
 }
