@@ -1,6 +1,17 @@
 use std::collections::BTreeSet;
 
 impl Solution {
+    #[inline(always)]
+    fn current_x_sum(set: &BTreeSet<(i32, i32)>, x: usize) -> i32 {
+        let mut sum = 0;
+        for &(neg_f, neg_v) in set.iter().take(x) {
+            let f = -neg_f;
+            let v = -neg_v;
+            sum += f * v;
+        }
+        sum
+    }
+    #[inline(always)]
     pub fn find_x_sum(nums: Vec<i32>, k: i32, x: i32) -> Vec<i32> {
         let k = k as usize;
         let x = x as usize;
@@ -20,19 +31,11 @@ impl Solution {
             }
         }
 
-        fn current_x_sum(set: &BTreeSet<(i32, i32)>, x: usize) -> i32 {
-            let mut sum = 0;
-            for &(neg_f, neg_v) in set.iter().take(x) {
-                let f = -neg_f;
-                let v = -neg_v;
-                sum += f * v;
-            }
-            sum
-        }
+        
 
         let mut ans = Vec::with_capacity(n - k + 1);
 
-        ans.push(current_x_sum(&set, x));
+        ans.push(Self::current_x_sum(&set, x));
 
         for i in k..n {
             let out = nums[i - k] as usize;
@@ -62,7 +65,7 @@ impl Solution {
                 }
             }
 
-            ans.push(current_x_sum(&set, x));
+            ans.push(Self::current_x_sum(&set, x));
         }
 
         ans
