@@ -29,7 +29,7 @@ impl Solution {
         let mut water_amount = 0;
 
         let mut block_queue: BinaryHeap<Block> 
-            = BinaryHeap::with_capacity((max_row_id + 1) * (max_col_id + 1) / 2);
+            = BinaryHeap::with_capacity((max_row_id + 1) * (max_col_id + 1));
 
         let mut block_visit: Vec<Vec<bool>> = vec![vec![false; max_col_id + 1]; max_row_id + 1];
         for row_id in 0 ..= max_row_id {
