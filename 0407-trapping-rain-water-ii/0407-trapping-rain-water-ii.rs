@@ -32,8 +32,8 @@ impl Solution {
 
         let mut block_queue: BinaryHeap<Block> 
             = BinaryHeap::with_capacity((max_row_id + 1) * (max_col_id + 1));
-
         let mut block_visit: Vec<Vec<bool>> = vec![vec![false; max_col_id + 1]; max_row_id + 1];
+
         for row_id in 0 ..= max_row_id {
             block_visit[row_id][0] = true;
             block_queue.push(Block {
@@ -75,9 +75,6 @@ impl Solution {
                 (row_id.wrapping_sub(1), col_id), 
                 (row_id + 1, col_id)
             ];
-            block_visit[row_id][col_id] = true;
-
-
 
             for (&(next_row_id, next_col_id))in next_pos.iter() {
                 if max_row_id < next_row_id 
