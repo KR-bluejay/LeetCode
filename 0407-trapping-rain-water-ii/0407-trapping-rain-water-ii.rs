@@ -1,7 +1,7 @@
 use std::collections::{BinaryHeap, HashSet};
 use std::cmp::Ordering;
 
-#[derive(Debug, Eq, PartialEq)]
+#[derive(Eq, PartialEq)]
 struct Block {
     row_id: usize,
     col_id: usize,
@@ -9,22 +9,24 @@ struct Block {
 }
 
 impl Ord for Block {
+    #[inline(always)]
     fn cmp(&self, other: &Self) -> Ordering {
         other.height.cmp(&self.height)
     }
 }
 
 impl PartialOrd for Block {
+    #[inline(always)]
     fn partial_cmp(&self, other: &Self) -> Option<Ordering> {
         Some(self.cmp(&other))
     }
 }
 
 impl Solution {
+    #[inline(always)]
     pub fn trap_rain_water(mut height_map: Vec<Vec<i32>>) -> i32 {
         let max_row_id = height_map.len() - 1;
         let max_col_id = height_map[0].len() - 1;
-        const near_pos: [(i32, i32); 4] = [(-1, 0), (1, 0), (0, -1), (0, 1)];
 
         let mut water_amount = 0;
 
@@ -67,13 +69,17 @@ impl Solution {
 
         while let Some(block) = block_queue.pop() {
             let Block { row_id, col_id, height } = block;
-
+            let next_pos = [
+                (row_id, col_id.wrapping_sub(1)), 
+                (row_id, col_id + 1), 
+                (row_id.wrapping_sub(1), col_id), 
+                (row_id + 1, col_id)
+            ];
             block_visit[row_id][col_id] = true;
 
-            for ((near_row_id, near_col_id))in near_pos.iter() {
-                let next_row_id = (row_id as i32 + near_row_id) as usize;
-                let next_col_id = (col_id as i32 + near_col_id) as usize;
-                
+
+
+            for (&(next_row_id, next_col_id))in next_pos.iter() {
                 if max_row_id < next_row_id 
                 || max_col_id < next_col_id 
                 || block_visit[next_row_id][next_col_id] {
