@@ -9,14 +9,12 @@ struct Block {
 }
 
 impl Ord for Block {
-    #[inline(always)]
     fn cmp(&self, other: &Self) -> Ordering {
         other.height.cmp(&self.height)
     }
 }
 
 impl PartialOrd for Block {
-    #[inline(always)]
     fn partial_cmp(&self, other: &Self) -> Option<Ordering> {
         Some(self.cmp(&other))
     }
