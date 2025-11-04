@@ -1,65 +1,101 @@
-use std::collections::BinaryHeap;
+use std::collections::{BinaryHeap, HashSet};
 use std::cmp::Ordering;
 
-#[derive(Eq, PartialEq, Debug)]
-struct BlockTuple(i32, usize, usize);
+#[derive(Eq, PartialEq)]
+struct Block {
+    row_id: usize,
+    col_id: usize,
+    height: i32
+}
 
-impl Ord for BlockTuple {
+impl Ord for Block {
+    #[inline(always)]
     fn cmp(&self, other: &Self) -> Ordering {
-        other.0.cmp(&self.0)
+        other.height.cmp(&self.height)
     }
 }
 
-impl PartialOrd for BlockTuple {
+impl PartialOrd for Block {
+    #[inline(always)]
     fn partial_cmp(&self, other: &Self) -> Option<Ordering> {
-        Some(self.cmp(other))
+        Some(self.cmp(&other))
     }
 }
 
 impl Solution {
-    pub fn trap_rain_water(height_map: Vec<Vec<i32>>) -> i32 {
-        if height_map.is_empty() || height_map[0].is_empty() { return 0; }
+    #[inline(always)]
+    pub fn trap_rain_water(mut height_map: Vec<Vec<i32>>) -> i32 {
+        let max_row_id = height_map.len() - 1;
+        let max_col_id = height_map[0].len() - 1;
 
-        let m = height_map.len();
-        let n = height_map[0].len();
         let mut water_amount = 0;
 
-        let mut heap: BinaryHeap<BlockTuple> = BinaryHeap::with_capacity(m * n);
-        let mut visited = vec![vec![false; n]; m];
+        let mut block_queue: BinaryHeap<Block> 
+            = BinaryHeap::with_capacity((max_row_id + 1) * (max_col_id + 1));
+        let mut block_visit: Vec<Vec<bool>> = vec![vec![false; max_col_id + 1]; max_row_id + 1];
 
-        for row in 0..m {
-            visited[row][0] = true;
-            visited[row][n-1] = true;
-            heap.push(BlockTuple(height_map[row][0], row, 0));
-            heap.push(BlockTuple(height_map[row][n-1], row, n-1));
+        for row_id in 0 ..= max_row_id {
+            block_visit[row_id][0] = true;
+            block_queue.push(Block {
+                row_id,
+                col_id: 0,
+                height: height_map[row_id][0]
+            });
+
+            block_visit[row_id][max_col_id] = true;
+            block_queue.push(Block {
+                row_id,
+                col_id: max_col_id,
+                height: height_map[row_id][max_col_id]
+            });
         }
-        for col in 1..n-1 {
-            visited[0][col] = true;
-            visited[m-1][col] = true;
-            heap.push(BlockTuple(height_map[0][col], 0, col));
-            heap.push(BlockTuple(height_map[m-1][col], m-1, col));
+
+        for col_id in 1 .. max_col_id {
+            block_visit[0][col_id] = true;
+            block_queue.push(Block {
+                row_id: 0,
+                col_id,
+                height: height_map[0][col_id]
+            });
+
+            block_visit[max_row_id][col_id] = true;
+            block_queue.push(Block {
+                row_id: max_row_id,
+                col_id,
+                height: height_map[max_row_id][col_id]
+            });
         }
 
-        let directions: [(i32, i32); 4] = [(-1,0),(1,0),(0,-1),(0,1)];
 
-        while let Some(BlockTuple(height, row, col)) = heap.pop() {
-            for &(dr, dc) in &directions {
-                let nr = row as i32 + dr;
-                let nc = col as i32 + dc;
+        while let Some(block) = block_queue.pop() {
+            let Block { row_id, col_id, height } = block;
+            let next_pos = [
+                (row_id, col_id.wrapping_sub(1)), 
+                (row_id, col_id + 1), 
+                (row_id.wrapping_sub(1), col_id), 
+                (row_id + 1, col_id)
+            ];
 
-                if nr < 0 || nr >= m as i32 || nc < 0 || nc >= n as i32 { continue; }
-                let nr = nr as usize;
-                let nc = nc as usize;
+            for (&(next_row_id, next_col_id))in next_pos.iter() {
+                if max_row_id < next_row_id 
+                || max_col_id < next_col_id 
+                || block_visit[next_row_id][next_col_id] {
+                    continue;
+                }
+                let next_height = height_map[next_row_id][next_col_id];
 
-                if visited[nr][nc] { continue; }
+                water_amount += (height - next_height).max(0);
 
-                visited[nr][nc] = true;
-                let nh = height_map[nr][nc];
-                water_amount += (height - nh).max(0);
-                heap.push(BlockTuple(height.max(nh), nr, nc));
+                block_visit[next_row_id][next_col_id] = true;
+                block_queue.push(Block {
+                    row_id: next_row_id,
+                    col_id: next_col_id,
+                    height: height.max(next_height)
+                });
             }
         }
 
         water_amount
+
     }
 }
