@@ -21,7 +21,6 @@ impl PartialOrd for Block {
 }
 
 impl Solution {
-    #[inline(always)]
     pub fn trap_rain_water(mut height_map: Vec<Vec<i32>>) -> i32 {
         let max_row_id = height_map.len() - 1;
         let max_col_id = height_map[0].len() - 1;
