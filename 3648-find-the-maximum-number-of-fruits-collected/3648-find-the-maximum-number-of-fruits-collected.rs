@@ -1,78 +1,68 @@
 impl Solution {
     #[inline(always)]
-    fn solve_child2(fruits: &Vec<Vec<i32>>, n: usize) -> i32 {
-        let mut dp = vec![vec![i32::MIN / 2; n]; n];
-        dp[0][n-1] = fruits[0][n-1];
-        
-        for i in 0..n-1 {
-            for j in 0..n {
-                if dp[i][j] == i32::MIN / 2 {
-                    continue;
-                }
-                
-                let cur = dp[i][j];
-                
-                // (i, j) -> (i+1, j-1)
-                if j > 0 {
-                    dp[i+1][j-1] = dp[i+1][j-1].max(cur + fruits[i+1][j-1]);
-                }
-                // (i, j) -> (i+1, j)
-                dp[i+1][j] = dp[i+1][j].max(cur + fruits[i+1][j]);
-                // (i, j) -> (i+1, j+1)
-                if j + 1 < n {
-                    dp[i+1][j+1] = dp[i+1][j+1].max(cur + fruits[i+1][j+1]);
-                }
-            }
-        }
-        
-        dp[n-1][n-1]
-    }
-    
-    fn solve_child3(fruits: &Vec<Vec<i32>>, n: usize) -> i32 {
-        let mut dp = vec![vec![i32::MIN / 2; n]; n];
-        dp[n-1][0] = fruits[n-1][0];
-        
-        for j in 0..n-1 {
-            for i in 0..n {
-                if dp[i][j] == i32::MIN / 2 {
-                    continue;
-                }
-                
-                let cur = dp[i][j];
-                
-                // (i, j) -> (i-1, j+1)
-                if i > 0 {
-                    dp[i-1][j+1] = dp[i-1][j+1].max(cur + fruits[i-1][j+1]);
-                }
-                // (i, j) -> (i, j+1)
-                dp[i][j+1] = dp[i][j+1].max(cur + fruits[i][j+1]);
-                // (i, j) -> (i+1, j+1)
-                if i + 1 < n {
-                    dp[i+1][j+1] = dp[i+1][j+1].max(cur + fruits[i+1][j+1]);
-                }
-            }
-        }
-        
-        dp[n-1][n-1]
-    }
-    
-    #[inline(always)]
     pub fn max_collected_fruits(mut fruits: Vec<Vec<i32>>) -> i32 {
-        let n = fruits.len();
         let mut result = 0;
-        
-        // 1번 아이 (대각선)
-        for i in 0..n {
+        let mut max_board_len = fruits.len() - 1;
+
+
+        for i in 0 .. fruits.len() {
             result += fruits[i][i];
+            
             fruits[i][i] = 0;
         }
+
+        let mut board: Vec<Vec<i32>> = vec![vec![-1; fruits.len()]; fruits.len()];
+        board[0][max_board_len] = fruits[0][max_board_len];
+
+        for row_id in 0 .. max_board_len {
+            let next_row_id = row_id + 1;
+
+            for col_id in 0 ..= max_board_len {
+                if board[row_id][col_id] == -1 {
+                    continue;
+                }
+
+                let cur_score = board[row_id][col_id];
+                let next_col_ids = [col_id - 1, col_id, col_id + 1];
+
+                for &next_col_id in next_col_ids.iter() {
+                    if max_board_len < next_row_id || max_board_len < next_col_id {
+                        continue;
+                    }
+                    board[next_row_id][next_col_id] 
+                        = board[next_row_id][next_col_id]
+                            .max(cur_score + fruits[next_row_id][next_col_id]);
+                }
+            }
+        }
+        result += board[max_board_len][max_board_len];
+        board = vec![vec![-1; fruits.len()]; fruits.len()];
+
+        board[max_board_len][0] = fruits[max_board_len][0];
         
-        // 2번 아이
-        result += Self::solve_child2(&fruits, n);
-        
-        // 3번 아이
-        result += Self::solve_child3(&fruits, n);
-        
-        result
+
+        for col_id in 0 .. max_board_len {
+            let next_col_id = col_id + 1;
+
+            for row_id in 0 ..= max_board_len {
+                if board[row_id][col_id] == -1 {
+                    continue;
+                }
+
+                let cur_score = board[row_id][col_id];
+                let next_row_ids: [usize; 3] = [row_id - 1, row_id, row_id + 1];
+
+                for &next_row_id in next_row_ids.iter() {
+                    if max_board_len < next_row_id || max_board_len < next_col_id {
+                        continue;
+                    }
+
+                    board[next_row_id][next_col_id] 
+                        = board[next_row_id][next_col_id]
+                            .max(cur_score + fruits[next_row_id][next_col_id]);
+                }
+            }
+        }
+        result + board[max_board_len][max_board_len]
     }
 }
