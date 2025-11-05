@@ -17,7 +17,7 @@ impl Solution {
         for row_id in 0 .. max_board_len {
             let next_row_id = row_id + 1;
 
-            for col_id in 0 ..= max_board_len {
+            for col_id in max_board_len / 2 ..= max_board_len {
                 if board[row_id][col_id] == -1 {
                     continue;
                 }
@@ -44,7 +44,7 @@ impl Solution {
         for col_id in 0 .. max_board_len {
             let next_col_id = col_id + 1;
 
-            for row_id in 0 ..= max_board_len {
+            for row_id in max_board_len / 2 ..= max_board_len {
                 if board[row_id][col_id] == -1 {
                     continue;
                 }
