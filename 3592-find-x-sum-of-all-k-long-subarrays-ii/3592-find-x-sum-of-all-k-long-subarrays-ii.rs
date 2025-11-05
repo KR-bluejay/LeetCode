@@ -39,6 +39,7 @@ impl Solution {
             top_set.insert(rest_item);
         }
     }
+    #[inline(always)]
     pub fn find_x_sum(nums: Vec<i32>, k: i32, x: i32) -> Vec<i64> {
         let k = k as usize;
         let x = x as usize;
