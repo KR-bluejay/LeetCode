@@ -54,18 +54,28 @@ impl Solution {
 
             if query_type == 2 {
                 online[query_target] = false;
-                grids[station_grid[query_target]].remove(&query_target);
+                // grids[station_grid[query_target]].remove(&query_target);
 
                 continue;
             }
+            let prev_len = results.len();
 
             if online[query_target] {
                 results.push(query_target as i32);
-            } else if let Some(&id) = grids[station_grid[query_target]].iter()
-                .filter(|a_id| online[**a_id])
-                .next() {
-                results.push(id as i32);
+
+                continue;
             } else {
+                while let Some(&a_id) = grids[station_grid[query_target]].iter().next() {
+                    if online[a_id] {
+                        results.push(a_id as i32);
+                        
+                        break;
+                    } else {
+                        grids[station_grid[a_id]].remove(&a_id);
+                    }
+                }
+            }
+            if prev_len == results.len() {
                 results.push(-1);
             }
         }
