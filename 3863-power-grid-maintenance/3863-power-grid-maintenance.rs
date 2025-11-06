@@ -54,7 +54,6 @@ impl Solution {
 
             if query_type == 2 {
                 online[query_target] = false;
-                // grids[station_grid[query_target]].remove(&query_target);
 
                 continue;
             }
