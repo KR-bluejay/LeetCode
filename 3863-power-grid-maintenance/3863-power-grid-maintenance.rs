@@ -1,26 +1,6 @@
-use std::collections::BTreeSet;
+use std::collections::{BTreeSet, VecDeque};
 
 impl Solution {
-    fn precompute(
-        station_id: usize,
-        station_connect: &Vec<Vec<usize>>,
-        station_visit: &mut Vec<bool>,
-        station_grid: &mut BTreeSet<usize>,
-    ) {
-        if station_visit[station_id] {
-            return;
-        }
-        station_visit[station_id] = true;
-        station_grid.insert(station_id);
-
-        for &pair_id in station_connect[station_id].iter() {
-            if station_visit[pair_id] {
-                continue;
-            }
-
-            Self::precompute(pair_id, station_connect, station_visit, station_grid);
-        }
-    }
     pub fn process_queries(
         c: i32, 
         connections: Vec<Vec<i32>>, 
@@ -37,21 +17,35 @@ impl Solution {
         }
 
         let mut grids: Vec<BTreeSet<usize>> = Vec::with_capacity(station_count);
-        let mut station_grid: Vec<usize> = vec![0; station_count];
-        let mut station_visit: Vec<bool> = vec![false; station_count];
+        let mut station_grid: Vec<usize> = vec![usize::MAX; station_count];
         let mut online: Vec<bool> = vec![true; station_count];
+        let mut queue: VecDeque<usize> = VecDeque::with_capacity(station_count);
 
         for id in 1 .. station_count {
+            if station_grid[id] != usize::MAX {
+                continue;
+            }
+
             let grid_id = grids.len();
             let mut grid = BTreeSet::new();
 
-            Self::precompute(id, &station_connect, &mut station_visit, &mut grid);
+            queue.push_back(id);
 
-            for &target_id in grid.iter() {
-                station_grid[target_id] = grid_id;
+            while let Some(station_id) = queue.pop_front() {
+                grid.insert(station_id);
+                station_grid[station_id] = grid_id;
+
+                for &pair_id in station_connect[station_id].iter() {
+                    if station_grid[pair_id] != usize::MAX {
+                        continue;
+                    }
+                    station_grid[pair_id] = grid_id;
+                    queue.push_back(pair_id);
+                }
             }
 
             grids.push(grid.clone());
+            queue.clear();
         }
 
         for query in queries.iter() {
