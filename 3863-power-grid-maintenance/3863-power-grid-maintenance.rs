@@ -1,4 +1,4 @@
-use std::collections::{BTreeSet, VecDeque};
+use std::collections::{VecDeque};
 
 impl Solution {
     pub fn process_queries(
@@ -16,10 +16,11 @@ impl Solution {
             station_connect[connection[1] as usize].push(connection[0] as usize);
         }
 
-        let mut grids: Vec<BTreeSet<usize>> = Vec::with_capacity(station_count);
+        let mut grids: Vec<Vec<usize>> = Vec::with_capacity(station_count);
         let mut station_grid: Vec<usize> = vec![usize::MAX; station_count];
         let mut online: Vec<bool> = vec![true; station_count];
         let mut queue: VecDeque<usize> = VecDeque::with_capacity(station_count);
+        let mut grid = Vec::with_capacity(station_count);
 
         for id in 1 .. station_count {
             if station_grid[id] != usize::MAX {
@@ -27,12 +28,11 @@ impl Solution {
             }
 
             let grid_id = grids.len();
-            let mut grid = BTreeSet::new();
 
             queue.push_back(id);
 
             while let Some(station_id) = queue.pop_front() {
-                grid.insert(station_id);
+                grid.push(station_id);
                 station_grid[station_id] = grid_id;
 
                 for &pair_id in station_connect[station_id].iter() {
@@ -44,38 +44,50 @@ impl Solution {
                 }
             }
 
+            grid.sort_unstable();
             grids.push(grid.clone());
             queue.clear();
+            grid.clear();
         }
+
+        let mut grid_online_index: Vec<usize> = vec![0; grids.len()];
 
         for query in queries.iter() {
             let query_type = query[0];
             let query_target = query[1] as usize;
+            let prev_len = results.len();
 
             if query_type == 2 {
                 online[query_target] = false;
 
                 continue;
             }
-            let prev_len = results.len();
 
             if online[query_target] {
                 results.push(query_target as i32);
 
                 continue;
-            } else {
-                while let Some(&a_id) = grids[station_grid[query_target]].iter().next() {
-                    if online[a_id] {
-                        results.push(a_id as i32);
-                        
-                        break;
-                    } else {
-                        grids[station_grid[a_id]].remove(&a_id);
-                    }
+            }
+
+            let grid_id = station_grid[query_target];
+            let grid_nodes = &grids[grid_id];
+            let mut cur_id = grid_online_index[grid_id];
+
+            while cur_id < grid_nodes.len() {
+                let candidate_id = grid_nodes[cur_id];
+
+                if online[candidate_id] {
+                    results.push(candidate_id as i32);
+                    grid_online_index[grid_id] = cur_id;
+                    break;
+                } else {
+                    cur_id += 1;
                 }
             }
+
             if prev_len == results.len() {
                 results.push(-1);
+                grid_online_index[grid_id] = grid_nodes.len();
             }
         }
 
