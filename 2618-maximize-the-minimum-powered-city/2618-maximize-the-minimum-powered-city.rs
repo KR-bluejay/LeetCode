@@ -43,7 +43,9 @@ impl Solution {
             let mut extra = 0i64;
             let mut possible = true;
 
-            add_powers[0 ..= (last_id + r).min(stations.len() - 1)].fill(0);
+            if last_id != 0 {
+                add_powers[0 ..= (last_id + r).min(stations.len() - 1)].fill(0);
+            }
             
             for id in 0 .. n {
                 last_id = id;
