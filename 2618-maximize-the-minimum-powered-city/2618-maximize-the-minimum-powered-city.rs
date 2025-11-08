@@ -11,6 +11,7 @@ impl Solution {
         let mut result = i64::MAX;
         
         let mut station_sums: Vec<i64> = Vec::with_capacity(stations.len());
+        
         station_sums.push(total_power);
 
         for id in 1 .. stations.len() {
