@@ -34,16 +34,19 @@ impl Solution {
         
         let mut result = left_power;
         let mut add_powers = vec![0i64; n];
+        let mut last_id = 0;
         
         while left_power <= right_power {
             let mid_power = left_power + (right_power - left_power) / 2;
             
-            add_powers.fill(0);
             let mut cur_add_power = 0i64;
             let mut extra = 0i64;
             let mut possible = true;
+
+            add_powers[0 ..= (last_id + r).min(stations.len() - 1)].fill(0);
             
-            for id in 0..n {
+            for id in 0 .. n {
+                last_id = id;
                 if id > 0 {
                     if id > r {
                         cur_add_power -= add_powers[id - r - 1];
@@ -69,6 +72,7 @@ impl Solution {
                     add_powers[install_pos] += expand_power;
                 }
             }
+            
             
             if possible {
                 result = mid_power;
