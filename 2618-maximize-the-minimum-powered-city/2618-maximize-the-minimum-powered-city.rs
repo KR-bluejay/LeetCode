@@ -38,23 +38,29 @@ impl Solution {
             let mut extra: i64 = 0;
             let mut cur_add_power: i64 = 0;
 
-            for id in 0 .. stations.len() {
-                if r < id {
-                    cur_add_power -= add_powers[id - r - 1];
-                }
+            add_powers.fill(0);
 
-                if id + r < stations.len() {
-                    cur_add_power += add_powers[id + r];
+            for id in 0 .. stations.len() {
+                if id > 0 {
+                    if r < id {
+                        cur_add_power -= add_powers[id - r - 1];
+                    }
+        
+                    if id + r < stations.len() {
+                        cur_add_power += add_powers[id + r];
+                    }
                 }
 
                 let expand_power = (mid_power - station_sums[id] - cur_add_power).max(0);
 
-                extra += expand_power;
-                cur_add_power += expand_power;
-                add_powers[(id + r).min(stations.len() - 1)] += expand_power;
-
-                if extra > k {
-                    break;
+                if expand_power > 0 {
+                    extra += expand_power;
+                    cur_add_power += expand_power;
+                    add_powers[(id + r).min(stations.len() - 1)] += expand_power;
+    
+                    if extra > k {
+                        break;
+                    }
                 }
             }
 
@@ -64,7 +70,6 @@ impl Solution {
             } else {
                 right_power = mid_power - 1;
             }
-            add_powers.fill(0);
         }
 
         
