@@ -208,6 +208,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2429-design-a-food-rating-system](https://github.com/KR-bluejay/LeetCode/tree/master/2429-design-a-food-rating-system) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/KR-bluejay/LeetCode/tree/master/2432-number-of-zero-filled-subarrays) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/KR-bluejay/LeetCode/tree/master/2527-count-subarrays-with-fixed-bounds) |
+| [2618-maximize-the-minimum-powered-city](https://github.com/KR-bluejay/LeetCode/tree/master/2618-maximize-the-minimum-powered-city) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/KR-bluejay/LeetCode/tree/master/2626-count-the-number-of-good-subarrays) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/KR-bluejay/LeetCode/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [2699-count-the-number-of-fair-pairs](https://github.com/KR-bluejay/LeetCode/tree/master/2699-count-the-number-of-fair-pairs) |
@@ -348,6 +349,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1755-defuse-the-bomb](https://github.com/KR-bluejay/LeetCode/tree/master/1755-defuse-the-bomb) |
 | [2003-distinct-numbers-in-each-subarray](https://github.com/KR-bluejay/LeetCode/tree/master/2003-distinct-numbers-in-each-subarray) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/KR-bluejay/LeetCode/tree/master/2527-count-subarrays-with-fixed-bounds) |
+| [2618-maximize-the-minimum-powered-city](https://github.com/KR-bluejay/LeetCode/tree/master/2618-maximize-the-minimum-powered-city) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/KR-bluejay/LeetCode/tree/master/2626-count-the-number-of-good-subarrays) |
 | [2856-count-complete-subarrays-in-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/2856-count-complete-subarrays-in-an-array) |
 | [3213-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/KR-bluejay/LeetCode/tree/master/3213-count-subarrays-where-max-element-appears-at-least-k-times) |
@@ -462,6 +464,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1612-avoid-flood-in-the-city](https://github.com/KR-bluejay/LeetCode/tree/master/1612-avoid-flood-in-the-city) |
 | [2164-two-best-non-overlapping-events](https://github.com/KR-bluejay/LeetCode/tree/master/2164-two-best-non-overlapping-events) |
 | [2280-count-good-triplets-in-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/2280-count-good-triplets-in-an-array) |
+| [2618-maximize-the-minimum-powered-city](https://github.com/KR-bluejay/LeetCode/tree/master/2618-maximize-the-minimum-powered-city) |
 | [2699-count-the-number-of-fair-pairs](https://github.com/KR-bluejay/LeetCode/tree/master/2699-count-the-number-of-fair-pairs) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/KR-bluejay/LeetCode/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
@@ -565,6 +568,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0325-maximum-size-subarray-sum-equals-k](https://github.com/KR-bluejay/LeetCode/tree/master/0325-maximum-size-subarray-sum-equals-k) |
 | [1046-max-consecutive-ones-iii](https://github.com/KR-bluejay/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [2249-count-the-hidden-sequences](https://github.com/KR-bluejay/LeetCode/tree/master/2249-count-the-hidden-sequences) |
+| [2618-maximize-the-minimum-powered-city](https://github.com/KR-bluejay/LeetCode/tree/master/2618-maximize-the-minimum-powered-city) |
 | [2915-count-of-interesting-subarrays](https://github.com/KR-bluejay/LeetCode/tree/master/2915-count-of-interesting-subarrays) |
 | [3383-taking-maximum-energy-from-the-mystic-dungeon](https://github.com/KR-bluejay/LeetCode/tree/master/3383-taking-maximum-energy-from-the-mystic-dungeon) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/KR-bluejay/LeetCode/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
@@ -665,6 +669,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1834-minimum-number-of-people-to-teach](https://github.com/KR-bluejay/LeetCode/tree/master/1834-minimum-number-of-people-to-teach) |
 | [1917-maximum-average-pass-ratio](https://github.com/KR-bluejay/LeetCode/tree/master/1917-maximum-average-pass-ratio) |
 | [2345-minimum-number-of-operations-to-convert-time](https://github.com/KR-bluejay/LeetCode/tree/master/2345-minimum-number-of-operations-to-convert-time) |
+| [2618-maximize-the-minimum-powered-city](https://github.com/KR-bluejay/LeetCode/tree/master/2618-maximize-the-minimum-powered-city) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/KR-bluejay/LeetCode/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [3171-minimum-equal-sum-of-two-arrays-after-replacing-zeros](https://github.com/KR-bluejay/LeetCode/tree/master/3171-minimum-equal-sum-of-two-arrays-after-replacing-zeros) |
 | [3620-maximum-number-of-distinct-elements-after-operations](https://github.com/KR-bluejay/LeetCode/tree/master/3620-maximum-number-of-distinct-elements-after-operations) |
@@ -807,6 +812,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [2408-number-of-people-aware-of-a-secret](https://github.com/KR-bluejay/LeetCode/tree/master/2408-number-of-people-aware-of-a-secret) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/KR-bluejay/LeetCode/tree/master/2527-count-subarrays-with-fixed-bounds) |
+| [2618-maximize-the-minimum-powered-city](https://github.com/KR-bluejay/LeetCode/tree/master/2618-maximize-the-minimum-powered-city) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/KR-bluejay/LeetCode/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3827-implement-router](https://github.com/KR-bluejay/LeetCode/tree/master/3827-implement-router) |
 ## Monotonic Queue
