@@ -4,10 +4,8 @@ impl Solution {
         let k = k as i64;
         let n = stations.len();
         
-        // i64로 변환
         let stations: Vec<i64> = stations.into_iter().map(|v| v as i64).collect();
         
-        // Binary search 범위 계산
         let mut left_power = i64::MAX;
         let mut right_power = k;
         let mut total_power = 0i64;
