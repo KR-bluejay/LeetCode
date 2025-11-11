@@ -49,7 +49,6 @@ impl Solution {
         let mut num_counts: Vec<(usize, usize)> = Vec::with_capacity(strs.len());
         let mut cache: Vec<Vec<Vec<i32>>> 
             = vec![vec![vec![-1; n as usize + 1]; m as usize + 1]; strs.len()];
-        let mut max_form_count = 0;
 
         for str_item in strs.into_iter() {
             let (zero_count, one_count) = str_item.into_bytes()
