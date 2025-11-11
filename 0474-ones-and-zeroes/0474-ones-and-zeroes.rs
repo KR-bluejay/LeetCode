@@ -42,7 +42,7 @@ impl Solution {
 
                 result = result.max(cache[next_zero][next_one]);
             }
-            active.sort();
+            active.sort_unstable();
         }
         result
     }
