@@ -29,17 +29,26 @@ impl Solution {
         let (zero_count, one_count) = 
             (num_counts[id].0 + zero_used
             , num_counts[id].1 + one_used);
+
         if zero_count <= max_zero_count 
         && one_count <= max_one_count {
-            result = result.max(Self::find(
-                id + 1, 
-                num_counts, 
-                cache, 
-                zero_count, 
-                one_count, 
-                max_zero_count, 
-                max_one_count,
-            ) + 1);
+            let next_result = if id + 1 >= num_counts.len() {
+                0
+            } else if cache[id + 1][zero_count][one_count] != -1 {
+                cache[id + 1][zero_count][one_count]
+            } else {
+                Self::find(
+                    id + 1, 
+                    num_counts, 
+                    cache, 
+                    zero_count, 
+                    one_count, 
+                    max_zero_count, 
+                    max_one_count,
+                )
+            } + 1;
+
+            result = result.max(next_result);
         }
 
         cache[id][zero_used][one_used] = result;
