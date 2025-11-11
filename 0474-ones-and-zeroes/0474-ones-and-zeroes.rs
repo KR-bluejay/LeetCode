@@ -3,56 +3,47 @@ impl Solution {
         id: usize,
         num_counts: &Vec<(usize, usize)>,
         cache: &mut Vec<Vec<Vec<i32>>>,
-        prev_zero_count: usize,
-        prev_one_count: usize,
-        form_count: i32,
+        zero_used: usize,
+        one_used: usize,
         max_zero_count: usize,
         max_one_count: usize,
-        max_form_count: &mut i32,
-    ) {
+    ) -> i32 {
         if id == num_counts.len() {
-            return;
+            return 0;
         }
+
+        if cache[id][zero_used][one_used] != -1 {
+            return cache[id][zero_used][one_used];
+        }
+
+        let mut result = Self::find(
+            id + 1, 
+            num_counts, 
+            cache, 
+            zero_used, 
+            one_used, 
+            max_zero_count, 
+            max_one_count,
+        );
 
         let (zero_count, one_count) = 
-            (num_counts[id].0 + prev_zero_count
-            , num_counts[id].1 + prev_one_count);
-
-        if cache[id][prev_zero_count][prev_one_count] < form_count {
-            cache[id][prev_zero_count][prev_one_count] = form_count;
-            *max_form_count = (*max_form_count).max(form_count);
-
-            Self::find(
-                id + 1, 
-                num_counts, 
-                cache, 
-                prev_zero_count, 
-                prev_one_count, 
-                form_count, 
-                max_zero_count, 
-                max_one_count,
-                max_form_count
-            );
-        }
-
+            (num_counts[id].0 + zero_used
+            , num_counts[id].1 + one_used);
         if zero_count <= max_zero_count 
-        && one_count <= max_one_count 
-        && cache[id][zero_count][one_count] < form_count + 1 {
-            cache[id][zero_count][one_count] = form_count + 1;
-            *max_form_count = (*max_form_count).max(form_count + 1);
-
-            Self::find(
+        && one_count <= max_one_count {
+            result = result.max(Self::find(
                 id + 1, 
                 num_counts, 
                 cache, 
                 zero_count, 
                 one_count, 
-                form_count + 1, 
                 max_zero_count, 
                 max_one_count,
-                max_form_count
-            );
+            ) + 1);
         }
+
+        cache[id][zero_used][one_used] = result;
+        cache[id][zero_used][one_used]
     }
     pub fn find_max_form(strs: Vec<String>, m: i32, n: i32) -> i32 {
         let mut num_counts: Vec<(usize, usize)> = Vec::with_capacity(strs.len());
@@ -80,11 +71,8 @@ impl Solution {
             &mut cache, 
             0, 
             0, 
-            0, 
             m as usize, 
             n as usize, 
-            &mut max_form_count
-        );
-        max_form_count
+        )
     }
 }
