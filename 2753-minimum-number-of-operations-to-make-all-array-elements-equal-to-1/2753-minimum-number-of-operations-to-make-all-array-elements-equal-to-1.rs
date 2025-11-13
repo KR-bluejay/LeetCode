@@ -12,9 +12,7 @@ impl Solution {
         lhs
     }
     pub fn min_operations(nums: Vec<i32>) -> i32 {
-        let mut num_map: HashMap<(i32, i32), i32> = HashMap::with_capacity(nums.len());
         let mut op_count = usize::MAX;
-        let mut is_one_found = false;
         let mut one_count = 0;
 
         for i in 0 .. nums.len() - 1 {
@@ -22,6 +20,8 @@ impl Solution {
 
             if lhs == 1 {
                 one_count += 1;
+
+                continue;
             }
 
             for j in i + 1 .. nums.len() {
@@ -39,7 +39,6 @@ impl Solution {
 
                 if lhs == 1 {
                     op_count = op_count.min(j - i);
-                    // println!("{op_count}");
                     break;
                 }
             }
