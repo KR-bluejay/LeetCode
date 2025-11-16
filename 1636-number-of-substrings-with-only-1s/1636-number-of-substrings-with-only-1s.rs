@@ -1,9 +1,9 @@
 impl Solution {
     pub fn num_sub(s: String) -> i32 {
-        let mut continual_count: u32 = 0;
-        let mut result: u32 = 0;
+        let mut continual_count: i64 = 0;
+        let mut result: i64 = 0;
 
-        const MODULO: u32 = 1000000007;
+        const MODULO: i64 = 1000000007;
 
 
         for item in s.into_bytes() {
