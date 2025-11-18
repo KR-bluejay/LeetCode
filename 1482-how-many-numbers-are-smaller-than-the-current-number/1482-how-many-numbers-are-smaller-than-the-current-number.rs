@@ -9,7 +9,6 @@ impl Solution {
         sorted_nums.sort();
         
         let mut ranks: HashMap<i32, i32> = HashMap::with_capacity(nums.len());
-        // let mut results: Vec<i32> = Vec::with_capacity(nums.len());
         let mut prev_value = -1;
         let mut prev_rank = 0;
 
@@ -21,6 +20,6 @@ impl Solution {
             ranks.insert(cur_value, prev_rank as i32);
         }
 
-        nums.iter().map(|v| *ranks.get(v).unwrap()).collect()
+        nums.into_iter().map(|v| *ranks.get(&v).unwrap()).collect()
     }
 }
