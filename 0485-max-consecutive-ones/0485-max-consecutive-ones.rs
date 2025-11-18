@@ -14,7 +14,7 @@ impl Solution {
             }
             let cur_sum = right - left + 1;
 
-            max_sum = cmp::max(cur_sum, max_sum);
+            max_sum = max_sum.max(cur_sum);
         }
 
         max_sum as i32
