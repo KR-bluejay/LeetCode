@@ -1,39 +1,28 @@
-use std::collections::HashSet;
-
 impl Solution {
     pub fn intersection_size_two(mut intervals: Vec<Vec<i32>>) -> i32 {
-        intervals.sort_by(|lhs, rhs| lhs[1].cmp(&rhs[1]).then_with(|| lhs[0].cmp(&rhs[0])));
-    
-        let mut interval_nums: Vec<i32> = Vec::with_capacity(intervals.len() * 2);
+        intervals.sort_by(|left, right| left[1].cmp(&right[1]).then_with(|| right[0].cmp(&left[0])));
 
-        interval_nums.push(intervals[0][1] - 1);
-        interval_nums.push(intervals[0][1]);
+        let mut inter_count = 2;
+        let mut second_last_num = intervals[0][1] - 1;
+        let mut last_num = intervals[0][1];
+        
 
         for interval in intervals.into_iter().skip(1) {
-            let start_num = interval[0];
-            let end_num = interval[1];
-            let last_id = interval_nums.len() - 1;
+            let start = interval[0];
+            let end = interval[1];
 
-            let is_first_contain = start_num <= interval_nums[last_id - 1];
-            let is_second_contain = start_num <= interval_nums[last_id];
 
-            if is_first_contain && is_second_contain {
-                continue;
-            }
-
-            if is_first_contain || is_second_contain {
-                if interval_nums[last_id] == end_num {
-                    interval_nums.push(end_num - 1);
-                } else {
-                    interval_nums.push(end_num);
-                }
-            } else if !(is_first_contain && is_second_contain) {
-                interval_nums.push(end_num - 1);
-                interval_nums.push(end_num);
+            if last_num < start {
+                inter_count += 2;
+                second_last_num = end - 1;
+                last_num = end;
+            } else if second_last_num < start {
+                inter_count += 1;
+                second_last_num = last_num;
+                last_num = end;
             }
         }
 
-
-        interval_nums.len() as i32
+        inter_count
     }
 }
