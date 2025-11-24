@@ -183,6 +183,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0948-sort-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/0948-sort-an-array) |
 | [1006-vowel-spellchecker](https://github.com/KR-bluejay/LeetCode/tree/master/1006-vowel-spellchecker) |
 | [1018-largest-perimeter-triangle](https://github.com/KR-bluejay/LeetCode/tree/master/1018-largest-perimeter-triangle) |
+| [1018-binary-prefix-divisible-by-5](https://github.com/KR-bluejay/LeetCode/tree/master/1018-binary-prefix-divisible-by-5) |
 | [1025-minimum-cost-for-tickets](https://github.com/KR-bluejay/LeetCode/tree/master/1025-minimum-cost-for-tickets) |
 | [1046-max-consecutive-ones-iii](https://github.com/KR-bluejay/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/KR-bluejay/LeetCode/tree/master/1049-minimum-domino-rotations-for-equal-row) |
@@ -347,6 +348,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0266-palindrome-permutation](https://github.com/KR-bluejay/LeetCode/tree/master/0266-palindrome-permutation) |
 | [0338-counting-bits](https://github.com/KR-bluejay/LeetCode/tree/master/0338-counting-bits) |
 | [0645-set-mismatch](https://github.com/KR-bluejay/LeetCode/tree/master/0645-set-mismatch) |
+| [1018-binary-prefix-divisible-by-5](https://github.com/KR-bluejay/LeetCode/tree/master/1018-binary-prefix-divisible-by-5) |
 | [1067-campus-bikes-ii](https://github.com/KR-bluejay/LeetCode/tree/master/1067-campus-bikes-ii) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/KR-bluejay/LeetCode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/KR-bluejay/LeetCode/tree/master/2059-unique-length-3-palindromic-subsequences) |
