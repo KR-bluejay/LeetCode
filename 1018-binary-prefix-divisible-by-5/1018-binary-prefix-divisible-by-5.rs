@@ -3,7 +3,7 @@ impl Solution {
         let mut results: Vec<bool> = Vec::with_capacity(nums.len());
         let mut prefix_num = 0;
 
-        for (num_id, &num_val) in nums.iter().enumerate() {
+        for num_val in nums.into_iter() {
             prefix_num = (prefix_num << 1 | num_val) % 5;
 
             results.push(prefix_num == 0);
