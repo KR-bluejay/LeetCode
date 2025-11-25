@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0202-happy-number](https://github.com/KR-bluejay/LeetCode/tree/master/0202-happy-number) |
 | [0797-rabbits-in-forest](https://github.com/KR-bluejay/LeetCode/tree/master/0797-rabbits-in-forest) |
 | [0830-largest-triangle-area](https://github.com/KR-bluejay/LeetCode/tree/master/0830-largest-triangle-area) |
+| [1015-smallest-integer-divisible-by-k](https://github.com/KR-bluejay/LeetCode/tree/master/1015-smallest-integer-divisible-by-k) |
 | [1018-largest-perimeter-triangle](https://github.com/KR-bluejay/LeetCode/tree/master/1018-largest-perimeter-triangle) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/KR-bluejay/LeetCode/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1426-find-n-unique-integers-sum-up-to-zero](https://github.com/KR-bluejay/LeetCode/tree/master/1426-find-n-unique-integers-sum-up-to-zero) |
@@ -299,6 +300,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0768-partition-labels](https://github.com/KR-bluejay/LeetCode/tree/master/0768-partition-labels) |
 | [0797-rabbits-in-forest](https://github.com/KR-bluejay/LeetCode/tree/master/0797-rabbits-in-forest) |
 | [1006-vowel-spellchecker](https://github.com/KR-bluejay/LeetCode/tree/master/1006-vowel-spellchecker) |
+| [1015-smallest-integer-divisible-by-k](https://github.com/KR-bluejay/LeetCode/tree/master/1015-smallest-integer-divisible-by-k) |
 | [1084-find-k-length-substrings-with-no-repeated-characters](https://github.com/KR-bluejay/LeetCode/tree/master/1084-find-k-length-substrings-with-no-repeated-characters) |
 | [1098-largest-unique-number](https://github.com/KR-bluejay/LeetCode/tree/master/1098-largest-unique-number) |
 | [1108-analyze-user-website-visit-pattern](https://github.com/KR-bluejay/LeetCode/tree/master/1108-analyze-user-website-visit-pattern) |
