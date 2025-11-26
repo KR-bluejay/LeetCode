@@ -33,7 +33,10 @@ impl Solution {
 
             if row_id != max_row_id {
                 std::mem::swap(&mut prev_row, &mut cur_row);
-                cur_row.iter_mut().for_each(|v| v.fill(0));
+
+                if row_id != 0 {
+                    cur_row.iter_mut().for_each(|v| v.fill(0));
+                }
             }
         }
 
