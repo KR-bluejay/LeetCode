@@ -1,4 +1,5 @@
 impl Solution {
+    #[inline(always)]
     fn count_components(
         node_id: usize,
         parent_id: Option<usize>,
