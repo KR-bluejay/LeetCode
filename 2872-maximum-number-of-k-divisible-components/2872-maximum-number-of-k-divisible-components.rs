@@ -1,52 +1,58 @@
 impl Solution {
+    fn count_components(
+        node_id: usize,
+        parent_id: Option<usize>,
+        values: &Vec<i32>,
+        graph: &Vec<Vec<usize>>,
+        neighbor_nodes: &Vec<usize>,
+        k: i32,
+    ) -> (i32, i32) {
+        let mut comp_count = 0;
+        let mut comp_sum = 0;
+
+        for &neighbor_node in  neighbor_nodes.iter() {
+            if parent_id.is_some() && parent_id.unwrap() == neighbor_node {
+                continue;
+            }
+
+            let (local_count, local_sum) = Self::count_components(
+                neighbor_node,
+                Some(node_id),
+                values,
+                graph,
+                &graph[neighbor_node],
+                k
+            );
+            comp_count += local_count;
+
+            comp_sum += local_sum;
+            comp_sum %= k;
+        }
+        comp_sum += values[node_id];
+        comp_sum %= k;
+
+        if comp_sum == 0 {
+            comp_count += 1;
+        }
+
+        (comp_count, comp_sum)
+    }
     pub fn max_k_divisible_components(
         n: i32, 
         edges: Vec<Vec<i32>>, 
         values: Vec<i32>, 
         k: i32
     ) -> i32 {
-        let n = n as usize;
-        let mut graph = vec![vec![]; n];
-        let mut visited = vec![false; n];
-        
-        // Build adjacency list
+        let node_count = n as usize;
+        let mut graph: Vec<Vec<usize>> = vec![Vec::with_capacity(node_count); node_count];
+
         for edge in edges {
-            let u = edge[0] as usize;
-            let v = edge[1] as usize;
-            graph[u].push(v);
-            graph[v].push(u);
+            let (node1, node2) = (edge[0] as usize, edge[1] as usize);
+
+            graph[node1].push(node2);
+            graph[node2].push(node1);
         }
-        
-        let mut components = 0;
-        
-        fn dfs(
-            node: usize,
-            parent: usize,
-            graph: &Vec<Vec<usize>>,
-            values: &Vec<i32>,
-            k: i32,
-            components: &mut i32,
-        ) -> i64 {
-            let mut sum = values[node] as i64;
-            
-            for &neighbor in &graph[node] {
-                if neighbor == parent {
-                    continue;
-                }
-                let child_sum = dfs(neighbor, node, graph, values, k, components);
-                sum += child_sum;
-            }
-            
-            // If the sum of this subtree is divisible by k, we can split it off
-            if sum % (k as i64) == 0 {
-                *components += 1;
-                return 0; // This component is complete, return 0 to parent
-            }
-            
-            sum
-        }
-        
-        dfs(0, usize::MAX, &graph, &values, k, &mut components);
-        components
+
+        Self::count_components(0, None, &values, &graph, &graph[0], k).0
     }
 }
