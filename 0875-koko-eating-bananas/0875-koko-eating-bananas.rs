@@ -5,16 +5,7 @@ impl Solution {
 
         while left_speed < right_speed {
             let mid_speed = left_speed + (right_speed - left_speed) / 2;
-            let mut total_speed = 0;
-
-
-            for &pile in piles.iter() {
-                total_speed += (pile + mid_speed - 1) / mid_speed;
-
-                if h < total_speed {
-                    break;
-                }
-            }
+            let mut total_speed = piles.iter().fold(0, |acc, pile| acc + (pile + mid_speed - 1) / mid_speed);
 
             if h < total_speed {
                 left_speed = mid_speed + 1;
