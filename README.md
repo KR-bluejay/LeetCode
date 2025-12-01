@@ -218,6 +218,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2003-distinct-numbers-in-each-subarray](https://github.com/KR-bluejay/LeetCode/tree/master/2003-distinct-numbers-in-each-subarray) |
 | [2023-design-movie-rental-system](https://github.com/KR-bluejay/LeetCode/tree/master/2023-design-movie-rental-system) |
 | [2048-build-array-from-permutation](https://github.com/KR-bluejay/LeetCode/tree/master/2048-build-array-from-permutation) |
+| [2141-maximum-running-time-of-n-computers](https://github.com/KR-bluejay/LeetCode/tree/master/2141-maximum-running-time-of-n-computers) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/KR-bluejay/LeetCode/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2164-two-best-non-overlapping-events](https://github.com/KR-bluejay/LeetCode/tree/master/2164-two-best-non-overlapping-events) |
 | [2169-simple-bank-system](https://github.com/KR-bluejay/LeetCode/tree/master/2169-simple-bank-system) |
@@ -510,6 +511,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1051-shortest-way-to-form-string](https://github.com/KR-bluejay/LeetCode/tree/master/1051-shortest-way-to-form-string) |
 | [1102-check-if-a-number-is-majority-element-in-a-sorted-array](https://github.com/KR-bluejay/LeetCode/tree/master/1102-check-if-a-number-is-majority-element-in-a-sorted-array) |
 | [1612-avoid-flood-in-the-city](https://github.com/KR-bluejay/LeetCode/tree/master/1612-avoid-flood-in-the-city) |
+| [2141-maximum-running-time-of-n-computers](https://github.com/KR-bluejay/LeetCode/tree/master/2141-maximum-running-time-of-n-computers) |
 | [2164-two-best-non-overlapping-events](https://github.com/KR-bluejay/LeetCode/tree/master/2164-two-best-non-overlapping-events) |
 | [2280-count-good-triplets-in-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/2280-count-good-triplets-in-an-array) |
 | [2618-maximize-the-minimum-powered-city](https://github.com/KR-bluejay/LeetCode/tree/master/2618-maximize-the-minimum-powered-city) |
@@ -653,6 +655,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/KR-bluejay/LeetCode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/KR-bluejay/LeetCode/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
 | [1626-can-make-arithmetic-progression-from-sequence](https://github.com/KR-bluejay/LeetCode/tree/master/1626-can-make-arithmetic-progression-from-sequence) |
+| [2141-maximum-running-time-of-n-computers](https://github.com/KR-bluejay/LeetCode/tree/master/2141-maximum-running-time-of-n-computers) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/KR-bluejay/LeetCode/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2164-two-best-non-overlapping-events](https://github.com/KR-bluejay/LeetCode/tree/master/2164-two-best-non-overlapping-events) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/KR-bluejay/LeetCode/tree/master/2274-keep-multiplying-found-values-by-two) |
@@ -738,6 +741,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1700-minimum-time-to-make-rope-colorful](https://github.com/KR-bluejay/LeetCode/tree/master/1700-minimum-time-to-make-rope-colorful) |
 | [1834-minimum-number-of-people-to-teach](https://github.com/KR-bluejay/LeetCode/tree/master/1834-minimum-number-of-people-to-teach) |
 | [1917-maximum-average-pass-ratio](https://github.com/KR-bluejay/LeetCode/tree/master/1917-maximum-average-pass-ratio) |
+| [2141-maximum-running-time-of-n-computers](https://github.com/KR-bluejay/LeetCode/tree/master/2141-maximum-running-time-of-n-computers) |
 | [2345-minimum-number-of-operations-to-convert-time](https://github.com/KR-bluejay/LeetCode/tree/master/2345-minimum-number-of-operations-to-convert-time) |
 | [2618-maximize-the-minimum-powered-city](https://github.com/KR-bluejay/LeetCode/tree/master/2618-maximize-the-minimum-powered-city) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/KR-bluejay/LeetCode/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
