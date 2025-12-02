@@ -41,8 +41,8 @@ impl Solution {
             let start_id = edge[0] as usize;
             let end_id = edge[1] as usize;
 
-            tree_map.entry(start_id).or_insert(Vec::new()).push(end_id);
-            tree_map.entry(end_id).or_insert(Vec::new()).push(start_id);
+            tree_map.entry(start_id).or_insert(Vec::with_capacity(3)).push(end_id);
+            tree_map.entry(end_id).or_insert(Vec::with_capacity(3)).push(start_id);
         }
 
         Self::find_apples(0, &tree_map, &mut tree_visit, &has_apple).max(2) - 2
