@@ -19,7 +19,7 @@ impl Solution {
         let mut total_frog = 0;
 
 
-        for croak in croak_of_frogs.bytes() {
+        for croak in croak_of_frogs.into_bytes() {
             let id = Self::find_id(croak);
             croaks[id] += 1;
 
