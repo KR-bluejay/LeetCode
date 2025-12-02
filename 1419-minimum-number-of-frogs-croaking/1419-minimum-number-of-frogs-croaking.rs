@@ -19,7 +19,6 @@ impl Solution {
         let mut total_frog = 0;
 
 
-
         for croak in croak_of_frogs.bytes() {
             let id = Self::find_id(croak);
             croaks[id] += 1;
@@ -48,15 +47,12 @@ impl Solution {
                 }, 
                 _ => {}
             }
-
         }
-        let count = croaks[0];
-            
-        if croaks.iter().skip(1).all(|v| *v == count) {
+
+        if active_frog == 0 {
             total_frog
         } else {
             -1
         }
-
     }
 }
