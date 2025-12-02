@@ -239,6 +239,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2429-design-a-food-rating-system](https://github.com/KR-bluejay/LeetCode/tree/master/2429-design-a-food-rating-system) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/KR-bluejay/LeetCode/tree/master/2432-number-of-zero-filled-subarrays) |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/KR-bluejay/LeetCode/tree/master/2435-paths-in-matrix-whose-sum-is-divisible-by-k) |
+| [2453-destroy-sequential-targets](https://github.com/KR-bluejay/LeetCode/tree/master/2453-destroy-sequential-targets) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/KR-bluejay/LeetCode/tree/master/2527-count-subarrays-with-fixed-bounds) |
 | [2618-maximize-the-minimum-powered-city](https://github.com/KR-bluejay/LeetCode/tree/master/2618-maximize-the-minimum-powered-city) |
 | [2625-increment-submatrices-by-one](https://github.com/KR-bluejay/LeetCode/tree/master/2625-increment-submatrices-by-one) |
@@ -335,6 +336,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2274-keep-multiplying-found-values-by-two](https://github.com/KR-bluejay/LeetCode/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2427-first-letter-to-appear-twice](https://github.com/KR-bluejay/LeetCode/tree/master/2427-first-letter-to-appear-twice) |
 | [2429-design-a-food-rating-system](https://github.com/KR-bluejay/LeetCode/tree/master/2429-design-a-food-rating-system) |
+| [2453-destroy-sequential-targets](https://github.com/KR-bluejay/LeetCode/tree/master/2453-destroy-sequential-targets) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/KR-bluejay/LeetCode/tree/master/2626-count-the-number-of-good-subarrays) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/KR-bluejay/LeetCode/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [2856-count-complete-subarrays-in-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/2856-count-complete-subarrays-in-an-array) |
@@ -381,6 +383,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2053-check-if-all-characters-have-equal-number-of-occurrences](https://github.com/KR-bluejay/LeetCode/tree/master/2053-check-if-all-characters-have-equal-number-of-occurrences) |
 | [2174-next-greater-numerically-balanced-number](https://github.com/KR-bluejay/LeetCode/tree/master/2174-next-greater-numerically-balanced-number) |
 | [2427-first-letter-to-appear-twice](https://github.com/KR-bluejay/LeetCode/tree/master/2427-first-letter-to-appear-twice) |
+| [2453-destroy-sequential-targets](https://github.com/KR-bluejay/LeetCode/tree/master/2453-destroy-sequential-targets) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/KR-bluejay/LeetCode/tree/master/3242-count-elements-with-maximum-frequency) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/KR-bluejay/LeetCode/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/KR-bluejay/LeetCode/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
