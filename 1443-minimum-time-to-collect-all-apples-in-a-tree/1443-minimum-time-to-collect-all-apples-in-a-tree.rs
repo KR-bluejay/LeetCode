@@ -11,12 +11,11 @@ impl Solution {
             if parent_id == child_id {
                 continue;
             }
-            
+
             let child_time = Self::find_min_time(child_id, id, graph, has_apple);
+            let has_descendant_apple = (child_time > 0 || has_apple[child_id]) as i32;
             
-            if child_time > 0 || has_apple[child_id] {
-                collecting_time += child_time + 2;
-            }
+            collecting_time += has_descendant_apple * (child_time + 2);
         }
 
         collecting_time
