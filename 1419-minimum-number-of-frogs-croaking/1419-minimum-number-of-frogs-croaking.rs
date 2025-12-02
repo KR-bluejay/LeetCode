@@ -33,15 +33,6 @@ impl Solution {
                     active_frog += 1;
                     total_frog = total_frog.max(active_frog);
                 },
-                1 => {
-
-                },
-                2 => {
-
-                },
-                3 => {
-
-                },
                 4 => {
                     active_frog -= 1;
                 }, 
