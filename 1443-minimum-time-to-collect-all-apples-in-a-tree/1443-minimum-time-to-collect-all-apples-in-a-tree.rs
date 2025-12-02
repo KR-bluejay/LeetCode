@@ -1,50 +1,37 @@
-use std::collections::HashMap;
-
 impl Solution {
-    fn find_apples(
-        id: usize,
-        tree_map: &HashMap<usize, Vec<usize>>,
-        tree_visit: &mut Vec<bool>,
+    fn find_min_time(
+        id: usize, 
+        parent_id: usize, 
+        graph: &Vec<Vec<usize>>,
         has_apple: &Vec<bool>,
     ) -> i32 {
         let mut collecting_time = 0;
 
-        tree_visit[id] = true;
-
-        if let Some(neighbors) = tree_map.get(&id) {
-            for &neighbor in neighbors.iter() {
-                if tree_visit[neighbor] {
-                    continue;
-                }
-
-                collecting_time += Self::find_apples(
-                    neighbor, 
-                    tree_map, 
-                    tree_visit,
-                    has_apple
-                );
+        for &child_id in graph[id].iter() {
+            if parent_id == child_id {
+                continue;
+            }
+            
+            let child_time = Self::find_min_time(child_id, id, graph, has_apple);
+            
+            if child_time > 0 || has_apple[child_id] {
+                collecting_time += child_time + 2;
             }
         }
 
-        collecting_time + if collecting_time > 0 || has_apple[id] {
-            2
-        } else {
-            0
-        }
+        collecting_time
     }
     pub fn min_time(n: i32, edges: Vec<Vec<i32>>, has_apple: Vec<bool>) -> i32 {
         let tree_count = n as usize;
-        let mut tree_map: HashMap<usize, Vec<usize>> = HashMap::with_capacity(tree_count);
-        let mut tree_visit: Vec<bool> = vec![false; tree_count];
+        let mut graph: Vec<Vec<usize>> = vec![Vec::with_capacity(3); tree_count];
 
-        for (id, edge) in edges.iter().enumerate() {
-            let start_id = edge[0] as usize;
-            let end_id = edge[1] as usize;
+        for edge in edges {
+            let (from, to) = (edge[0] as usize, edge[1] as usize);
 
-            tree_map.entry(start_id).or_insert(Vec::with_capacity(3)).push(end_id);
-            tree_map.entry(end_id).or_insert(Vec::with_capacity(3)).push(start_id);
+            graph[from].push(to);
+            graph[to].push(from);
         }
 
-        Self::find_apples(0, &tree_map, &mut tree_visit, &has_apple).max(2) - 2
+        Self::find_min_time(0, usize::MAX, &graph, &has_apple)
     }
 }
