@@ -10,7 +10,8 @@ impl Solution {
         && let Some(right_id) = opt_right_id 
         && left_id < right_id {
             directions[left_id ..= right_id].iter()
-                .fold(0, |mut acc, &d| acc + matches!(d, b'L' | b'R') as i32)
+                .filter(|&d| matches!(d, b'L' | b'R'))
+                .count() as i32
         } else {
             0
         }
