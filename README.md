@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1585-the-kth-factor-of-n](https://github.com/KR-bluejay/LeetCode/tree/master/1585-the-kth-factor-of-n) |
 | [1636-number-of-substrings-with-only-1s](https://github.com/KR-bluejay/LeetCode/tree/master/1636-number-of-substrings-with-only-1s) |
 | [1817-calculate-money-in-leetcode-bank](https://github.com/KR-bluejay/LeetCode/tree/master/1817-calculate-money-in-leetcode-bank) |
+| [1925-count-square-sum-triples](https://github.com/KR-bluejay/LeetCode/tree/master/1925-count-square-sum-triples) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/KR-bluejay/LeetCode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2050-count-good-numbers](https://github.com/KR-bluejay/LeetCode/tree/master/2050-count-good-numbers) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/KR-bluejay/LeetCode/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
@@ -845,6 +846,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [1656-count-good-triplets](https://github.com/KR-bluejay/LeetCode/tree/master/1656-count-good-triplets) |
 | [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/KR-bluejay/LeetCode/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
+| [1925-count-square-sum-triples](https://github.com/KR-bluejay/LeetCode/tree/master/1925-count-square-sum-triples) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/KR-bluejay/LeetCode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2174-next-greater-numerically-balanced-number](https://github.com/KR-bluejay/LeetCode/tree/master/2174-next-greater-numerically-balanced-number) |
 | [2507-number-of-common-factors](https://github.com/KR-bluejay/LeetCode/tree/master/2507-number-of-common-factors) |
