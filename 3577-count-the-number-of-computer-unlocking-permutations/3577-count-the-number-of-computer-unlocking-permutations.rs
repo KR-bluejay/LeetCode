@@ -8,8 +8,7 @@ impl Solution {
         const MODULO: usize = 1_000_000_007;
 
         for i in 2 .. complexity.len() {
-            result *= i;
-            result %= MODULO
+            result = result * i % MODULO;
         }
 
         result as i32
