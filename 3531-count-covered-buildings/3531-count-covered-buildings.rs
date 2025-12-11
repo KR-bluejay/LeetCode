@@ -6,6 +6,8 @@ impl Solution {
         let mut one_cover: Vec<bool> = vec![false; n as usize + 1];
         let mut two_cover: Vec<bool> = vec![false; n as usize + 1];
 
+        let mut result = 0;
+
         for (id, building) in buildings.iter().enumerate() {
             let (x_pos, y_pos) = (building[0] as usize, building[1] as usize);
 
@@ -25,12 +27,9 @@ impl Solution {
         one_cover.fill(false);
         two_cover.fill(false);
 
-        // println!("{cover_counts:?}");
-        
 
         for (id, building) in buildings.iter().enumerate().rev() {
             let (x_pos, y_pos) = (building[0] as usize, building[1] as usize);
-            // println!("{id} {x_pos} {y_pos}");
 
             if one_cover[x_pos] {
                 cover_counts[id] += 1;
@@ -43,10 +42,12 @@ impl Solution {
             } else {
                 two_cover[y_pos] = true;
             }
+
+            if cover_counts[id] == 4 {
+                result += 1;
+            }
         }
 
-        // println!("{cover_counts:?}");
-
-        cover_counts.into_iter().filter(|v| *v == 4).count() as i32
+        result
     }
 }
