@@ -84,9 +84,6 @@ impl Solution {
         }
 
 
-        user_mention.into_iter().map(|mut v| {
-            v += all_count;
-            v
-        }).collect()
+        user_mention.into_iter().map(|mut v| v + all_count).collect()
     }
 }
