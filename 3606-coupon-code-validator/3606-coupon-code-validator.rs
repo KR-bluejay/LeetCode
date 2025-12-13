@@ -28,8 +28,8 @@ impl Solution {
 
         for (code_id, code) in codes.iter().enumerate() {
             if is_active[code_id]
-            && let Ok(category) = Category::from_str(&business_lines[code_id])
             && code.len() > 0
+            && let Ok(category) = Category::from_str(&business_lines[code_id])
             && code.chars().into_iter()
                 .all(|v| v.is_alphanumeric() || v == '_') {
                     results.push((category, code.clone()));
