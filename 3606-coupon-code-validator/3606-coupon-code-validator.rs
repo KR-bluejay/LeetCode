@@ -30,8 +30,8 @@ impl Solution {
             if is_active[code_id]
             && let Ok(category) = Category::from_str(&business_lines[code_id])
             && code.len() > 0
-            && code.bytes().into_iter()
-                .all(|v| (b'a' <= v && v <= b'z') || (b'A' <= v && v <= b'Z') || (b'0' <= v && v <= b'9') || v == b'_') {
+            && code.chars().into_iter()
+                .all(|v| v.is_alphanumeric() || v == '_') {
                     results.push((category, code.clone()));
                 }
         }
