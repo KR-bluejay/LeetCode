@@ -1,20 +1,13 @@
 impl Solution {
     pub fn get_descent_periods(prices: Vec<i32>) -> i64 {
-        let mut left_id = 0;
-        let mut result = 0;
+        let mut result = 1_i64;
+        let mut descent_period = 1_i64;
 
-        while left_id < prices.len() {
-            let mut right_id = left_id + 1;
-
-            while right_id < prices.len() && prices[right_id - 1] - 1 == prices[right_id] {
-                right_id += 1;
-            }
-            result += (right_id - left_id) * (right_id - left_id + 1) / 2;
-
-
-            left_id = right_id;
+        for id in 1 .. prices.len() {
+            descent_period = (((prices[id - 1] - 1 == prices[id]) as i64 * -1) & descent_period) + 1;
+            result += descent_period;
         }
 
-        result as i64
+        result
     }
 }
