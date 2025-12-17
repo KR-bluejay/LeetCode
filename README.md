@@ -285,6 +285,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3476-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/KR-bluejay/LeetCode/tree/master/3476-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/KR-bluejay/LeetCode/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 | [3531-count-covered-buildings](https://github.com/KR-bluejay/LeetCode/tree/master/3531-count-covered-buildings) |
+| [3573-best-time-to-buy-and-sell-stock-v](https://github.com/KR-bluejay/LeetCode/tree/master/3573-best-time-to-buy-and-sell-stock-v) |
 | [3577-count-the-number-of-computer-unlocking-permutations](https://github.com/KR-bluejay/LeetCode/tree/master/3577-count-the-number-of-computer-unlocking-permutations) |
 | [3592-find-x-sum-of-all-k-long-subarrays-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3592-find-x-sum-of-all-k-long-subarrays-ii) |
 | [3606-coupon-code-validator](https://github.com/KR-bluejay/LeetCode/tree/master/3606-coupon-code-validator) |
@@ -664,6 +665,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/KR-bluejay/LeetCode/tree/master/2435-paths-in-matrix-whose-sum-is-divisible-by-k) |
 | [3273-most-expensive-item-that-can-not-be-bought](https://github.com/KR-bluejay/LeetCode/tree/master/3273-most-expensive-item-that-can-not-be-bought) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/KR-bluejay/LeetCode/tree/master/3437-maximum-total-damage-with-spell-casting) |
+| [3573-best-time-to-buy-and-sell-stock-v](https://github.com/KR-bluejay/LeetCode/tree/master/3573-best-time-to-buy-and-sell-stock-v) |
 | [3648-find-the-maximum-number-of-fruits-collected](https://github.com/KR-bluejay/LeetCode/tree/master/3648-find-the-maximum-number-of-fruits-collected) |
 ## Prefix Sum
 |  |
