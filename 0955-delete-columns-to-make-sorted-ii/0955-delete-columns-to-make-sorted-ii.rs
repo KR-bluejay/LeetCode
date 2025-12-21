@@ -28,8 +28,15 @@ impl Solution {
 
 
             if col_id == col_bytes[0].len() - 1 {
+                let mut all_sort = true;
+
                 for col_id in 0 .. col_bytes[0].len() - 1 {
                     col_sort[col_id] |= col_bytes[row_id][col_id] < col_bytes[row_id][col_id + 1];
+                    all_sort &= col_sort[col_id];
+                }
+
+                if all_sort {
+                    return result;
                 }
             }
         }
