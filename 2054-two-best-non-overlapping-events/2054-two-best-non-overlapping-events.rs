@@ -1,35 +1,27 @@
-use std::collections::BTreeMap;
-
 impl Solution {
     pub fn max_two_events(mut events: Vec<Vec<i32>>) -> i32 {
-        let mut start_map: BTreeMap<i32, i32> = BTreeMap::new();
-        let mut max_score = 0;
-        let mut result = 0;
-        // let mut end_map: BTreeMap<i32, i32> = BTreeMap::new();
-
-        events.sort_by(|lhs, rhs| lhs[0].cmp(&rhs[0]).then(lhs[1].cmp(&rhs[1])));
-
-        for event in events.iter().rev() {
-            let start_time = event[0];
-            // let end_time = event[1];
-            
-            max_score = max_score.max(event[2]);
-
-            start_map.entry(start_time)
-                .and_modify(|v| { (*v) = (*v).max(max_score)})
-                .or_insert(max_score);
+        events.sort_unstable_by_key(|e| e[0]);
+        
+        let n = events.len();
+        let mut suffix_max = vec![0; n + 1];
+        for i in (0..n).rev() {
+            suffix_max[i] = suffix_max[i + 1].max(events[i][2]);
         }
 
-        for event in events.iter() {
-            let end_time = event[1];
-            let mut first_score = event[2];
+        let mut result = 0;
 
+        for event in &events {
+            let start = event[0];
+            let end = event[1];
+            let val = event[2];
 
-            if let Some((k, v)) = start_map.range((end_time + 1)..).next() {
-                // println!("{end_time} {k} {v}");
-                first_score += *v;
+            result = result.max(val);
+
+            let idx = events.partition_point(|e| e[0] <= end);
+
+            if idx < n {
+                result = result.max(val + suffix_max[idx]);
             }
-            result = result.max(first_score);
         }
 
         result
