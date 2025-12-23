@@ -244,6 +244,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2003-distinct-numbers-in-each-subarray](https://github.com/KR-bluejay/LeetCode/tree/master/2003-distinct-numbers-in-each-subarray) |
 | [2023-design-movie-rental-system](https://github.com/KR-bluejay/LeetCode/tree/master/2023-design-movie-rental-system) |
 | [2048-build-array-from-permutation](https://github.com/KR-bluejay/LeetCode/tree/master/2048-build-array-from-permutation) |
+| [2054-two-best-non-overlapping-events](https://github.com/KR-bluejay/LeetCode/tree/master/2054-two-best-non-overlapping-events) |
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/KR-bluejay/LeetCode/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
 | [2141-maximum-running-time-of-n-computers](https://github.com/KR-bluejay/LeetCode/tree/master/2141-maximum-running-time-of-n-computers) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/KR-bluejay/LeetCode/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
@@ -564,6 +565,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1051-shortest-way-to-form-string](https://github.com/KR-bluejay/LeetCode/tree/master/1051-shortest-way-to-form-string) |
 | [1102-check-if-a-number-is-majority-element-in-a-sorted-array](https://github.com/KR-bluejay/LeetCode/tree/master/1102-check-if-a-number-is-majority-element-in-a-sorted-array) |
 | [1612-avoid-flood-in-the-city](https://github.com/KR-bluejay/LeetCode/tree/master/1612-avoid-flood-in-the-city) |
+| [2054-two-best-non-overlapping-events](https://github.com/KR-bluejay/LeetCode/tree/master/2054-two-best-non-overlapping-events) |
 | [2141-maximum-running-time-of-n-computers](https://github.com/KR-bluejay/LeetCode/tree/master/2141-maximum-running-time-of-n-computers) |
 | [2164-two-best-non-overlapping-events](https://github.com/KR-bluejay/LeetCode/tree/master/2164-two-best-non-overlapping-events) |
 | [2280-count-good-triplets-in-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/2280-count-good-triplets-in-an-array) |
@@ -668,6 +670,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1524-number-of-sub-arrays-with-odd-sum](https://github.com/KR-bluejay/LeetCode/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/KR-bluejay/LeetCode/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [1700-minimum-time-to-make-rope-colorful](https://github.com/KR-bluejay/LeetCode/tree/master/1700-minimum-time-to-make-rope-colorful) |
+| [2054-two-best-non-overlapping-events](https://github.com/KR-bluejay/LeetCode/tree/master/2054-two-best-non-overlapping-events) |
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/KR-bluejay/LeetCode/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
 | [2147-number-of-ways-to-divide-a-long-corridor](https://github.com/KR-bluejay/LeetCode/tree/master/2147-number-of-ways-to-divide-a-long-corridor) |
 | [2164-two-best-non-overlapping-events](https://github.com/KR-bluejay/LeetCode/tree/master/2164-two-best-non-overlapping-events) |
@@ -722,6 +725,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/KR-bluejay/LeetCode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/KR-bluejay/LeetCode/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
 | [1626-can-make-arithmetic-progression-from-sequence](https://github.com/KR-bluejay/LeetCode/tree/master/1626-can-make-arithmetic-progression-from-sequence) |
+| [2054-two-best-non-overlapping-events](https://github.com/KR-bluejay/LeetCode/tree/master/2054-two-best-non-overlapping-events) |
 | [2092-find-all-people-with-secret](https://github.com/KR-bluejay/LeetCode/tree/master/2092-find-all-people-with-secret) |
 | [2141-maximum-running-time-of-n-computers](https://github.com/KR-bluejay/LeetCode/tree/master/2141-maximum-running-time-of-n-computers) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/KR-bluejay/LeetCode/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
@@ -906,6 +910,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1612-avoid-flood-in-the-city](https://github.com/KR-bluejay/LeetCode/tree/master/1612-avoid-flood-in-the-city) |
 | [1917-maximum-average-pass-ratio](https://github.com/KR-bluejay/LeetCode/tree/master/1917-maximum-average-pass-ratio) |
 | [2023-design-movie-rental-system](https://github.com/KR-bluejay/LeetCode/tree/master/2023-design-movie-rental-system) |
+| [2054-two-best-non-overlapping-events](https://github.com/KR-bluejay/LeetCode/tree/master/2054-two-best-non-overlapping-events) |
 | [2164-two-best-non-overlapping-events](https://github.com/KR-bluejay/LeetCode/tree/master/2164-two-best-non-overlapping-events) |
 | [2429-design-a-food-rating-system](https://github.com/KR-bluejay/LeetCode/tree/master/2429-design-a-food-rating-system) |
 | [3592-find-x-sum-of-all-k-long-subarrays-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3592-find-x-sum-of-all-k-long-subarrays-ii) |
