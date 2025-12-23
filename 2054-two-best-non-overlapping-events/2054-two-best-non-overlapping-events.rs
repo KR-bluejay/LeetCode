@@ -1,27 +1,21 @@
 impl Solution {
     pub fn max_two_events(mut events: Vec<Vec<i32>>) -> i32 {
-        events.sort_unstable_by_key(|e| e[0]);
+        events.sort_unstable_by(|lhs, rhs| lhs[0].cmp(&rhs[0]));
         
-        let n = events.len();
-        let mut suffix_max = vec![0; n + 1];
-        for i in (0..n).rev() {
-            suffix_max[i] = suffix_max[i + 1].max(events[i][2]);
-        }
-
+        let mut suffix_scores: Vec<i32> = vec![0; events.len() + 1];
         let mut result = 0;
 
-        for event in &events {
-            let start = event[0];
-            let end = event[1];
-            let val = event[2];
+        for id in (0 .. events.len()).rev() {
+            suffix_scores[id] = suffix_scores[id + 1].max(events[id][2]);
+        }
 
-            result = result.max(val);
+        for event in events.iter() {
+            let start_time = event[0];
+            let end_time = event[1];
+            let score = event[2];
+            let next_id = events.partition_point(|e| e[0] <= end_time);
 
-            let idx = events.partition_point(|e| e[0] <= end);
-
-            if idx < n {
-                result = result.max(val + suffix_max[idx]);
-            }
+            result = result.max(score + suffix_scores[next_id]);
         }
 
         result
