@@ -7,7 +7,7 @@ impl Solution {
         let mut cur_penalty = 0;
 
         for (id, customer) in customers.into_iter().enumerate() {
-            cur_penalty += (customer == b'N') as i32 - (customer == b'Y') as i32;
+            cur_penalty += (customer == b'N') as i32 * 2 - 1;
 
             if cur_penalty < min_penalty {
                 min_hour = id + 1;
