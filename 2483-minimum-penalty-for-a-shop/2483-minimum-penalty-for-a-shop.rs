@@ -1,31 +1,20 @@
 impl Solution {
     pub fn best_closing_time(customers: String) -> i32 {
         let customers: Vec<u8> = customers.into_bytes();
-        let mut cache: Vec<i32> = vec![0; customers.len() + 1];
+        let mut min_penalty = 0;
+        let mut min_hour = 0;
 
-        for id in (0 .. customers.len()).rev() {
-            cache[id] = cache[id + 1] + (customers[id] == b'Y') as i32;
-        }
+        let mut cur_penalty = 0;
 
-        let mut n_count = 0;
+        for (id, customer) in customers.into_iter().enumerate() {
+            cur_penalty += (customer == b'N') as i32 - (customer == b'Y') as i32;
 
-        for id in 0 .. customers.len() {
-            n_count += (customers[id] == b'N') as i32;
-
-            cache[id + 1] += n_count
-        }
-
-        let mut penalty_count = customers.len() as i32;
-        let mut penalty_id = 0;
-
-
-        for id in 0 .. cache.len() {
-            if cache[id] < penalty_count {
-                penalty_count = cache[id];
-                penalty_id = id;
+            if cur_penalty < min_penalty {
+                min_hour = id + 1;
+                min_penalty = cur_penalty;
             }
         }
 
-        penalty_id as i32
+        min_hour as i32
     }
 }
