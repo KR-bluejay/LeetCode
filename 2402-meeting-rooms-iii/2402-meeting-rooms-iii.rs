@@ -9,10 +9,9 @@ impl Solution {
 
         let mut meeting_count: Vec<i32> = vec![0; room_count];
 
-        let mut room_heap: BinaryHeap<Reverse<usize>> = BinaryHeap::from(
+        let mut room_heap: BinaryHeap<Reverse<usize>> = BinaryHeap::from_iter(
             (0 .. room_count)
                 .map(Reverse)
-                .collect::<Vec<_>>()
         );
 
         let mut end_time_heap: BinaryHeap<Reverse<(i64, usize)>> = BinaryHeap::with_capacity(room_count);
@@ -34,7 +33,7 @@ impl Solution {
                 end_time_heap.push(Reverse((meeting_end_time, free_room_id)));
             } else if let Some(Reverse((end_time, free_room_id))) = end_time_heap.pop() {
                 meeting_count[free_room_id] += 1;
-                meeting_end_time += (end_time - meeting_start_time).max(0);
+                meeting_end_time += (end_time - meeting_start_time);
 
                 end_time_heap.push(Reverse((meeting_end_time, free_room_id)))
             }
