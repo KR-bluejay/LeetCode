@@ -3,8 +3,7 @@ use std::cmp::Reverse;
 
 impl Solution {
     pub fn most_booked(n: i32, mut meetings: Vec<Vec<i32>>) -> i32 {
-        // meetings.sort_by(|lhs, rhs| lhs[0].cmp(&rhs[0]));
-        meetings.sort();
+        meetings.sort_unstable_by_key(|m| m[0]);
 
         let room_count = n as usize;
 
