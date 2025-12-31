@@ -32,7 +32,7 @@ impl Solution {
             }
 
             while let Some((row_id, col_id)) = block_queue.pop_front() {
-                if row_id + 1 == row_len {
+                if row_id + 1 == row_len || result == mid_day {
                     result = result.max(mid_day);
                     
                     break;
@@ -50,6 +50,11 @@ impl Solution {
                     || mid_day >= matrix[next_row_id][next_col_id] {
                         continue;
                     }
+
+                    if next_row_id + 1 == row_len {
+                        result = result.max(mid_day);
+                    }
+
                     visit[next_row_id][next_col_id] = true;
                     
                     block_queue.push_back((next_row_id, next_col_id));
