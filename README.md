@@ -244,6 +244,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1755-defuse-the-bomb](https://github.com/KR-bluejay/LeetCode/tree/master/1755-defuse-the-bomb) |
 | [1834-minimum-number-of-people-to-teach](https://github.com/KR-bluejay/LeetCode/tree/master/1834-minimum-number-of-people-to-teach) |
 | [1917-maximum-average-pass-ratio](https://github.com/KR-bluejay/LeetCode/tree/master/1917-maximum-average-pass-ratio) |
+| [1970-last-day-where-you-can-still-cross](https://github.com/KR-bluejay/LeetCode/tree/master/1970-last-day-where-you-can-still-cross) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/KR-bluejay/LeetCode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2003-distinct-numbers-in-each-subarray](https://github.com/KR-bluejay/LeetCode/tree/master/2003-distinct-numbers-in-each-subarray) |
 | [2023-design-movie-rental-system](https://github.com/KR-bluejay/LeetCode/tree/master/2023-design-movie-rental-system) |
@@ -508,6 +509,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/KR-bluejay/LeetCode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1443-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/KR-bluejay/LeetCode/tree/master/1443-minimum-time-to-collect-all-apples-in-a-tree) |
 | [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/KR-bluejay/LeetCode/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
+| [1970-last-day-where-you-can-still-cross](https://github.com/KR-bluejay/LeetCode/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2092-find-all-people-with-secret](https://github.com/KR-bluejay/LeetCode/tree/master/2092-find-all-people-with-secret) |
 | [2793-count-the-number-of-complete-components](https://github.com/KR-bluejay/LeetCode/tree/master/2793-count-the-number-of-complete-components) |
 | [2872-maximum-number-of-k-divisible-components](https://github.com/KR-bluejay/LeetCode/tree/master/2872-maximum-number-of-k-divisible-components) |
@@ -537,6 +539,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/KR-bluejay/LeetCode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1443-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/KR-bluejay/LeetCode/tree/master/1443-minimum-time-to-collect-all-apples-in-a-tree) |
 | [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/KR-bluejay/LeetCode/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
+| [1970-last-day-where-you-can-still-cross](https://github.com/KR-bluejay/LeetCode/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2092-find-all-people-with-secret](https://github.com/KR-bluejay/LeetCode/tree/master/2092-find-all-people-with-secret) |
 | [2793-count-the-number-of-complete-components](https://github.com/KR-bluejay/LeetCode/tree/master/2793-count-the-number-of-complete-components) |
 | [3863-power-grid-maintenance](https://github.com/KR-bluejay/LeetCode/tree/master/3863-power-grid-maintenance) |
@@ -579,6 +582,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1051-shortest-way-to-form-string](https://github.com/KR-bluejay/LeetCode/tree/master/1051-shortest-way-to-form-string) |
 | [1102-check-if-a-number-is-majority-element-in-a-sorted-array](https://github.com/KR-bluejay/LeetCode/tree/master/1102-check-if-a-number-is-majority-element-in-a-sorted-array) |
 | [1612-avoid-flood-in-the-city](https://github.com/KR-bluejay/LeetCode/tree/master/1612-avoid-flood-in-the-city) |
+| [1970-last-day-where-you-can-still-cross](https://github.com/KR-bluejay/LeetCode/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2054-two-best-non-overlapping-events](https://github.com/KR-bluejay/LeetCode/tree/master/2054-two-best-non-overlapping-events) |
 | [2141-maximum-running-time-of-n-computers](https://github.com/KR-bluejay/LeetCode/tree/master/2141-maximum-running-time-of-n-computers) |
 | [2164-two-best-non-overlapping-events](https://github.com/KR-bluejay/LeetCode/tree/master/2164-two-best-non-overlapping-events) |
@@ -771,6 +775,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0130-surrounded-regions](https://github.com/KR-bluejay/LeetCode/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/KR-bluejay/LeetCode/tree/master/0200-number-of-islands) |
 | [0794-swim-in-rising-water](https://github.com/KR-bluejay/LeetCode/tree/master/0794-swim-in-rising-water) |
+| [1970-last-day-where-you-can-still-cross](https://github.com/KR-bluejay/LeetCode/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2092-find-all-people-with-secret](https://github.com/KR-bluejay/LeetCode/tree/master/2092-find-all-people-with-secret) |
 | [2793-count-the-number-of-complete-components](https://github.com/KR-bluejay/LeetCode/tree/master/2793-count-the-number-of-complete-components) |
 | [3863-power-grid-maintenance](https://github.com/KR-bluejay/LeetCode/tree/master/3863-power-grid-maintenance) |
@@ -809,6 +814,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0794-swim-in-rising-water](https://github.com/KR-bluejay/LeetCode/tree/master/0794-swim-in-rising-water) |
 | [0840-magic-squares-in-grid](https://github.com/KR-bluejay/LeetCode/tree/master/0840-magic-squares-in-grid) |
 | [0945-snakes-and-ladders](https://github.com/KR-bluejay/LeetCode/tree/master/0945-snakes-and-ladders) |
+| [1970-last-day-where-you-can-still-cross](https://github.com/KR-bluejay/LeetCode/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/KR-bluejay/LeetCode/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/KR-bluejay/LeetCode/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2343-count-unguarded-cells-in-the-grid](https://github.com/KR-bluejay/LeetCode/tree/master/2343-count-unguarded-cells-in-the-grid) |
