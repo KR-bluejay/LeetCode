@@ -10,6 +10,8 @@ impl Solution {
         let mut end_day = cells.len();
 
         let mut result = 0;
+        let mut visit = vec![vec![false; col_len]; row_len];
+        let mut block_queue: VecDeque<(usize, usize)> = VecDeque::with_capacity(cells.len());
 
         for (day_id, cell) in cells.into_iter().enumerate() {
             matrix[cell[0] as usize - 1][cell[1] as usize - 1] = day_id + 1;
@@ -17,8 +19,6 @@ impl Solution {
 
 
 
-        let mut visit = vec![vec![false; col_len]; row_len];
-        let mut block_heap: VecDeque<(usize, usize)> = VecDeque::with_capacity(row_len * col_len);
 
         while start_day < end_day {
             let mid_day = start_day + (end_day - start_day) / 2;
@@ -27,11 +27,11 @@ impl Solution {
             for col_id in 0 .. col_len {
                 if mid_day < matrix[0][col_id] {
                     visit[0][col_id] = true;
-                    block_heap.push_back((0, col_id))
+                    block_queue.push_back((0, col_id))
                 }
             }
 
-            while let Some((row_id, col_id)) = block_heap.pop_front() {
+            while let Some((row_id, col_id)) = block_queue.pop_front() {
                 if row_id + 1 == row_len {
                     result = result.max(mid_day);
                     
@@ -52,11 +52,11 @@ impl Solution {
                     }
                     visit[next_row_id][next_col_id] = true;
                     
-                    block_heap.push_back((next_row_id, next_col_id));
+                    block_queue.push_back((next_row_id, next_col_id));
                 }
             }
 
-            block_heap.clear();
+            block_queue.clear();
 
             if result == mid_day {
                 start_day = mid_day + 1;
