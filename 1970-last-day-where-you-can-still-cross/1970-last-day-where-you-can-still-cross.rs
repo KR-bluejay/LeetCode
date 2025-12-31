@@ -1,4 +1,4 @@
-use std::collections::BinaryHeap;
+use std::collections::VecDeque;
 
 impl Solution {
     pub fn latest_day_to_cross(row: i32, col: i32, cells: Vec<Vec<i32>>) -> i32 {
@@ -18,21 +18,20 @@ impl Solution {
 
 
         let mut visit = vec![vec![false; col_len]; row_len];
-        let mut block_heap: BinaryHeap<(usize, usize)> = BinaryHeap::with_capacity(row_len * col_len);
+        let mut block_heap: VecDeque<(usize, usize)> = VecDeque::with_capacity(row_len * col_len);
 
         while start_day < end_day {
             let mid_day = start_day + (end_day - start_day) / 2;
             visit = vec![vec![false; col_len]; row_len];
-            println!("{start_day} {mid_day} {end_day}");
             
             for col_id in 0 .. col_len {
                 if mid_day < matrix[0][col_id] {
                     visit[0][col_id] = true;
-                    block_heap.push((0, col_id))
+                    block_heap.push_back((0, col_id))
                 }
             }
 
-            while let Some((row_id, col_id)) = block_heap.pop() {
+            while let Some((row_id, col_id)) = block_heap.pop_front() {
                 if row_id + 1 == row_len {
                     result = result.max(mid_day);
                     
@@ -53,7 +52,7 @@ impl Solution {
                     }
                     visit[next_row_id][next_col_id] = true;
                     
-                    block_heap.push((next_row_id, next_col_id));
+                    block_heap.push_back((next_row_id, next_col_id));
                 }
             }
 
