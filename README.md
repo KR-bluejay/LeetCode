@@ -212,6 +212,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0948-sort-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/0948-sort-an-array) |
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0955-delete-columns-to-make-sorted-ii) |
 | [0960-delete-columns-to-make-sorted-iii](https://github.com/KR-bluejay/LeetCode/tree/master/0960-delete-columns-to-make-sorted-iii) |
+| [0961-n-repeated-element-in-size-2n-array](https://github.com/KR-bluejay/LeetCode/tree/master/0961-n-repeated-element-in-size-2n-array) |
 | [1006-vowel-spellchecker](https://github.com/KR-bluejay/LeetCode/tree/master/1006-vowel-spellchecker) |
 | [1018-largest-perimeter-triangle](https://github.com/KR-bluejay/LeetCode/tree/master/1018-largest-perimeter-triangle) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/KR-bluejay/LeetCode/tree/master/1018-binary-prefix-divisible-by-5) |
@@ -354,6 +355,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0768-partition-labels](https://github.com/KR-bluejay/LeetCode/tree/master/0768-partition-labels) |
 | [0797-rabbits-in-forest](https://github.com/KR-bluejay/LeetCode/tree/master/0797-rabbits-in-forest) |
 | [0840-magic-squares-in-grid](https://github.com/KR-bluejay/LeetCode/tree/master/0840-magic-squares-in-grid) |
+| [0961-n-repeated-element-in-size-2n-array](https://github.com/KR-bluejay/LeetCode/tree/master/0961-n-repeated-element-in-size-2n-array) |
 | [1006-vowel-spellchecker](https://github.com/KR-bluejay/LeetCode/tree/master/1006-vowel-spellchecker) |
 | [1015-smallest-integer-divisible-by-k](https://github.com/KR-bluejay/LeetCode/tree/master/1015-smallest-integer-divisible-by-k) |
 | [1084-find-k-length-substrings-with-no-repeated-characters](https://github.com/KR-bluejay/LeetCode/tree/master/1084-find-k-length-substrings-with-no-repeated-characters) |
