@@ -30,7 +30,7 @@ impl Solution {
         
         let mut cur_level = 1;
 
-        let mut cur_queue: VecDeque<Rc<RefCell<TreeNode>>> = VecDeque::with_capacity(10000);
+        let mut cur_queue: VecDeque<Rc<RefCell<TreeNode>>> = VecDeque::with_capacity(1000);
 
         cur_queue.push_back(root.unwrap());
 
