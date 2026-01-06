@@ -29,39 +29,35 @@ impl Solution {
         let mut max_sum = i32::MIN;
         
         let mut cur_level = 1;
-        let mut cur_sum = 0;
 
         let mut cur_queue: VecDeque<Rc<RefCell<TreeNode>>> = VecDeque::new();
-        let mut next_queue: VecDeque<Rc<RefCell<TreeNode>>> = VecDeque::new();
 
         cur_queue.push_back(root.unwrap());
 
         while !cur_queue.is_empty() {
-            cur_sum = 0;
+            let mut cur_sum = 0;
 
-            while let Some(cur_node) = cur_queue.pop_front() {
+            for id in 0 .. cur_queue.len() {
+                let cur_node = cur_queue.pop_front().unwrap();
                 let cur_node = cur_node.borrow();
-                cur_sum += cur_node.val;
 
+                cur_sum += cur_node.val;
+                
                 if let Some(left_node) = &cur_node.left {
-                    next_queue.push_back(left_node.clone());
+                    cur_queue.push_back(left_node.clone());
                 }
     
                 if let Some(right_node) = &cur_node.right {
-                    next_queue.push_back(right_node.clone());
+                    cur_queue.push_back(right_node.clone());
                 }
             }
-            
-
 
             if cur_sum > max_sum {
-                max_level = cur_level;
                 max_sum = cur_sum;
-            } 
-
-
+                max_level = cur_level;
+            }
+            
             cur_level += 1;
-            std::mem::swap(&mut cur_queue, &mut next_queue);
         }
 
         max_level
