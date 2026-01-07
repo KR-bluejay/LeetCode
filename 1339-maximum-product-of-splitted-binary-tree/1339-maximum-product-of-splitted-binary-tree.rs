@@ -19,66 +19,45 @@
 use std::rc::Rc;
 use std::cell::RefCell;
 impl Solution {
-    fn modify_tree(
-        node: Option<Rc<RefCell<TreeNode>>>,
-    ) -> i32 {
-        if node.is_none() {
-            return 0;
+    fn update_tree_val(node: &Rc<RefCell<TreeNode>>) -> i32 {
+        let mut node = node.borrow_mut();
+        let mut node_val = 0;
+
+        if let Some(ref left_node) = node.left {
+            node_val += Self::update_tree_val(left_node);
         }
 
-        let node = node.unwrap();
-        let mut node = node.borrow_mut();
+        if let Some(ref right_node) = node.right {
+            node_val += Self::update_tree_val(right_node);
+        }
 
-        let left_val = Self::modify_tree(node.left.clone());
-        let right_val = Self::modify_tree(node.right.clone());
-
-        node.val = (node.val + left_val + right_val);
+        node.val += node_val;
         node.val
     }
-    fn find_max_product(
-        node: Option<Rc<RefCell<TreeNode>>>,
-        total: i32,
-        max_product: &mut i64,
-    ) {
-        if node.is_none() {
-            return;
+    fn find_max(node: &Rc<RefCell<TreeNode>>, total: i64, max_prod: &mut i64) {
+        let node = node.borrow_mut();
+        let node_val = node.val as i64;
+
+        (*max_prod) = (*max_prod).max(node_val * (total - node_val));
+
+        if let Some(ref left_node) = node.left {
+            Self::find_max(left_node, total, max_prod);
         }
 
-        let node = node.unwrap();
-        let node = node.borrow();
-
-        const MODULO: i64 = 1_000_000_007;
-
-
-        Self::find_max_product(node.left.clone(), total, max_product);
-        Self::find_max_product(node.right.clone(), total, max_product);
-
-        if let Some(left_node) = &node.left {
-            let left_node = left_node.borrow();
-            let left_val = left_node.val;
-
-            (*max_product) = (*max_product)
-                .max((total - left_val) as i64 * left_val as i64);
+        if let Some(ref right_node) = node.right {
+            Self::find_max(right_node, total, max_prod);
         }
-
-        if let Some(right_node) = &node.right {
-            let right_node = right_node.borrow();
-            let right_val = right_node.val;
-
-            (*max_product) = (*max_product)
-                .max((total - right_val) as i64 * right_val as i64);
-        }
-
     }
+
     pub fn max_product(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
-        let mut max_product: i64 = 0;
-        const MODULO: i64 = 1_000_000_007;
+        let root = root.unwrap();
+        
+        let total = Self::update_tree_val(&root) as i64;
+        
+        let mut max_prod: i64 = 0;
 
+        Self::find_max(&root, total, &mut max_prod);
 
-        let total = Self::modify_tree(root.clone());
-        Self::find_max_product(root, total, &mut max_product);
-
-
-        (max_product % MODULO) as i32
+        (max_prod % 1_000_000_007) as i32
     }
 }
