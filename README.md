@@ -233,6 +233,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/KR-bluejay/LeetCode/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1426-find-n-unique-integers-sum-up-to-zero](https://github.com/KR-bluejay/LeetCode/tree/master/1426-find-n-unique-integers-sum-up-to-zero) |
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/KR-bluejay/LeetCode/tree/master/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
+| [1458-max-dot-product-of-two-subsequences](https://github.com/KR-bluejay/LeetCode/tree/master/1458-max-dot-product-of-two-subsequences) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/KR-bluejay/LeetCode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/KR-bluejay/LeetCode/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
 | [1524-number-of-sub-arrays-with-odd-sum](https://github.com/KR-bluejay/LeetCode/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
@@ -698,6 +699,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1111-minimum-score-triangulation-of-polygon](https://github.com/KR-bluejay/LeetCode/tree/master/1111-minimum-score-triangulation-of-polygon) |
 | [1250-longest-common-subsequence](https://github.com/KR-bluejay/LeetCode/tree/master/1250-longest-common-subsequence) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/KR-bluejay/LeetCode/tree/master/1262-greatest-sum-divisible-by-three) |
+| [1458-max-dot-product-of-two-subsequences](https://github.com/KR-bluejay/LeetCode/tree/master/1458-max-dot-product-of-two-subsequences) |
 | [1524-number-of-sub-arrays-with-odd-sum](https://github.com/KR-bluejay/LeetCode/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/KR-bluejay/LeetCode/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [1700-minimum-time-to-make-rope-colorful](https://github.com/KR-bluejay/LeetCode/tree/master/1700-minimum-time-to-make-rope-colorful) |
