@@ -26,23 +26,17 @@ impl Solution {
     ) -> (i32, Option<Rc<RefCell<TreeNode>>>) {
         let node = node_rc.borrow();
 
-        if node.left.is_none() && node.right.is_none() {
-            return (1, Some(node_rc.clone()));
-        }
-        
         let left_sub = if let Some(node_left) = &node.left {
-            let (sub_level, sub_node) = Self::find_deepest_sub_tree(
+            Self::find_deepest_sub_tree(
                 &node_left
-            );
-            (sub_level, sub_node)
+            )
         } else {
             (0, None)
         };
         let right_sub = if let Some(node_right) = &node.right {
-            let (sub_level, sub_node) = Self::find_deepest_sub_tree(
+            Self::find_deepest_sub_tree(
                 &node_right
-            );
-            (sub_level, sub_node)
+            )
         } else {
             (0, None)
         };
