@@ -359,6 +359,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0768-partition-labels](https://github.com/KR-bluejay/LeetCode/tree/master/0768-partition-labels) |
 | [0797-rabbits-in-forest](https://github.com/KR-bluejay/LeetCode/tree/master/0797-rabbits-in-forest) |
 | [0840-magic-squares-in-grid](https://github.com/KR-bluejay/LeetCode/tree/master/0840-magic-squares-in-grid) |
+| [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/KR-bluejay/LeetCode/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/KR-bluejay/LeetCode/tree/master/0961-n-repeated-element-in-size-2n-array) |
 | [1006-vowel-spellchecker](https://github.com/KR-bluejay/LeetCode/tree/master/1006-vowel-spellchecker) |
 | [1015-smallest-integer-divisible-by-k](https://github.com/KR-bluejay/LeetCode/tree/master/1015-smallest-integer-divisible-by-k) |
@@ -484,6 +485,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/KR-bluejay/LeetCode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0637-average-of-levels-in-binary-tree) |
+| [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/KR-bluejay/LeetCode/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/KR-bluejay/LeetCode/tree/master/1030-smallest-string-starting-from-leaf) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
@@ -512,6 +514,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0744-network-delay-time](https://github.com/KR-bluejay/LeetCode/tree/master/0744-network-delay-time) |
 | [0794-swim-in-rising-water](https://github.com/KR-bluejay/LeetCode/tree/master/0794-swim-in-rising-water) |
 | [0813-all-paths-from-source-to-target](https://github.com/KR-bluejay/LeetCode/tree/master/0813-all-paths-from-source-to-target) |
+| [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/KR-bluejay/LeetCode/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/KR-bluejay/LeetCode/tree/master/1030-smallest-string-starting-from-leaf) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
@@ -545,6 +548,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0744-network-delay-time](https://github.com/KR-bluejay/LeetCode/tree/master/0744-network-delay-time) |
 | [0794-swim-in-rising-water](https://github.com/KR-bluejay/LeetCode/tree/master/0794-swim-in-rising-water) |
 | [0813-all-paths-from-source-to-target](https://github.com/KR-bluejay/LeetCode/tree/master/0813-all-paths-from-source-to-target) |
+| [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/KR-bluejay/LeetCode/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [0945-snakes-and-ladders](https://github.com/KR-bluejay/LeetCode/tree/master/0945-snakes-and-ladders) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/KR-bluejay/LeetCode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
@@ -569,6 +573,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/KR-bluejay/LeetCode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0637-average-of-levels-in-binary-tree) |
+| [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/KR-bluejay/LeetCode/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/KR-bluejay/LeetCode/tree/master/1030-smallest-string-starting-from-leaf) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
