@@ -4,7 +4,7 @@ impl Solution {
     pub fn separate_squares(mut squares: Vec<Vec<i32>>) -> f64 {
         let mut total_area: f64 = 0.0;
 
-        let mut left_y = 0.0;
+        let mut left_y = f64::MAX;
         let mut right_y = f64::MIN;
 
 
@@ -15,7 +15,7 @@ impl Solution {
 
             let tmp = (square[1] + square[2]) as f64;
             
-            // left_y = left_y.min(square[1] as f64);
+            left_y = left_y.min(square[1] as f64);
             right_y = right_y.max(tmp);
         }
 
