@@ -109,6 +109,7 @@ impl Solution {
             }
 
             while let Some(next_node) = node_queue.peek() 
+            && decrease_count > 0
             && (nodes[next_node.left_id].is_merged 
             || nodes[next_node.right_id].is_merged 
             || nodes[next_node.left_id].val + nodes[next_node.right_id].val 
