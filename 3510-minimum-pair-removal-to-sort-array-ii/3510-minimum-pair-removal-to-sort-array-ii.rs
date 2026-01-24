@@ -32,38 +32,46 @@ impl PartialOrd for Pair {
 
 impl Solution {
     pub fn minimum_pair_removal(nums: Vec<i32>) -> i32 {
-        let num_last_id = nums.len() - 1;
+        
+        let mut decrease_count = 0;
+        let mut op_count = 0;
 
-        let mut node_queue: BinaryHeap<Pair> = BinaryHeap::with_capacity(nums.len());
-        let mut nodes: Vec<Node> = nums.into_iter().enumerate()
-            .map(|(i, n)| Node {
-                val: n as i64,
-                prev_id: if i > 0 {
-                    Some(i - 1)
+        let mut nodes: Vec<Node> = Vec::with_capacity(nums.len());
+        let mut node_queue: BinaryHeap<Pair> = BinaryHeap::with_capacity(nums.len() - 1);
+
+        for (id, &num) in nums.iter().enumerate() {
+            let num = num as i64;
+
+            nodes.push(Node {
+                val: num,
+                prev_id: if id > 0 {
+                    Some(id - 1)
                 } else {
                     None
                 },
-                next_id: if i < num_last_id {
-                    Some(i + 1)
+                next_id: if id + 1 < nums.len() {
+                    Some(id + 1)
                 } else {
                     None
                 },
                 is_merged: false
-            })
-            .collect();
-
-        let mut decrease_count = 0;
-        let mut op_count = 0;
-
-        for id in 0 .. nodes.len() - 1 {
-            decrease_count += (nodes[id].val > nodes[id + 1].val) as i32;
-
-            node_queue.push(Pair {
-                left_id: id,
-                right_id: id + 1,
-                cost: nodes[id].val + nodes[id + 1].val
             });
+
+            if id + 1 < nums.len() {
+                let next_num = nums[id + 1] as i64;
+                let cost = num + next_num;
+
+                decrease_count += (num > next_num) as i32;
+    
+                node_queue.push(Pair {
+                    left_id: id,
+                    right_id: id + 1,
+                    cost,
+                });
+            }
         }
+
+
 
         while let Some(node_pair) = node_queue.pop() && decrease_count > 0 {
             let (left_id, right_id, cost) 
