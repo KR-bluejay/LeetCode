@@ -39,21 +39,13 @@ impl Solution {
         let mut nodes: Vec<Node> = Vec::with_capacity(nums.len());
         let mut node_queue: BinaryHeap<Pair> = BinaryHeap::with_capacity(nums.len() - 1);
 
-        for (id, &num) in nums.iter().enumerate() {
-            let num = num as i64;
+        for id in 0 .. nums.len() {
+            let num = nums[id] as i64;
 
             nodes.push(Node {
                 val: num,
-                prev_id: if id > 0 {
-                    Some(id - 1)
-                } else {
-                    None
-                },
-                next_id: if id + 1 < nums.len() {
-                    Some(id + 1)
-                } else {
-                    None
-                },
+                prev_id: id.checked_sub(1),
+                next_id: (id + 1 < nums.len()).then_some(id + 1),
                 is_merged: false
             });
 
