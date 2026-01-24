@@ -69,12 +69,6 @@ impl Solution {
             let (left_id, right_id, cost) 
                 = (node_pair.left_id, node_pair.right_id, node_pair.cost);
             
-            if nodes[left_id].is_merged 
-            || nodes[right_id].is_merged 
-            || nodes[left_id].val + nodes[right_id].val != cost {
-                continue;
-            }
-
             decrease_count -= (nodes[left_id].val > nodes[right_id].val) as i32;
             op_count += 1;
 
@@ -114,13 +108,14 @@ impl Solution {
                 });
             }
 
-            // while let Some(next_node) = node_queue.peek() 
-            // && (nodes[next_node.left_id].is_merged 
-            // || nodes[next_node.right_id].is_merged 
-            // || nodes[next_node.left_id].val + nodes[next_node.right_id].val 
-            //     != next_node.cost) {
-            //     node_queue.pop();
-            // }
+            while let Some(next_node) = node_queue.peek() 
+            && (nodes[next_node.left_id].is_merged 
+            || nodes[next_node.right_id].is_merged 
+            || nodes[next_node.left_id].val + nodes[next_node.right_id].val 
+                != next_node.cost
+            ) {
+                node_queue.pop();
+            }
         }
 
         op_count
