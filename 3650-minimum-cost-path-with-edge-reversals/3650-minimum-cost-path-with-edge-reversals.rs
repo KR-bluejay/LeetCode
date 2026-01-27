@@ -1,32 +1,13 @@
 use std::collections::BinaryHeap;
-use std::cmp::Ordering;
-
-#[derive(Debug, Eq, PartialEq)]
-struct Node {
-    id: usize,
-    cost: i32,
-}
-
-impl Ord for Node {
-    fn cmp(&self, other: &Self) -> Ordering {
-        self.id.cmp(&other.id).reverse()
-            // .then(self.cost.cmp(&other.cost).reverse())
-            .then(self.cost.cmp(&other.cost))
-    }
-}
-
-impl PartialOrd for Node {
-    fn partial_cmp(&self, other: &Self) -> Option<Ordering> {
-        Some(self.cmp(other))
-    }
-}
+use std::cmp::{ Ordering, Reverse };
 
 impl Solution {
     pub fn min_cost(n: i32, edges: Vec<Vec<i32>>) -> i32 {
         let last_node_id = n as usize - 1;
 
         let mut node_state: Vec<i32> = vec![i32::MAX; n as usize];
-        let mut node_heap: BinaryHeap<Node> = BinaryHeap::with_capacity(n as usize);
+        let mut node_heap: BinaryHeap<(Reverse<i32>, usize)> 
+            = BinaryHeap::with_capacity(n as usize);
 
         let mut graph: Vec<Vec<(usize, i32)>> 
             = vec![Vec::with_capacity(2); n as usize];
@@ -39,15 +20,12 @@ impl Solution {
             graph[v].push((u, cost * 2));
         }
 
-        node_heap.push(Node {
-            id: 0,
-            cost: 0,
-        });
+        node_heap.push((Reverse(0), 0));
         node_state[0] = 0;
 
 
         while let Some(node) = node_heap.pop() {
-            let Node { id, cost } = node;
+            let (id, cost) = (node.1, node.0.0);
 
             if node_state[id] < cost {
                 continue;
@@ -66,10 +44,7 @@ impl Solution {
                 }
 
                 node_state[next_id] = next_cost;
-                node_heap.push(Node {
-                    id: next_id,
-                    cost: next_cost,
-                });
+                node_heap.push((Reverse(next_cost), next_id));
             }
         }
 
