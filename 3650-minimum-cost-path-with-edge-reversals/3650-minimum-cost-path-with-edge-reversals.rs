@@ -23,6 +23,8 @@ impl PartialOrd for Node {
 
 impl Solution {
     pub fn min_cost(n: i32, edges: Vec<Vec<i32>>) -> i32 {
+        let last_node_id = n as usize - 1;
+
         let mut node_state: Vec<i32> = vec![i32::MAX; n as usize];
         let mut node_heap: BinaryHeap<Node> = BinaryHeap::with_capacity(n as usize);
 
@@ -51,7 +53,7 @@ impl Solution {
                 continue;
             }
 
-            if id == n as usize - 1 {
+            if id == last_node_id {
                 return cost;
             }
 
