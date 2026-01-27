@@ -27,13 +27,20 @@ impl Solution {
         while let Some(node) = node_heap.pop() {
             let (id, cost) = (node.1, node.0.0);
 
-            if node_state[id] < cost {
-                continue;
-            }
-
             if id == last_node_id {
                 return cost;
             }
+
+
+            // if node_state[id] < cost {
+            //     continue;
+            // }
+
+            while let Some(next_node) = node_heap.peek() 
+            && next_node.1 == id {
+                node_heap.pop();
+            }
+
 
             for next_node in graph[id].iter() {
                 let next_id = next_node.0;
