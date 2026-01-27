@@ -32,9 +32,9 @@ impl Solution {
             }
 
 
-            // if node_state[id] < cost {
-            //     continue;
-            // }
+            if node_state[id] < cost {
+                continue;
+            }
 
             while let Some(next_node) = node_heap.peek() 
             && next_node.1 == id {
