@@ -8,19 +8,15 @@ impl Solution {
         let mut max_right: Vec<i64> = vec![i64::MIN; nums.len()];
 
         for id in 1 .. nums.len() {
-            max_left[id] = if nums[id - 1] < nums[id] {
-                max_left[id - 1].max(0) + nums[id - 1] as i64
-            } else {
-                i64::MIN
-            };
+            if nums[id - 1] < nums[id] {
+                max_left[id] = max_left[id - 1].max(0) + nums[id - 1] as i64;
+            }
         }
 
         for id in (0 .. nums.len() - 1).rev() {
-            max_right[id] = if nums[id] < nums[id + 1] {
-                max_right[id + 1].max(0) + nums[id + 1] as i64
-            } else {
-                i64::MIN
-            };
+            if nums[id] < nums[id + 1] {
+                max_right[id] = max_right[id + 1].max(0) + nums[id + 1] as i64;
+            }
         }
 
 
@@ -35,15 +31,11 @@ impl Solution {
             }
 
             if left_id < right_id {
-                println!("A");
                 let left_sum = max_left[left_id];
                 let right_sum = max_right[right_id];
 
                 if left_sum != i64::MIN && right_sum != i64::MIN {
-                    println!("{left_sum} {center_sum} {right_sum}");
                     result = result.max(left_sum + center_sum + right_sum);
-                } else {
-                    println!("{center_id} {left_sum} {right_sum}");
                 }
 
                 center_id = right_id;
