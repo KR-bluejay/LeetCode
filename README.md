@@ -144,6 +144,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1653-minimum-deletions-to-make-string-balanced](https://github.com/KR-bluejay/LeetCode/tree/master/1653-minimum-deletions-to-make-string-balanced) |
 | [2211-count-collisions-on-a-road](https://github.com/KR-bluejay/LeetCode/tree/master/2211-count-collisions-on-a-road) |
 | [2307-replace-non-coprime-numbers-in-array](https://github.com/KR-bluejay/LeetCode/tree/master/2307-replace-non-coprime-numbers-in-array) |
+| [2487-remove-nodes-from-linked-list](https://github.com/KR-bluejay/LeetCode/tree/master/2487-remove-nodes-from-linked-list) |
 ## Array
 |  |
 | ------- |
@@ -686,6 +687,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0117-populating-next-right-pointers-in-each-node-ii) |
 | [0908-middle-of-the-linked-list](https://github.com/KR-bluejay/LeetCode/tree/master/0908-middle-of-the-linked-list) |
 | [1618-delete-n-nodes-after-m-nodes-of-a-linked-list](https://github.com/KR-bluejay/LeetCode/tree/master/1618-delete-n-nodes-after-m-nodes-of-a-linked-list) |
+| [2487-remove-nodes-from-linked-list](https://github.com/KR-bluejay/LeetCode/tree/master/2487-remove-nodes-from-linked-list) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/KR-bluejay/LeetCode/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 | [3510-minimum-pair-removal-to-sort-array-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3510-minimum-pair-removal-to-sort-array-ii) |
 ## Recursion
@@ -694,6 +696,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0002-add-two-numbers](https://github.com/KR-bluejay/LeetCode/tree/master/0002-add-two-numbers) |
 | [0025-reverse-nodes-in-k-group](https://github.com/KR-bluejay/LeetCode/tree/master/0025-reverse-nodes-in-k-group) |
 | [2050-count-good-numbers](https://github.com/KR-bluejay/LeetCode/tree/master/2050-count-good-numbers) |
+| [2487-remove-nodes-from-linked-list](https://github.com/KR-bluejay/LeetCode/tree/master/2487-remove-nodes-from-linked-list) |
 ## String Matching
 |  |
 | ------- |
@@ -1116,6 +1119,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0496-next-greater-element-i](https://github.com/KR-bluejay/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0943-sum-of-subarray-minimums](https://github.com/KR-bluejay/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/KR-bluejay/LeetCode/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
+| [2487-remove-nodes-from-linked-list](https://github.com/KR-bluejay/LeetCode/tree/master/2487-remove-nodes-from-linked-list) |
 ## Game Theory
 |  |
 | ------- |
