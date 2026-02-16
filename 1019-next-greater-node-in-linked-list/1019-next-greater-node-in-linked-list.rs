@@ -23,7 +23,6 @@ impl Solution {
         while let Some(mut node) = head {
             while let Some(&(last_node_id, last_node_val)) = node_stack.last() 
             && last_node_val < node.val {
-                println!("{node_id} {last_node_id}");
                 results[last_node_id] = node.val;
 
                 node_stack.pop();
