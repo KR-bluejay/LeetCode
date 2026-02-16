@@ -1,5 +1,5 @@
 struct StockSpanner {
-    records: Vec<u32>,
+    records: Vec<i32>,
 }
 
 
@@ -16,7 +16,6 @@ impl StockSpanner {
     }
     
     fn next(&mut self, price: i32) -> i32 {
-        let price = price as u32;
         let mut day = 1;
 
         while let Some(&packed) = self.records.last() {
@@ -34,7 +33,7 @@ impl StockSpanner {
 
         self.records.push((price << 15) | day);
 
-        day as i32
+        day
     }
 }
 
