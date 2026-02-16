@@ -17,8 +17,8 @@
 impl Solution {
     pub fn next_larger_nodes(mut head: Option<Box<ListNode>>) -> Vec<i32> {
         let mut node_id = 0;
-        let mut node_stack: Vec<(usize, i32)> = Vec::with_capacity(100000);
-        let mut results: Vec<i32> = Vec::with_capacity(100000);
+        let mut node_stack: Vec<(usize, i32)> = Vec::new();
+        let mut results: Vec<i32> = Vec::new();
 
         while let Some(mut node) = head {
             while let Some(&(last_node_id, last_node_val)) = node_stack.last() 
