@@ -1,5 +1,5 @@
 struct StockSpanner {
-    records: Vec<(i32, i32)>,
+    records: Vec<(i32, u16)>,
 }
 
 
@@ -27,7 +27,7 @@ impl StockSpanner {
 
         self.records.push((price, day));
 
-        day
+        day as i32
     }
 }
 
