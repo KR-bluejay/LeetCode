@@ -445,6 +445,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0191-number-of-1-bits](https://github.com/KR-bluejay/LeetCode/tree/master/0191-number-of-1-bits) |
 | [0266-palindrome-permutation](https://github.com/KR-bluejay/LeetCode/tree/master/0266-palindrome-permutation) |
 | [0338-counting-bits](https://github.com/KR-bluejay/LeetCode/tree/master/0338-counting-bits) |
+| [0401-binary-watch](https://github.com/KR-bluejay/LeetCode/tree/master/0401-binary-watch) |
 | [0645-set-mismatch](https://github.com/KR-bluejay/LeetCode/tree/master/0645-set-mismatch) |
 | [0756-pyramid-transition-matrix](https://github.com/KR-bluejay/LeetCode/tree/master/0756-pyramid-transition-matrix) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/KR-bluejay/LeetCode/tree/master/1018-binary-prefix-divisible-by-5) |
@@ -948,6 +949,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0077-combinations](https://github.com/KR-bluejay/LeetCode/tree/master/0077-combinations) |
 | [0078-subsets](https://github.com/KR-bluejay/LeetCode/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/KR-bluejay/LeetCode/tree/master/0079-word-search) |
+| [0401-binary-watch](https://github.com/KR-bluejay/LeetCode/tree/master/0401-binary-watch) |
 | [0756-pyramid-transition-matrix](https://github.com/KR-bluejay/LeetCode/tree/master/0756-pyramid-transition-matrix) |
 | [0813-all-paths-from-source-to-target](https://github.com/KR-bluejay/LeetCode/tree/master/0813-all-paths-from-source-to-target) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/KR-bluejay/LeetCode/tree/master/1030-smallest-string-starting-from-leaf) |
