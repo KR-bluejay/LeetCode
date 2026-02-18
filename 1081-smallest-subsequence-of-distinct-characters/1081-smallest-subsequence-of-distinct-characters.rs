@@ -3,8 +3,8 @@ impl Solution {
         let s_bytes = s.into_bytes();
 
         let mut byte_seen: u32 = 0;
-        let mut byte_pos = vec![0; 26];
-        let mut byte_stack: Vec<u8> = Vec::with_capacity(s_bytes.len());
+        let mut byte_pos: [usize; 26] = [0; 26];
+        let mut byte_stack: Vec<u8> = Vec::with_capacity(s_bytes.len().min(26));
         
         for (id, &s_byte) in s_bytes.iter().enumerate() {
             byte_pos[(s_byte - b'a') as usize] = id;
