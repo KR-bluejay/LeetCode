@@ -96,6 +96,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1006-vowel-spellchecker](https://github.com/KR-bluejay/LeetCode/tree/master/1006-vowel-spellchecker) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/KR-bluejay/LeetCode/tree/master/1030-smallest-string-starting-from-leaf) |
 | [1051-shortest-way-to-form-string](https://github.com/KR-bluejay/LeetCode/tree/master/1051-shortest-way-to-form-string) |
+| [1081-smallest-subsequence-of-distinct-characters](https://github.com/KR-bluejay/LeetCode/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1084-find-k-length-substrings-with-no-repeated-characters](https://github.com/KR-bluejay/LeetCode/tree/master/1084-find-k-length-substrings-with-no-repeated-characters) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1108-analyze-user-website-visit-pattern](https://github.com/KR-bluejay/LeetCode/tree/master/1108-analyze-user-website-visit-pattern) |
@@ -143,6 +144,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0901-online-stock-span](https://github.com/KR-bluejay/LeetCode/tree/master/0901-online-stock-span) |
 | [0943-sum-of-subarray-minimums](https://github.com/KR-bluejay/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
 | [1019-next-greater-node-in-linked-list](https://github.com/KR-bluejay/LeetCode/tree/master/1019-next-greater-node-in-linked-list) |
+| [1081-smallest-subsequence-of-distinct-characters](https://github.com/KR-bluejay/LeetCode/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/KR-bluejay/LeetCode/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [1653-minimum-deletions-to-make-string-balanced](https://github.com/KR-bluejay/LeetCode/tree/master/1653-minimum-deletions-to-make-string-balanced) |
 | [2211-count-collisions-on-a-road](https://github.com/KR-bluejay/LeetCode/tree/master/2211-count-collisions-on-a-road) |
@@ -906,6 +908,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1018-largest-perimeter-triangle](https://github.com/KR-bluejay/LeetCode/tree/master/1018-largest-perimeter-triangle) |
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/KR-bluejay/LeetCode/tree/master/1049-minimum-domino-rotations-for-equal-row) |
 | [1051-shortest-way-to-form-string](https://github.com/KR-bluejay/LeetCode/tree/master/1051-shortest-way-to-form-string) |
+| [1081-smallest-subsequence-of-distinct-characters](https://github.com/KR-bluejay/LeetCode/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/KR-bluejay/LeetCode/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/KR-bluejay/LeetCode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1612-avoid-flood-in-the-city](https://github.com/KR-bluejay/LeetCode/tree/master/1612-avoid-flood-in-the-city) |
@@ -1131,6 +1134,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0901-online-stock-span](https://github.com/KR-bluejay/LeetCode/tree/master/0901-online-stock-span) |
 | [0943-sum-of-subarray-minimums](https://github.com/KR-bluejay/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
 | [1019-next-greater-node-in-linked-list](https://github.com/KR-bluejay/LeetCode/tree/master/1019-next-greater-node-in-linked-list) |
+| [1081-smallest-subsequence-of-distinct-characters](https://github.com/KR-bluejay/LeetCode/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/KR-bluejay/LeetCode/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [2487-remove-nodes-from-linked-list](https://github.com/KR-bluejay/LeetCode/tree/master/2487-remove-nodes-from-linked-list) |
 ## Game Theory
