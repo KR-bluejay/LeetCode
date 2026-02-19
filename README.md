@@ -201,6 +201,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0219-contains-duplicate-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0219-contains-duplicate-ii) |
 | [0238-product-of-array-except-self](https://github.com/KR-bluejay/LeetCode/tree/master/0238-product-of-array-except-self) |
 | [0240-search-a-2d-matrix-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0240-search-a-2d-matrix-ii) |
+| [0287-find-the-duplicate-number](https://github.com/KR-bluejay/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0300-longest-increasing-subsequence](https://github.com/KR-bluejay/LeetCode/tree/master/0300-longest-increasing-subsequence) |
 | [0325-maximum-size-subarray-sum-equals-k](https://github.com/KR-bluejay/LeetCode/tree/master/0325-maximum-size-subarray-sum-equals-k) |
 | [0407-trapping-rain-water-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0407-trapping-rain-water-ii) |
@@ -452,6 +453,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0190-reverse-bits](https://github.com/KR-bluejay/LeetCode/tree/master/0190-reverse-bits) |
 | [0191-number-of-1-bits](https://github.com/KR-bluejay/LeetCode/tree/master/0191-number-of-1-bits) |
 | [0266-palindrome-permutation](https://github.com/KR-bluejay/LeetCode/tree/master/0266-palindrome-permutation) |
+| [0287-find-the-duplicate-number](https://github.com/KR-bluejay/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0338-counting-bits](https://github.com/KR-bluejay/LeetCode/tree/master/0338-counting-bits) |
 | [0401-binary-watch](https://github.com/KR-bluejay/LeetCode/tree/master/0401-binary-watch) |
 | [0645-set-mismatch](https://github.com/KR-bluejay/LeetCode/tree/master/0645-set-mismatch) |
@@ -633,6 +635,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/KR-bluejay/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0209-minimum-size-subarray-sum](https://github.com/KR-bluejay/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0240-search-a-2d-matrix-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0240-search-a-2d-matrix-ii) |
+| [0287-find-the-duplicate-number](https://github.com/KR-bluejay/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0300-longest-increasing-subsequence](https://github.com/KR-bluejay/LeetCode/tree/master/0300-longest-increasing-subsequence) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/KR-bluejay/LeetCode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0611-valid-triangle-number](https://github.com/KR-bluejay/LeetCode/tree/master/0611-valid-triangle-number) |
@@ -690,6 +693,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0151-reverse-words-in-a-string](https://github.com/KR-bluejay/LeetCode/tree/master/0151-reverse-words-in-a-string) |
 | [0165-compare-version-numbers](https://github.com/KR-bluejay/LeetCode/tree/master/0165-compare-version-numbers) |
 | [0202-happy-number](https://github.com/KR-bluejay/LeetCode/tree/master/0202-happy-number) |
+| [0287-find-the-duplicate-number](https://github.com/KR-bluejay/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0611-valid-triangle-number](https://github.com/KR-bluejay/LeetCode/tree/master/0611-valid-triangle-number) |
 | [0768-partition-labels](https://github.com/KR-bluejay/LeetCode/tree/master/0768-partition-labels) |
 | [0881-boats-to-save-people](https://github.com/KR-bluejay/LeetCode/tree/master/0881-boats-to-save-people) |
