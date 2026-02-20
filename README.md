@@ -89,6 +89,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0474-ones-and-zeroes](https://github.com/KR-bluejay/LeetCode/tree/master/0474-ones-and-zeroes) |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/KR-bluejay/LeetCode/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
 | [0756-pyramid-transition-matrix](https://github.com/KR-bluejay/LeetCode/tree/master/0756-pyramid-transition-matrix) |
+| [0761-special-binary-string](https://github.com/KR-bluejay/LeetCode/tree/master/0761-special-binary-string) |
 | [0768-partition-labels](https://github.com/KR-bluejay/LeetCode/tree/master/0768-partition-labels) |
 | [0944-delete-columns-to-make-sorted](https://github.com/KR-bluejay/LeetCode/tree/master/0944-delete-columns-to-make-sorted) |
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0955-delete-columns-to-make-sorted-ii) |
@@ -817,6 +818,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0611-valid-triangle-number](https://github.com/KR-bluejay/LeetCode/tree/master/0611-valid-triangle-number) |
 | [0645-set-mismatch](https://github.com/KR-bluejay/LeetCode/tree/master/0645-set-mismatch) |
 | [0759-set-intersection-size-at-least-two](https://github.com/KR-bluejay/LeetCode/tree/master/0759-set-intersection-size-at-least-two) |
+| [0761-special-binary-string](https://github.com/KR-bluejay/LeetCode/tree/master/0761-special-binary-string) |
 | [0853-car-fleet](https://github.com/KR-bluejay/LeetCode/tree/master/0853-car-fleet) |
 | [0881-boats-to-save-people](https://github.com/KR-bluejay/LeetCode/tree/master/0881-boats-to-save-people) |
 | [0948-sort-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/0948-sort-an-array) |
@@ -956,6 +958,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0191-number-of-1-bits](https://github.com/KR-bluejay/LeetCode/tree/master/0191-number-of-1-bits) |
 | [0215-kth-largest-element-in-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0240-search-a-2d-matrix-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0240-search-a-2d-matrix-ii) |
+| [0761-special-binary-string](https://github.com/KR-bluejay/LeetCode/tree/master/0761-special-binary-string) |
 | [0948-sort-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/0948-sort-an-array) |
 | [2280-count-good-triplets-in-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/2280-count-good-triplets-in-an-array) |
 ## Backtracking
