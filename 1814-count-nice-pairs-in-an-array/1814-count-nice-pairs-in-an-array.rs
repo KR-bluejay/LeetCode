@@ -18,20 +18,17 @@ impl Solution {
             }
 
 
-            num_map.entry(num - rev_num)
-                .and_modify(|v| *v += 1)
-                .or_insert(1);
+            num_map.entry(num - rev_num).and_modify(|v| {
+                result += *v;
+
+                *v += 1;
+            }).or_insert(1);
+
         }
 
 
 
-        for count in num_map.into_values() {
-            result += count * (count - 1) / 2;
-            result %= MODULO;
-        }
 
-
-
-        result as i32
+        (result % MODULO) as i32
     }
 }
