@@ -33,6 +33,8 @@ impl Solution {
             for left_id in (1 .. (total_id - 1)).step_by(2) {
                 let right_id = total_id - left_id - 1;
 
+                tree.reserve(tree_nodes[left_id].len() * tree_nodes[right_id].len());
+
                 for left_node in tree_nodes[left_id].iter() {
                     for right_node in tree_nodes[right_id].iter() {
                         tree.push(Some(Rc::new(RefCell::new(TreeNode {
