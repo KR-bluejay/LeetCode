@@ -12,12 +12,7 @@ impl Solution {
             | 1 << 29 
             | 1 << 31;
 
-        let mut result = 0;
-
-        for mid in left ..= right {
-            result += ((PRIME_BIT >> mid.count_ones()) & 1) as i32;
-        }
-
-        result
+        (left ..= right).map(|mid| (PRIME_BIT >> mid.count_ones()) & 1)
+            .sum::<u32>() as i32
     }
 }
