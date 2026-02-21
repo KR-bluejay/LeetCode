@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0067-add-binary](https://github.com/KR-bluejay/LeetCode/tree/master/0067-add-binary) |
 | [0166-fraction-to-recurring-decimal](https://github.com/KR-bluejay/LeetCode/tree/master/0166-fraction-to-recurring-decimal) |
 | [0202-happy-number](https://github.com/KR-bluejay/LeetCode/tree/master/0202-happy-number) |
+| [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/KR-bluejay/LeetCode/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
 | [0797-rabbits-in-forest](https://github.com/KR-bluejay/LeetCode/tree/master/0797-rabbits-in-forest) |
 | [0830-largest-triangle-area](https://github.com/KR-bluejay/LeetCode/tree/master/0830-largest-triangle-area) |
 | [0840-magic-squares-in-grid](https://github.com/KR-bluejay/LeetCode/tree/master/0840-magic-squares-in-grid) |
@@ -462,6 +463,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0401-binary-watch](https://github.com/KR-bluejay/LeetCode/tree/master/0401-binary-watch) |
 | [0645-set-mismatch](https://github.com/KR-bluejay/LeetCode/tree/master/0645-set-mismatch) |
 | [0756-pyramid-transition-matrix](https://github.com/KR-bluejay/LeetCode/tree/master/0756-pyramid-transition-matrix) |
+| [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/KR-bluejay/LeetCode/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/KR-bluejay/LeetCode/tree/master/1018-binary-prefix-divisible-by-5) |
 | [1067-campus-bikes-ii](https://github.com/KR-bluejay/LeetCode/tree/master/1067-campus-bikes-ii) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/KR-bluejay/LeetCode/tree/master/1993-sum-of-all-subset-xor-totals) |
