@@ -19,40 +19,34 @@
 use std::rc::Rc;
 use std::cell::RefCell;
 impl Solution {
-    fn build_tree(node_count: i8) 
-    -> Vec<Option<Rc<RefCell<TreeNode>>>> {
-        let mut result = Vec::new();
+    pub fn all_possible_fbt(n: i32) -> Vec<Option<Rc<RefCell<TreeNode>>>> {
+        let n = n as usize;
 
-        if node_count == 1 {
-            result.push(Some(Rc::new(RefCell::new(TreeNode::new(0)))));
+        let mut tree_nodes: Vec<Vec<Option<Rc<RefCell<TreeNode>>>>> 
+            = vec![vec![]; n + 1];
 
-            return result;
-        }
+        tree_nodes[1].push(Some(Rc::new(RefCell::new(TreeNode::new(0)))));
+        
+        for total_id in (3 ..= n).step_by(2) {
+            let mut tree = Vec::new();
 
+            for left_id in (1 .. (total_id - 1)).step_by(2) {
+                let right_id = total_id - left_id - 1;
 
-        for left_count in 1 .. (node_count - 1) {
-            let right_count = node_count - 1 - left_count;
-            let left_nodes = Self::build_tree(left_count);
-            let right_nodes = Self::build_tree(right_count);
-            
-            for left_node in left_nodes.iter() {
-                for right_node in right_nodes.iter() {
-                    result.push(Some(Rc::new(RefCell::new(TreeNode {
-                        val: 0,
-                        left: left_node.clone(),
-                        right: right_node.clone(),
-                    }))));
+                for left_node in tree_nodes[left_id].iter() {
+                    for right_node in tree_nodes[right_id].iter() {
+                        tree.push(Some(Rc::new(RefCell::new(TreeNode {
+                            val: 0,
+                            left: left_node.clone(),
+                            right: right_node.clone()
+                        }))));
+                    }
                 }
             }
+
+            tree_nodes[total_id] = tree
         }
 
-        result
-    }
-    pub fn all_possible_fbt(
-        node_count: i32
-    ) -> Vec<Option<Rc<RefCell<TreeNode>>>> {
-        let node_count = node_count as i8;
-
-        Self::build_tree(node_count)
+        tree_nodes.pop().unwrap()
     }
 }
