@@ -535,6 +535,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0530-minimum-absolute-difference-in-bst](https://github.com/KR-bluejay/LeetCode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/KR-bluejay/LeetCode/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
+| [0894-all-possible-full-binary-trees](https://github.com/KR-bluejay/LeetCode/tree/master/0894-all-possible-full-binary-trees) |
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/1008-construct-binary-search-tree-from-preorder-traversal) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/KR-bluejay/LeetCode/tree/master/1030-smallest-string-starting-from-leaf) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
@@ -624,6 +625,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0530-minimum-absolute-difference-in-bst](https://github.com/KR-bluejay/LeetCode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/KR-bluejay/LeetCode/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
+| [0894-all-possible-full-binary-trees](https://github.com/KR-bluejay/LeetCode/tree/master/0894-all-possible-full-binary-trees) |
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/1008-construct-binary-search-tree-from-preorder-traversal) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/KR-bluejay/LeetCode/tree/master/1030-smallest-string-starting-from-leaf) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
@@ -726,6 +728,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0002-add-two-numbers](https://github.com/KR-bluejay/LeetCode/tree/master/0002-add-two-numbers) |
 | [0025-reverse-nodes-in-k-group](https://github.com/KR-bluejay/LeetCode/tree/master/0025-reverse-nodes-in-k-group) |
+| [0894-all-possible-full-binary-trees](https://github.com/KR-bluejay/LeetCode/tree/master/0894-all-possible-full-binary-trees) |
 | [2050-count-good-numbers](https://github.com/KR-bluejay/LeetCode/tree/master/2050-count-good-numbers) |
 | [2487-remove-nodes-from-linked-list](https://github.com/KR-bluejay/LeetCode/tree/master/2487-remove-nodes-from-linked-list) |
 ## String Matching
@@ -760,6 +763,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/KR-bluejay/LeetCode/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/KR-bluejay/LeetCode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0799-champagne-tower](https://github.com/KR-bluejay/LeetCode/tree/master/0799-champagne-tower) |
+| [0894-all-possible-full-binary-trees](https://github.com/KR-bluejay/LeetCode/tree/master/0894-all-possible-full-binary-trees) |
 | [0943-sum-of-subarray-minimums](https://github.com/KR-bluejay/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
 | [0960-delete-columns-to-make-sorted-iii](https://github.com/KR-bluejay/LeetCode/tree/master/0960-delete-columns-to-make-sorted-iii) |
 | [1025-minimum-cost-for-tickets](https://github.com/KR-bluejay/LeetCode/tree/master/1025-minimum-cost-for-tickets) |
@@ -1107,6 +1111,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0139-word-break](https://github.com/KR-bluejay/LeetCode/tree/master/0139-word-break) |
+| [0894-all-possible-full-binary-trees](https://github.com/KR-bluejay/LeetCode/tree/master/0894-all-possible-full-binary-trees) |
 ## Queue
 |  |
 | ------- |
