@@ -538,6 +538,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/KR-bluejay/LeetCode/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [0894-all-possible-full-binary-trees](https://github.com/KR-bluejay/LeetCode/tree/master/0894-all-possible-full-binary-trees) |
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/1008-construct-binary-search-tree-from-preorder-traversal) |
+| [1022-sum-of-root-to-leaf-binary-numbers](https://github.com/KR-bluejay/LeetCode/tree/master/1022-sum-of-root-to-leaf-binary-numbers) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/KR-bluejay/LeetCode/tree/master/1030-smallest-string-starting-from-leaf) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
@@ -567,6 +568,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0794-swim-in-rising-water](https://github.com/KR-bluejay/LeetCode/tree/master/0794-swim-in-rising-water) |
 | [0813-all-paths-from-source-to-target](https://github.com/KR-bluejay/LeetCode/tree/master/0813-all-paths-from-source-to-target) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/KR-bluejay/LeetCode/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
+| [1022-sum-of-root-to-leaf-binary-numbers](https://github.com/KR-bluejay/LeetCode/tree/master/1022-sum-of-root-to-leaf-binary-numbers) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/KR-bluejay/LeetCode/tree/master/1030-smallest-string-starting-from-leaf) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
@@ -628,6 +630,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/KR-bluejay/LeetCode/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [0894-all-possible-full-binary-trees](https://github.com/KR-bluejay/LeetCode/tree/master/0894-all-possible-full-binary-trees) |
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/1008-construct-binary-search-tree-from-preorder-traversal) |
+| [1022-sum-of-root-to-leaf-binary-numbers](https://github.com/KR-bluejay/LeetCode/tree/master/1022-sum-of-root-to-leaf-binary-numbers) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/KR-bluejay/LeetCode/tree/master/1030-smallest-string-starting-from-leaf) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/KR-bluejay/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
