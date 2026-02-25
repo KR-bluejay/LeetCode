@@ -115,6 +115,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1960-check-if-the-sentence-is-pangram](https://github.com/KR-bluejay/LeetCode/tree/master/1960-check-if-the-sentence-is-pangram) |
 | [2053-check-if-all-characters-have-equal-number-of-occurrences](https://github.com/KR-bluejay/LeetCode/tree/master/2053-check-if-all-characters-have-equal-number-of-occurrences) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/KR-bluejay/LeetCode/tree/master/2059-unique-length-3-palindromic-subsequences) |
+| [2096-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/KR-bluejay/LeetCode/tree/master/2096-step-by-step-directions-from-a-binary-tree-node-to-another) |
 | [2147-number-of-ways-to-divide-a-long-corridor](https://github.com/KR-bluejay/LeetCode/tree/master/2147-number-of-ways-to-divide-a-long-corridor) |
 | [2211-count-collisions-on-a-road](https://github.com/KR-bluejay/LeetCode/tree/master/2211-count-collisions-on-a-road) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/KR-bluejay/LeetCode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
@@ -555,6 +556,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/KR-bluejay/LeetCode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 | [1443-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/KR-bluejay/LeetCode/tree/master/1443-minimum-time-to-collect-all-apples-in-a-tree) |
+| [2096-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/KR-bluejay/LeetCode/tree/master/2096-step-by-step-directions-from-a-binary-tree-node-to-another) |
 | [2872-maximum-number-of-k-divisible-components](https://github.com/KR-bluejay/LeetCode/tree/master/2872-maximum-number-of-k-divisible-components) |
 | [3562-maximum-profit-from-trading-stocks-with-discounts](https://github.com/KR-bluejay/LeetCode/tree/master/3562-maximum-profit-from-trading-stocks-with-discounts) |
 ## Depth-First Search
@@ -588,6 +590,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/KR-bluejay/LeetCode/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
 | [1970-last-day-where-you-can-still-cross](https://github.com/KR-bluejay/LeetCode/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2092-find-all-people-with-secret](https://github.com/KR-bluejay/LeetCode/tree/master/2092-find-all-people-with-secret) |
+| [2096-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/KR-bluejay/LeetCode/tree/master/2096-step-by-step-directions-from-a-binary-tree-node-to-another) |
 | [2793-count-the-number-of-complete-components](https://github.com/KR-bluejay/LeetCode/tree/master/2793-count-the-number-of-complete-components) |
 | [2872-maximum-number-of-k-divisible-components](https://github.com/KR-bluejay/LeetCode/tree/master/2872-maximum-number-of-k-divisible-components) |
 | [3562-maximum-profit-from-trading-stocks-with-discounts](https://github.com/KR-bluejay/LeetCode/tree/master/3562-maximum-profit-from-trading-stocks-with-discounts) |
@@ -646,6 +649,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/KR-bluejay/LeetCode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/1339-maximum-product-of-splitted-binary-tree) |
+| [2096-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/KR-bluejay/LeetCode/tree/master/2096-step-by-step-directions-from-a-binary-tree-node-to-another) |
 ## Binary Search Tree
 |  |
 | ------- |
