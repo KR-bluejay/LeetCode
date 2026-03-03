@@ -172,6 +172,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/KR-bluejay/LeetCode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0036-valid-sudoku](https://github.com/KR-bluejay/LeetCode/tree/master/0036-valid-sudoku) |
 | [0039-combination-sum](https://github.com/KR-bluejay/LeetCode/tree/master/0039-combination-sum) |
+| [0040-combination-sum-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0040-combination-sum-ii) |
 | [0042-trapping-rain-water](https://github.com/KR-bluejay/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0045-jump-game-ii) |
 | [0046-permutations](https://github.com/KR-bluejay/LeetCode/tree/master/0046-permutations) |
@@ -1011,6 +1012,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0017-letter-combinations-of-a-phone-number](https://github.com/KR-bluejay/LeetCode/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0022-generate-parentheses](https://github.com/KR-bluejay/LeetCode/tree/master/0022-generate-parentheses) |
 | [0039-combination-sum](https://github.com/KR-bluejay/LeetCode/tree/master/0039-combination-sum) |
+| [0040-combination-sum-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0040-combination-sum-ii) |
 | [0046-permutations](https://github.com/KR-bluejay/LeetCode/tree/master/0046-permutations) |
 | [0051-n-queens](https://github.com/KR-bluejay/LeetCode/tree/master/0051-n-queens) |
 | [0052-n-queens-ii](https://github.com/KR-bluejay/LeetCode/tree/master/0052-n-queens-ii) |
