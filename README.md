@@ -817,6 +817,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2262-solving-questions-with-brainpower](https://github.com/KR-bluejay/LeetCode/tree/master/2262-solving-questions-with-brainpower) |
 | [2408-number-of-people-aware-of-a-secret](https://github.com/KR-bluejay/LeetCode/tree/master/2408-number-of-people-aware-of-a-secret) |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/KR-bluejay/LeetCode/tree/master/2435-paths-in-matrix-whose-sum-is-divisible-by-k) |
+| [3129-find-all-possible-stable-binary-arrays-i](https://github.com/KR-bluejay/LeetCode/tree/master/3129-find-all-possible-stable-binary-arrays-i) |
 | [3273-most-expensive-item-that-can-not-be-bought](https://github.com/KR-bluejay/LeetCode/tree/master/3273-most-expensive-item-that-can-not-be-bought) |
 | [3332-maximum-points-tourist-can-earn](https://github.com/KR-bluejay/LeetCode/tree/master/3332-maximum-points-tourist-can-earn) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/KR-bluejay/LeetCode/tree/master/3437-maximum-total-damage-with-spell-casting) |
@@ -841,6 +842,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2625-increment-submatrices-by-one](https://github.com/KR-bluejay/LeetCode/tree/master/2625-increment-submatrices-by-one) |
 | [2915-count-of-interesting-subarrays](https://github.com/KR-bluejay/LeetCode/tree/master/2915-count-of-interesting-subarrays) |
 | [3096-minimum-levels-to-gain-more-points](https://github.com/KR-bluejay/LeetCode/tree/master/3096-minimum-levels-to-gain-more-points) |
+| [3129-find-all-possible-stable-binary-arrays-i](https://github.com/KR-bluejay/LeetCode/tree/master/3129-find-all-possible-stable-binary-arrays-i) |
 | [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/KR-bluejay/LeetCode/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
 | [3383-taking-maximum-energy-from-the-mystic-dungeon](https://github.com/KR-bluejay/LeetCode/tree/master/3383-taking-maximum-energy-from-the-mystic-dungeon) |
 | [3432-count-partitions-with-even-sum-difference](https://github.com/KR-bluejay/LeetCode/tree/master/3432-count-partitions-with-even-sum-difference) |
