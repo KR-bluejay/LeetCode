@@ -20,6 +20,12 @@ impl Solution {
 
             for &worker_time in worker_times.iter() {
                 let work = (mid / worker_time as i64) as f64;
+                // mid = worker_time * k * (k + 1) / 2
+                // mid / worker_time = k * (k + 1) / 2
+                // 2 * mid / worker_time = k * (k + 1)
+                // 2 * mid / worker_time = k.pow(2) + k
+                // k.pow(2) + k - 2 * mid / worker_time = 0
+                // [-1 + (1 + 8 * mid / worker_time).sqrt()] / -2
                 let k = ((-1.0 + (1.0 + 8.0 * work).sqrt()) / 2.0) as i64;
                 
                 count += k;
