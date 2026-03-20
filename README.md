@@ -52,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
 | [3278-find-the-number-of-ways-to-place-people-i](https://github.com/KR-bluejay/LeetCode/tree/master/3278-find-the-number-of-ways-to-place-people-i) |
 | [3279-alice-and-bob-playing-flower-game](https://github.com/KR-bluejay/LeetCode/tree/master/3279-alice-and-bob-playing-flower-game) |
+| [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/KR-bluejay/LeetCode/tree/master/3296-minimum-number-of-seconds-to-make-mountain-height-zero) |
 | [3336-water-bottles-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3336-water-bottles-ii) |
 | [3432-count-partitions-with-even-sum-difference](https://github.com/KR-bluejay/LeetCode/tree/master/3432-count-partitions-with-even-sum-difference) |
 | [3433-count-mentions-per-user](https://github.com/KR-bluejay/LeetCode/tree/master/3433-count-mentions-per-user) |
@@ -341,6 +342,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3242-count-elements-with-maximum-frequency](https://github.com/KR-bluejay/LeetCode/tree/master/3242-count-elements-with-maximum-frequency) |
 | [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
 | [3278-find-the-number-of-ways-to-place-people-i](https://github.com/KR-bluejay/LeetCode/tree/master/3278-find-the-number-of-ways-to-place-people-i) |
+| [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/KR-bluejay/LeetCode/tree/master/3296-minimum-number-of-seconds-to-make-mountain-height-zero) |
 | [3314-construct-the-minimum-bitwise-array-i](https://github.com/KR-bluejay/LeetCode/tree/master/3314-construct-the-minimum-bitwise-array-i) |
 | [3315-construct-the-minimum-bitwise-array-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3315-construct-the-minimum-bitwise-array-ii) |
 | [3332-maximum-points-tourist-can-earn](https://github.com/KR-bluejay/LeetCode/tree/master/3332-maximum-points-tourist-can-earn) |
@@ -696,6 +698,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2280-count-good-triplets-in-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/2280-count-good-triplets-in-an-array) |
 | [2618-maximize-the-minimum-powered-city](https://github.com/KR-bluejay/LeetCode/tree/master/2618-maximize-the-minimum-powered-city) |
 | [2699-count-the-number-of-fair-pairs](https://github.com/KR-bluejay/LeetCode/tree/master/2699-count-the-number-of-fair-pairs) |
+| [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/KR-bluejay/LeetCode/tree/master/3296-minimum-number-of-seconds-to-make-mountain-height-zero) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/KR-bluejay/LeetCode/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3453-separate-squares-i](https://github.com/KR-bluejay/LeetCode/tree/master/3453-separate-squares-i) |
 | [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
@@ -1003,6 +1006,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3074-apple-redistribution-into-boxes](https://github.com/KR-bluejay/LeetCode/tree/master/3074-apple-redistribution-into-boxes) |
 | [3075-maximize-happiness-of-selected-children](https://github.com/KR-bluejay/LeetCode/tree/master/3075-maximize-happiness-of-selected-children) |
 | [3171-minimum-equal-sum-of-two-arrays-after-replacing-zeros](https://github.com/KR-bluejay/LeetCode/tree/master/3171-minimum-equal-sum-of-two-arrays-after-replacing-zeros) |
+| [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/KR-bluejay/LeetCode/tree/master/3296-minimum-number-of-seconds-to-make-mountain-height-zero) |
 | [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/KR-bluejay/LeetCode/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
 | [3620-maximum-number-of-distinct-elements-after-operations](https://github.com/KR-bluejay/LeetCode/tree/master/3620-maximum-number-of-distinct-elements-after-operations) |
 ## Divide and Conquer
@@ -1104,6 +1108,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2402-meeting-rooms-iii](https://github.com/KR-bluejay/LeetCode/tree/master/2402-meeting-rooms-iii) |
 | [2429-design-a-food-rating-system](https://github.com/KR-bluejay/LeetCode/tree/master/2429-design-a-food-rating-system) |
 | [3013-divide-an-array-into-subarrays-with-minimum-cost-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3013-divide-an-array-into-subarrays-with-minimum-cost-ii) |
+| [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/KR-bluejay/LeetCode/tree/master/3296-minimum-number-of-seconds-to-make-mountain-height-zero) |
 | [3510-minimum-pair-removal-to-sort-array-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3510-minimum-pair-removal-to-sort-array-ii) |
 | [3592-find-x-sum-of-all-k-long-subarrays-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3592-find-x-sum-of-all-k-long-subarrays-ii) |
 | [3610-find-x-sum-of-all-k-long-subarrays-i](https://github.com/KR-bluejay/LeetCode/tree/master/3610-find-x-sum-of-all-k-long-subarrays-i) |
