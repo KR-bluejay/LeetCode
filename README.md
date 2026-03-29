@@ -129,6 +129,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2427-first-letter-to-appear-twice](https://github.com/KR-bluejay/LeetCode/tree/master/2427-first-letter-to-appear-twice) |
 | [2429-design-a-food-rating-system](https://github.com/KR-bluejay/LeetCode/tree/master/2429-design-a-food-rating-system) |
 | [2483-minimum-penalty-for-a-shop](https://github.com/KR-bluejay/LeetCode/tree/master/2483-minimum-penalty-for-a-shop) |
+| [2839-check-if-strings-can-be-made-equal-with-operations-i](https://github.com/KR-bluejay/LeetCode/tree/master/2839-check-if-strings-can-be-made-equal-with-operations-i) |
 | [2887-sort-vowels-in-a-string](https://github.com/KR-bluejay/LeetCode/tree/master/2887-sort-vowels-in-a-string) |
 | [2976-minimum-cost-to-convert-string-i](https://github.com/KR-bluejay/LeetCode/tree/master/2976-minimum-cost-to-convert-string-i) |
 | [3121-count-the-number-of-special-characters-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3121-count-the-number-of-special-characters-ii) |
