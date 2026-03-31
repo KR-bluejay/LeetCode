@@ -134,6 +134,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2976-minimum-cost-to-convert-string-i](https://github.com/KR-bluejay/LeetCode/tree/master/2976-minimum-cost-to-convert-string-i) |
 | [3121-count-the-number-of-special-characters-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3121-count-the-number-of-special-characters-ii) |
 | [3462-vowels-game-in-a-string](https://github.com/KR-bluejay/LeetCode/tree/master/3462-vowels-game-in-a-string) |
+| [3474-lexicographically-smallest-generated-string](https://github.com/KR-bluejay/LeetCode/tree/master/3474-lexicographically-smallest-generated-string) |
 | [3479-count-the-number-of-substrings-with-dominant-ones](https://github.com/KR-bluejay/LeetCode/tree/master/3479-count-the-number-of-substrings-with-dominant-ones) |
 | [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/KR-bluejay/LeetCode/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
 | [3543-count-substrings-that-satisfy-k-constraint-i](https://github.com/KR-bluejay/LeetCode/tree/master/3543-count-substrings-that-satisfy-k-constraint-i) |
@@ -776,6 +777,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/KR-bluejay/LeetCode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
+| [3474-lexicographically-smallest-generated-string](https://github.com/KR-bluejay/LeetCode/tree/master/3474-lexicographically-smallest-generated-string) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -1011,6 +1013,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3075-maximize-happiness-of-selected-children](https://github.com/KR-bluejay/LeetCode/tree/master/3075-maximize-happiness-of-selected-children) |
 | [3171-minimum-equal-sum-of-two-arrays-after-replacing-zeros](https://github.com/KR-bluejay/LeetCode/tree/master/3171-minimum-equal-sum-of-two-arrays-after-replacing-zeros) |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/KR-bluejay/LeetCode/tree/master/3296-minimum-number-of-seconds-to-make-mountain-height-zero) |
+| [3474-lexicographically-smallest-generated-string](https://github.com/KR-bluejay/LeetCode/tree/master/3474-lexicographically-smallest-generated-string) |
 | [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/KR-bluejay/LeetCode/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
 | [3620-maximum-number-of-distinct-elements-after-operations](https://github.com/KR-bluejay/LeetCode/tree/master/3620-maximum-number-of-distinct-elements-after-operations) |
 ## Divide and Conquer
