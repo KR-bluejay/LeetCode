@@ -7,7 +7,7 @@ impl Solution {
                 query[0] as usize, 
                 query[1] as usize, 
                 query[2] as usize, 
-                query[3] as i64
+                query[3] as u32
             );
 
             for id in (l ..= r).step_by(k) {
