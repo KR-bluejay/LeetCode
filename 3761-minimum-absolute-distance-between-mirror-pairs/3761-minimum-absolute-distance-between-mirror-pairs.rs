@@ -9,6 +9,10 @@ impl Solution {
         for (id, num) in nums.into_iter().enumerate() {
             let id = id as u32;
 
+            if let Some(&diff_id) = num_map.get(&num) {
+                min_dist = min_dist.min(id - diff_id);
+            }
+            
             let mut tmp = num;
             let mut rev_num = 0;
 
@@ -17,9 +21,6 @@ impl Solution {
                 tmp /= 10;
             }
 
-            if let Some(&diff_id) = num_map.get(&num) {
-                min_dist = min_dist.min(id - diff_id);
-            }
 
             num_map.insert(rev_num, id);
         }
