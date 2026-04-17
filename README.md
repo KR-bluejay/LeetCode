@@ -62,6 +62,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3623-count-number-of-trapezoids-i](https://github.com/KR-bluejay/LeetCode/tree/master/3623-count-number-of-trapezoids-i) |
 | [3676-smallest-number-with-all-set-bits](https://github.com/KR-bluejay/LeetCode/tree/master/3676-smallest-number-with-all-set-bits) |
 | [3744-minimum-operations-to-make-array-elements-zero](https://github.com/KR-bluejay/LeetCode/tree/master/3744-minimum-operations-to-make-array-elements-zero) |
+| [3761-minimum-absolute-distance-between-mirror-pairs](https://github.com/KR-bluejay/LeetCode/tree/master/3761-minimum-absolute-distance-between-mirror-pairs) |
 | [3768-check-if-digits-are-equal-in-string-after-operations-i](https://github.com/KR-bluejay/LeetCode/tree/master/3768-check-if-digits-are-equal-in-string-after-operations-i) |
 | [3830-find-closest-person](https://github.com/KR-bluejay/LeetCode/tree/master/3830-find-closest-person) |
 ## String
@@ -388,6 +389,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3685-count-subarrays-of-length-three-with-a-condition](https://github.com/KR-bluejay/LeetCode/tree/master/3685-count-subarrays-of-length-three-with-a-condition) |
 | [3744-minimum-operations-to-make-array-elements-zero](https://github.com/KR-bluejay/LeetCode/tree/master/3744-minimum-operations-to-make-array-elements-zero) |
 | [3748-sort-matrix-by-diagonals](https://github.com/KR-bluejay/LeetCode/tree/master/3748-sort-matrix-by-diagonals) |
+| [3761-minimum-absolute-distance-between-mirror-pairs](https://github.com/KR-bluejay/LeetCode/tree/master/3761-minimum-absolute-distance-between-mirror-pairs) |
 | [3790-fruits-into-baskets-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3790-fruits-into-baskets-ii) |
 | [3794-find-the-minimum-amount-of-time-to-brew-potions](https://github.com/KR-bluejay/LeetCode/tree/master/3794-find-the-minimum-amount-of-time-to-brew-potions) |
 | [3797-design-spreadsheet](https://github.com/KR-bluejay/LeetCode/tree/master/3797-design-spreadsheet) |
@@ -478,6 +480,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3678-design-task-manager](https://github.com/KR-bluejay/LeetCode/tree/master/3678-design-task-manager) |
 | [3713-longest-balanced-substring-i](https://github.com/KR-bluejay/LeetCode/tree/master/3713-longest-balanced-substring-i) |
 | [3714-longest-balanced-substring-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3714-longest-balanced-substring-ii) |
+| [3761-minimum-absolute-distance-between-mirror-pairs](https://github.com/KR-bluejay/LeetCode/tree/master/3761-minimum-absolute-distance-between-mirror-pairs) |
 | [3797-design-spreadsheet](https://github.com/KR-bluejay/LeetCode/tree/master/3797-design-spreadsheet) |
 | [3827-implement-router](https://github.com/KR-bluejay/LeetCode/tree/master/3827-implement-router) |
 | [3863-power-grid-maintenance](https://github.com/KR-bluejay/LeetCode/tree/master/3863-power-grid-maintenance) |
