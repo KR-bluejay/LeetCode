@@ -293,6 +293,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1814-count-nice-pairs-in-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/1814-count-nice-pairs-in-an-array) |
 | [1828-queries-on-number-of-points-inside-a-circle](https://github.com/KR-bluejay/LeetCode/tree/master/1828-queries-on-number-of-points-inside-a-circle) |
 | [1834-minimum-number-of-people-to-teach](https://github.com/KR-bluejay/LeetCode/tree/master/1834-minimum-number-of-people-to-teach) |
+| [1855-maximum-distance-between-a-pair-of-values](https://github.com/KR-bluejay/LeetCode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/KR-bluejay/LeetCode/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 | [1917-maximum-average-pass-ratio](https://github.com/KR-bluejay/LeetCode/tree/master/1917-maximum-average-pass-ratio) |
 | [1970-last-day-where-you-can-still-cross](https://github.com/KR-bluejay/LeetCode/tree/master/1970-last-day-where-you-can-still-cross) |
@@ -702,6 +703,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1051-shortest-way-to-form-string](https://github.com/KR-bluejay/LeetCode/tree/master/1051-shortest-way-to-form-string) |
 | [1102-check-if-a-number-is-majority-element-in-a-sorted-array](https://github.com/KR-bluejay/LeetCode/tree/master/1102-check-if-a-number-is-majority-element-in-a-sorted-array) |
 | [1612-avoid-flood-in-the-city](https://github.com/KR-bluejay/LeetCode/tree/master/1612-avoid-flood-in-the-city) |
+| [1855-maximum-distance-between-a-pair-of-values](https://github.com/KR-bluejay/LeetCode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [1970-last-day-where-you-can-still-cross](https://github.com/KR-bluejay/LeetCode/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2054-two-best-non-overlapping-events](https://github.com/KR-bluejay/LeetCode/tree/master/2054-two-best-non-overlapping-events) |
 | [2141-maximum-running-time-of-n-computers](https://github.com/KR-bluejay/LeetCode/tree/master/2141-maximum-running-time-of-n-computers) |
@@ -760,6 +762,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0881-boats-to-save-people](https://github.com/KR-bluejay/LeetCode/tree/master/0881-boats-to-save-people) |
 | [0908-middle-of-the-linked-list](https://github.com/KR-bluejay/LeetCode/tree/master/0908-middle-of-the-linked-list) |
 | [1051-shortest-way-to-form-string](https://github.com/KR-bluejay/LeetCode/tree/master/1051-shortest-way-to-form-string) |
+| [1855-maximum-distance-between-a-pair-of-values](https://github.com/KR-bluejay/LeetCode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [2699-count-the-number-of-fair-pairs](https://github.com/KR-bluejay/LeetCode/tree/master/2699-count-the-number-of-fair-pairs) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/KR-bluejay/LeetCode/tree/master/3437-maximum-total-damage-with-spell-casting) |
 ## Linked List
