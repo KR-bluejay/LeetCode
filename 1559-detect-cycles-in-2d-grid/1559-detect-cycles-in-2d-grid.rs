@@ -5,7 +5,6 @@ struct UnionFind {
 }
 
 impl UnionFind {
-    #[inline(always)]
     fn new(n: usize) -> Self {
         let parents = (0 .. n).collect();
         let sizes = vec![1; n];
@@ -16,7 +15,6 @@ impl UnionFind {
         }
     }
     
-    #[inline(always)]
     fn find(&mut self, id: usize) -> usize {
         if self.parents[id] != id {
             self.parents[id] = self.find(self.parents[id]);
@@ -25,7 +23,6 @@ impl UnionFind {
         self.parents[id]
     }
 
-    #[inline(always)]
     fn union(&mut self, left: usize, right: usize) -> bool {
         let p_left = self.find(left);
         let p_right = self.find(right);
@@ -43,7 +40,6 @@ impl UnionFind {
 
 }
 impl Solution {
-    #[inline(always)]
     pub fn contains_cycle(grid: Vec<Vec<char>>) -> bool {
         let mut union_find = UnionFind::new(grid.len() * grid[0].len());
 
