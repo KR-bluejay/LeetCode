@@ -338,6 +338,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2699-count-the-number-of-fair-pairs](https://github.com/KR-bluejay/LeetCode/tree/master/2699-count-the-number-of-fair-pairs) |
 | [2753-minimum-number-of-operations-to-make-all-array-elements-equal-to-1](https://github.com/KR-bluejay/LeetCode/tree/master/2753-minimum-number-of-operations-to-make-all-array-elements-equal-to-1) |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/KR-bluejay/LeetCode/tree/master/2770-maximum-number-of-jumps-to-reach-the-last-index) |
+| [2784-check-if-array-is-good](https://github.com/KR-bluejay/LeetCode/tree/master/2784-check-if-array-is-good) |
 | [2856-count-complete-subarrays-in-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/2856-count-complete-subarrays-in-an-array) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/KR-bluejay/LeetCode/tree/master/2888-minimum-index-of-a-valid-split) |
 | [2915-count-of-interesting-subarrays](https://github.com/KR-bluejay/LeetCode/tree/master/2915-count-of-interesting-subarrays) |
@@ -467,6 +468,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2453-destroy-sequential-targets](https://github.com/KR-bluejay/LeetCode/tree/master/2453-destroy-sequential-targets) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/KR-bluejay/LeetCode/tree/master/2626-count-the-number-of-good-subarrays) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/KR-bluejay/LeetCode/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
+| [2784-check-if-array-is-good](https://github.com/KR-bluejay/LeetCode/tree/master/2784-check-if-array-is-good) |
 | [2856-count-complete-subarrays-in-an-array](https://github.com/KR-bluejay/LeetCode/tree/master/2856-count-complete-subarrays-in-an-array) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/KR-bluejay/LeetCode/tree/master/2888-minimum-index-of-a-valid-split) |
 | [2915-count-of-interesting-subarrays](https://github.com/KR-bluejay/LeetCode/tree/master/2915-count-of-interesting-subarrays) |
@@ -931,6 +933,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2402-meeting-rooms-iii](https://github.com/KR-bluejay/LeetCode/tree/master/2402-meeting-rooms-iii) |
 | [2463-minimum-total-distance-traveled](https://github.com/KR-bluejay/LeetCode/tree/master/2463-minimum-total-distance-traveled) |
 | [2699-count-the-number-of-fair-pairs](https://github.com/KR-bluejay/LeetCode/tree/master/2699-count-the-number-of-fair-pairs) |
+| [2784-check-if-array-is-good](https://github.com/KR-bluejay/LeetCode/tree/master/2784-check-if-array-is-good) |
 | [2887-sort-vowels-in-a-string](https://github.com/KR-bluejay/LeetCode/tree/master/2887-sort-vowels-in-a-string) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/KR-bluejay/LeetCode/tree/master/2888-minimum-index-of-a-valid-split) |
 | [3074-apple-redistribution-into-boxes](https://github.com/KR-bluejay/LeetCode/tree/master/3074-apple-redistribution-into-boxes) |
