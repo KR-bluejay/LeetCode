@@ -271,6 +271,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1111-minimum-score-triangulation-of-polygon](https://github.com/KR-bluejay/LeetCode/tree/master/1111-minimum-score-triangulation-of-polygon) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/KR-bluejay/LeetCode/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/KR-bluejay/LeetCode/tree/master/1262-greatest-sum-divisible-by-three) |
+| [1345-jump-game-iv](https://github.com/KR-bluejay/LeetCode/tree/master/1345-jump-game-iv) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/KR-bluejay/LeetCode/tree/master/1353-find-resultant-array-after-removing-anagrams) |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/KR-bluejay/LeetCode/tree/master/1356-sort-integers-by-the-number-of-1-bits) |
 | [1390-four-divisors](https://github.com/KR-bluejay/LeetCode/tree/master/1390-four-divisors) |
@@ -446,6 +447,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/KR-bluejay/LeetCode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/KR-bluejay/LeetCode/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1264-maximum-number-of-words-you-can-type](https://github.com/KR-bluejay/LeetCode/tree/master/1264-maximum-number-of-words-you-can-type) |
+| [1345-jump-game-iv](https://github.com/KR-bluejay/LeetCode/tree/master/1345-jump-game-iv) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/KR-bluejay/LeetCode/tree/master/1353-find-resultant-array-after-removing-anagrams) |
 | [1443-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/KR-bluejay/LeetCode/tree/master/1443-minimum-time-to-collect-all-apples-in-a-tree) |
 | [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/KR-bluejay/LeetCode/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
@@ -659,6 +661,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0945-snakes-and-ladders](https://github.com/KR-bluejay/LeetCode/tree/master/0945-snakes-and-ladders) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/KR-bluejay/LeetCode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
+| [1345-jump-game-iv](https://github.com/KR-bluejay/LeetCode/tree/master/1345-jump-game-iv) |
 | [1443-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/KR-bluejay/LeetCode/tree/master/1443-minimum-time-to-collect-all-apples-in-a-tree) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/KR-bluejay/LeetCode/tree/master/1559-detect-cycles-in-2d-grid) |
 | [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/KR-bluejay/LeetCode/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
