@@ -1,31 +1,30 @@
 impl Solution {
     pub fn number_of_special_chars(word: String) -> i32 {
-        let mut record: Vec<u8> = vec![0; 26];
+        let mut cache = vec![false; 52];
+        let mut result = 0;
 
-        let mut count = 0;
+        for word_byte in word.into_bytes() {
+            if word_byte <= b'Z' {
+                let id = (word_byte - b'A' + 26) as usize;
+                let rev_id = (word_byte - b'A') as usize;
 
-        for word in word.into_bytes() {
-            if word < b'a' {
-                let key = (word - b'A') as usize;
-
-                if record[key] == 0 {
-                    record[key] = 3;
-                } else if record[key] == 1 {
-                    count += 1;
-                    record[key] = 2;
+                if cache[rev_id] && !cache[id] {
+                    result += 1;
                 }
+                cache[id] = true;
             } else {
-                let key = (word - b'a') as usize;
+                let id = (word_byte - b'a') as usize;
+                let rev_id = (word_byte - b'a' + 26) as usize;
 
-                if record[key] == 0 {
-                    record[key] = 1;
-                } else if record[key] == 2 {
-                    count -= 1;
-                    record[key] = 3;
+                println!("{} {id} {rev_id}", word_byte as char);
+
+                if cache[id] && cache[rev_id] {
+                    result -= 1;
                 }
+                cache[id] = !cache[rev_id];
             }
         }
 
-        count
+        result
     }
 }
