@@ -16,8 +16,6 @@ impl Solution {
                 let id = (word_byte - b'a') as usize;
                 let rev_id = (word_byte - b'a' + 26) as usize;
 
-                println!("{} {id} {rev_id}", word_byte as char);
-
                 if cache[id] && cache[rev_id] {
                     result -= 1;
                 }
