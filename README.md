@@ -390,6 +390,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/KR-bluejay/LeetCode/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
 | [3634-minimum-removals-to-balance-array](https://github.com/KR-bluejay/LeetCode/tree/master/3634-minimum-removals-to-balance-array) |
+| [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
 | [3637-trionic-array-i](https://github.com/KR-bluejay/LeetCode/tree/master/3637-trionic-array-i) |
 | [3640-maximum-frequency-of-an-element-after-performing-operations-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3640-maximum-frequency-of-an-element-after-performing-operations-ii) |
 | [3640-trionic-array-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3640-trionic-array-ii) |
@@ -733,6 +734,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3453-separate-squares-i](https://github.com/KR-bluejay/LeetCode/tree/master/3453-separate-squares-i) |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/KR-bluejay/LeetCode/tree/master/3600-maximize-spanning-tree-stability-with-upgrades) |
 | [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
+| [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
 | [3640-maximum-frequency-of-an-element-after-performing-operations-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3640-maximum-frequency-of-an-element-after-performing-operations-ii) |
 | [3790-fruits-into-baskets-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3790-fruits-into-baskets-ii) |
 | [3827-implement-router](https://github.com/KR-bluejay/LeetCode/tree/master/3827-implement-router) |
@@ -783,6 +785,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/KR-bluejay/LeetCode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [2699-count-the-number-of-fair-pairs](https://github.com/KR-bluejay/LeetCode/tree/master/2699-count-the-number-of-fair-pairs) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/KR-bluejay/LeetCode/tree/master/3437-maximum-total-damage-with-spell-casting) |
+| [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
 ## Linked List
 |  |
 | ------- |
@@ -956,6 +959,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3606-coupon-code-validator](https://github.com/KR-bluejay/LeetCode/tree/master/3606-coupon-code-validator) |
 | [3620-maximum-number-of-distinct-elements-after-operations](https://github.com/KR-bluejay/LeetCode/tree/master/3620-maximum-number-of-distinct-elements-after-operations) |
 | [3634-minimum-removals-to-balance-array](https://github.com/KR-bluejay/LeetCode/tree/master/3634-minimum-removals-to-balance-array) |
+| [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
 | [3640-maximum-frequency-of-an-element-after-performing-operations-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3640-maximum-frequency-of-an-element-after-performing-operations-ii) |
 | [3748-sort-matrix-by-diagonals](https://github.com/KR-bluejay/LeetCode/tree/master/3748-sort-matrix-by-diagonals) |
 ## Union Find
@@ -1061,6 +1065,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/KR-bluejay/LeetCode/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/KR-bluejay/LeetCode/tree/master/3600-maximize-spanning-tree-stability-with-upgrades) |
 | [3620-maximum-number-of-distinct-elements-after-operations](https://github.com/KR-bluejay/LeetCode/tree/master/3620-maximum-number-of-distinct-elements-after-operations) |
+| [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/KR-bluejay/LeetCode/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
 ## Divide and Conquer
 |  |
 | ------- |
