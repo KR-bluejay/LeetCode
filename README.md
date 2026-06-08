@@ -317,6 +317,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/KR-bluejay/LeetCode/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2164-two-best-non-overlapping-events](https://github.com/KR-bluejay/LeetCode/tree/master/2164-two-best-non-overlapping-events) |
 | [2169-simple-bank-system](https://github.com/KR-bluejay/LeetCode/tree/master/2169-simple-bank-system) |
+| [2196-create-binary-tree-from-descriptions](https://github.com/KR-bluejay/LeetCode/tree/master/2196-create-binary-tree-from-descriptions) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/KR-bluejay/LeetCode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/KR-bluejay/LeetCode/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2249-count-the-hidden-sequences](https://github.com/KR-bluejay/LeetCode/tree/master/2249-count-the-hidden-sequences) |
@@ -466,6 +467,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/KR-bluejay/LeetCode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2169-simple-bank-system](https://github.com/KR-bluejay/LeetCode/tree/master/2169-simple-bank-system) |
 | [2174-next-greater-numerically-balanced-number](https://github.com/KR-bluejay/LeetCode/tree/master/2174-next-greater-numerically-balanced-number) |
+| [2196-create-binary-tree-from-descriptions](https://github.com/KR-bluejay/LeetCode/tree/master/2196-create-binary-tree-from-descriptions) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/KR-bluejay/LeetCode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/KR-bluejay/LeetCode/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2402-meeting-rooms-iii](https://github.com/KR-bluejay/LeetCode/tree/master/2402-meeting-rooms-iii) |
@@ -602,6 +604,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 | [1443-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/KR-bluejay/LeetCode/tree/master/1443-minimum-time-to-collect-all-apples-in-a-tree) |
 | [2096-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/KR-bluejay/LeetCode/tree/master/2096-step-by-step-directions-from-a-binary-tree-node-to-another) |
+| [2196-create-binary-tree-from-descriptions](https://github.com/KR-bluejay/LeetCode/tree/master/2196-create-binary-tree-from-descriptions) |
 | [2872-maximum-number-of-k-divisible-components](https://github.com/KR-bluejay/LeetCode/tree/master/2872-maximum-number-of-k-divisible-components) |
 | [3562-maximum-profit-from-trading-stocks-with-discounts](https://github.com/KR-bluejay/LeetCode/tree/master/3562-maximum-profit-from-trading-stocks-with-discounts) |
 ## Depth-First Search
@@ -698,6 +701,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/KR-bluejay/LeetCode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/KR-bluejay/LeetCode/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 | [2096-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/KR-bluejay/LeetCode/tree/master/2096-step-by-step-directions-from-a-binary-tree-node-to-another) |
+| [2196-create-binary-tree-from-descriptions](https://github.com/KR-bluejay/LeetCode/tree/master/2196-create-binary-tree-from-descriptions) |
 ## Binary Search Tree
 |  |
 | ------- |
